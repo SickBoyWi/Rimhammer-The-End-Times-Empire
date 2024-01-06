@@ -1005,7 +1005,55 @@
 			<wornGraphicPath>Things/Items/Misc/Cape/RH_TET_Empire_Cape</wornGraphicPath>
 		</apparel>
 	</ThingDef>
-  
+ 
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_Empire_OutriderJacket</defName>
+		<description>A fancy jacket worn sleeves off by Empire outrider cavalry. It hangs from the shoulders, and covers the back. Offers protection, and is a display of wealth.</description>
+		<label>Empire outrider jacket</label>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Items/Outrider_Jacket/RH_TET_Empire_OutriderJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>25</onGroundRandomRotateAngle>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>90</costStuffCount>
+		<costList>
+			<Gold>5</Gold>
+		</costList>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<SellPriceFactor>1.0</SellPriceFactor>
+			<EquipDelay>1.5</EquipDelay>
+			<Beauty>0</Beauty>
+			<Mass>2.2</Mass>
+			<WorkToMake>15000</WorkToMake>
+			<StuffEffectMultiplierArmor>0.38</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.52</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers><li>Shell</li></layers>
+			<wornGraphicPath>Things/Items/Outrider_Jacket/RH_TET_Empire_OutriderJacket</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+	
 	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
 		<defName>RH_TET_Empire_Armor_Faith</defName>
 		<label>Empire faith armor</label>
