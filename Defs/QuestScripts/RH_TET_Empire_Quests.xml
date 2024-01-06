@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<QuestScriptDef>
+		<defName>RH_TET_Empire_OpportunitySite_FaithfulWillingToJoin</defName>
+		<rootSelectionWeight>1</rootSelectionWeight>
+		<rootMinPoints>0</rootMinPoints>
+		<rootIncreasesPopulation>false</rootIncreasesPopulation>
+		<autoAccept>false</autoAccept>
+		<expireDaysRange>3~7</expireDaysRange>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->[prisoner_nameDef]'s Salvation</li>
+				<li>questName->[prisoner_nameDef]'s Rescue</li>
+				<li>questName->[prisoner_nameDef]'s Liberation</li>
+				<li>questName->Rescuing [prisoner_nameDef]</li>
+				<li>questName->Saving [prisoner_nameDef]</li>
+				<li>questName->Freeing [prisoner_nameDef]</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<!-- Implicitly, prisoner is asker. It's a bit legacy -->
+				<li>questDescription->A prisoner being held by [siteFaction_name] has managed to contact you via the voice of Shallya! [prisoner_pronoun] is a faithful of Shallya, and can wield healing powers.
+\n[prisoner_nameDef] is being held at a camp near [map_definite][underArmedGuard]. Rescue [prisoner_objective], and [prisoner_pronoun] will join you. [prisoner_pronoun] is a [prisoner_age]-year-old [prisoner_title]. [prisoner_pronoun] says that [allSitePartsDescriptionsExceptFirst][formerColonistInfo][prisonerFullRelationInfo]
+\nIf you miss this opportunity, you may never hear from [prisoner_nameDef] again.				</li>
+
+				<li>formerColonistInfo(priority=1)->\n\n[prisoner_formerlyColonistInfo]</li>
+				<li>formerColonistInfo-></li>
+		
+				<li>underArmedGuard(allowViolentQuests==true,priority=1)-> under armed guard</li>
+				<li>underArmedGuard-></li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_SubScript">
+					<def>Util_RandomizePointsChallengeRating</def>
+					<parms>
+						<pointsFactorTwoStar>2</pointsFactorTwoStar>
+						<pointsFactorThreeStar>2.5</pointsFactorThreeStar>
+					</parms>
+				</li>
+				<li Class="QuestNode_SubScript">
+					<def>Util_AdjustPointsForDistantFight</def>
+				</li>
+				<li Class="QuestNode_GetMap"/>
+
+				<li Class="QuestNode_GetSiteTile">
+					<storeAs>siteTile</storeAs>
+					<preferCloserTiles>true</preferCloserTiles>
+				</li>
+
+				<li Class="QuestNode_ViolentQuestsAllowed">
+					<node Class="QuestNode_Set">
+						<name>siteThreatChance</name>
+						<value>1</value>
+					</node>
+					<elseNode Class="QuestNode_Set">
+						<name>siteThreatChance</name>
+						<value>0</value>
+					</elseNode>
+				</li>
+
+				<li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+					<storeAs>sitePartDefs</storeAs>
+					<storeFactionAs>siteFaction</storeFactionAs>
+					<sitePartsTags>
+						<li>
+							<tag>FaithfulPrisonerWillingToJoin</tag>
+							<!--<tag>PrisonerWillingToJoin</tag>-->
+						</li>
+						<li>
+							<tag>PrisonerRescueQuestThreat</tag>
+							<chance>$siteThreatChance</chance>
+						</li>
+					</sitePartsTags>
+				</li>
+
+				<li Class="QuestNode_GetDefaultSitePartsParams">
+					<tile>$siteTile</tile>
+					<faction>$siteFaction</faction>
+					<sitePartDefs>$sitePartDefs</sitePartDefs>
+					<storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+				</li>
+
+				<li Class="QuestNode_SubScript">
+					<def>Util_GenerateSite</def>
+					<parms>
+						<hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+					</parms>
+				</li>
+        
+				<li Class="QuestNode_SpawnWorldObjects">
+					<worldObjects>$site</worldObjects>
+					<defsToExcludeFromHyperlinks>Human</defsToExcludeFromHyperlinks>
+				</li>
+
+				<li Class="QuestNode_WorldObjectTimeout">
+					<worldObject>$site</worldObject>
+					<isQuestTimeout>true</isQuestTimeout>
+					<delayTicks>$(randInt(20,28)*60000)</delayTicks>
+					<inSignalDisable>site.MapGenerated</inSignalDisable>
+					<node Class="QuestNode_End">
+						<outcome>Fail</outcome>
+						<sendStandardLetter>true</sendStandardLetter>
+					</node>
+				</li>
+
+				<li Class="QuestNode_AddPawnReward">
+					<pawn>$prisoner</pawn>
+					<inSignalChoiceUsed>site.MapGenerated</inSignalChoiceUsed>
+					<rewardDetailsHidden>true</rewardDetailsHidden>
+				</li>
+
+				<li Class="QuestNode_NoWorldObject">
+					<worldObject>$site</worldObject>
+					<node Class="QuestNode_End"/>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+  
+	<SitePartDef>
+		<defName>RH_TET_FaithfulPrisonerWillingToJoin</defName>
+		<label>captive faithful camp</label>
+		<description>A faithful prisoner being held by enemies. Rescue them and they will join you.</description>
+		<workerClass>TheEndTimes_Empire.SitePartWorker_FaithfulPrisonerWillingToJoin</workerClass>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>World/WorldObjects/Expanding/Sites/Prisoner</expandingIconTexture>
+		<forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+		<requiresFaction>true</requiresFaction>
+		<increasesPopulation>true</increasesPopulation>
+		<handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+		<tags>
+			<li>FaithfulPrisonerWillingToJoin</li>
+		</tags>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>RH_TET_Empire_FaithfulPrisonerWillingToJoin</defName>
+		<linkWithSite>RH_TET_FaithfulPrisonerWillingToJoin</linkWithSite>
+		<order>460</order>
+		<genStep Class="TheEndTimes_Empire.GenStep_FaithfulPrisonerWillingToJoin">
+			<!--<genStep Class="GenStep_PrisonerWillingToJoin">-->
+			<count>1</count>
+			<nearMapCenter>true</nearMapCenter>
+		</genStep>
+	</GenStepDef>
+
+</Defs>

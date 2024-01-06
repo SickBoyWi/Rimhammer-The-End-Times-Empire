@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef>
+		<defName>RH_TET_Empire_Bread</defName>
+		<label>bread</label>
+		<description>Bread made from wheat. It lasts a decent amount of time without refrigeration. If it isn't spoiled, then it won't get a person sick.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Items/Resource/Bread</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<MarketValue>16</MarketValue>
+			<Mass>0.2</Mass>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>20</stackLimit>
+		<pathCost>15</pathCost>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>12</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Ingredients"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>RH_TET_Empire_Cheese</defName>
+		<label>cheese</label>
+		<description>Yellow cheese. It lasts a long amount of time without refrigeration.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Items/Resource/Cheese</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<MarketValue>20</MarketValue>
+			<Mass>0.4</Mass>
+			<DeteriorationRate>.75</DeteriorationRate>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>15</stackLimit>
+		<pathCost>15</pathCost>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>45</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Ingredients"/>
+			<li Class="CompProperties_FoodPoisonable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>RH_TET_Empire_BrinedMeat</defName>
+		<label>brined meat</label>
+		<description>Brined meat. This substance needs to smoked in a meat smoker before it becomes jerky.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/BrinedMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>30</stackLimit>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>1</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<thingCategories>
+			<li>RH_TET_PreservedFoods</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>RH_TET_Jerky</defName>
+		<label>jerky</label>
+		<description>Meat preserved by brining and smoking. Tastes great. It lasts significantly longer than raw meat. Great for traveling. Not poisonable. Has a shelf life of one year.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<thingCategories>
+			<li>RH_TET_PreservedFoods</li>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Items/Resource/RH_TET_Jerky</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Mass>0.02</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought>AteFineMeal</tasteThought>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients"/>
+		</comps>
+	</ThingDef>
+  
+</Defs>

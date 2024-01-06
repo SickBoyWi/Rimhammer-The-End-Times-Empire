@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RH_TET_Empire_ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>RH_TET_Empire_HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<smeltable>true</smeltable>
+		<!--
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+	-->
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="RH_TET_Empire_ShirtMilitary_Base" ParentName="RH_TET_Empire_ApparelMakeableBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef Name="RH_TET_Empire_ShirtBasic_Base" ParentName="RH_TET_Empire_ShirtMilitary_Base" Abstract="True">
+		<costList>
+			<Cloth>50</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2400</WorkToMake>
+			<Mass>0.25</Mass>
+			<EquipDelay>1.5</EquipDelay>
+			<ArmorRating_Sharp>0.095</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<Insulation_Cold>4.8</Insulation_Cold>
+			<Insulation_Heat>2.2</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<tags>
+				<li>RH_TET_Empire_Mid</li>
+				<li>RH_TET_Empire_Soldier</li>
+			</tags>
+			<!-- TODO -->
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_Apparel_Basic</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Basic</li></researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="RH_TET_Empire_ShirtMid_Base" ParentName="RH_TET_Empire_ShirtMilitary_Base" Abstract="True">
+		<costList>
+			<Cloth>65</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>3200</WorkToMake>
+			<Mass>0.3</Mass>
+			<ArmorRating_Sharp>0.135</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.09</ArmorRating_Heat>
+			<Insulation_Cold>9.6</Insulation_Cold>
+			<Insulation_Heat>4.4</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ArrestSuccessChance>0.1</ArrestSuccessChance>
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>RH_TET_Empire_Mid</li>
+				<li>RH_TET_Empire_Officer</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_Mid</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="RH_TET_Empire_ShirtHigh_Base" ParentName="RH_TET_Empire_ShirtMilitary_Base" Abstract="True">
+		<costList>
+			<Cloth>80</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>110</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.35</Mass>
+			<ArmorRating_Sharp>0.175</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.13</ArmorRating_Heat>
+			<Insulation_Cold>14.2</Insulation_Cold>
+			<Insulation_Heat>6.6</Insulation_Heat>
+			<EquipDelay>2.0</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ArrestSuccessChance>0.2</ArrestSuccessChance>
+			<SocialImpact>0.15</SocialImpact>
+			<PawnBeauty>0.05</PawnBeauty>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>RH_TET_Empire_Fine</li>
+				<li>RH_TET_Empire_Officer</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Advanced</li></researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Talabheim</defName>
+		<label>Talabheim soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Talabheim, and bearing its colors: red and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Talabheim/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Talabheim/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Talabheim</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Talabheim</defName>
+		<label>Talabheim officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Talabheim, and bearing its colors: red and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Talabheim/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Talabheim/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Talabheim</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Talabheim</defName>
+		<label>Talabheim high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Talabheim, and bearing its colors: red and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Talabheim/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Talabheim/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Talabheim</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Middenland</defName>
+		<label>Middenland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Middenland, and bearing its colors: blue and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Middenland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Middenland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Middenland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Middenland</defName>
+		<label>Middenland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Middenland, and bearing its colors: blue and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Middenland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Middenland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Middenland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Middenland</defName>
+		<label>Middenland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Middenland, and bearing its colors: blue and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Middenland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Middenland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Middenland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Averland</defName>
+		<label>Averland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Averland, and bearing its colors: black and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Averland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Averland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Averland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Averland</defName>
+		<label>Averland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Averland, and bearing its colors: black and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Averland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Averland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Averland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Averland</defName>
+		<label>Averland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Averland, and bearing its colors: black and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Averland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Averland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Averland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Ostermark</defName>
+		<label>Ostermark soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Ostermark, and bearing its colors: red and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Ostermark/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Ostermark/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Ostermark</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Ostermark</defName>
+		<label>Ostermark officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Ostermark, and bearing its colors: red and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Ostermark/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Ostermark/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Ostermark</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Ostermark</defName>
+		<label>Ostermark high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Ostermark, and bearing its colors: red and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Ostermark/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Ostermark/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Ostermark</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Ostland</defName>
+		<label>Ostland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Ostland, and bearing its colors: black and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Ostland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Ostland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Ostland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Ostland</defName>
+		<label>Ostland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Ostland, and bearing its colors: black and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Ostland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Ostland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Ostland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Ostland</defName>
+		<label>Ostland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Ostland, and bearing its colors: black and white.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Ostland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Ostland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Ostland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Hochland</defName>
+		<label>Hochland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Hochland, and bearing its colors: red and green.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Hochland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Hochland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Hochland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Hochland</defName>
+		<label>Hochland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Hochland, and bearing its colors: red and green.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Hochland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Hochland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Hochland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Hochland</defName>
+		<label>Hochland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Hochland, and bearing its colors: red and green.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Hochland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Hochland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Hochland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Stirland</defName>
+		<label>Stirland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Stirland, and bearing its colors: yellow and green.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Stirland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Stirland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Stirland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Stirland</defName>
+		<label>Stirland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Stirland, and bearing its colors: yellow and green.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Stirland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Stirland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Stirland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Stirland</defName>
+		<label>Stirland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Stirland, and bearing its colors: yellow and green.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Stirland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Stirland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Stirland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Reikland</defName>
+		<label>Reikland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Reikland, and bearing its colors: red accented white (or fawn).</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Reikland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Reikland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Reikland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsReikland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Reikland</defName>
+		<label>Reikland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Reikland, and bearing its colors: red accented white (or fawn).</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Reikland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Reikland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Reikland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsReikland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Reikland</defName>
+		<label>Reikland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Reikland, and bearing its colors: red accented white (or fawn).</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Reikland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Reikland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Reikland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsReikland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Nordland</defName>
+		<label>Nordland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Nordland, and bearing its colors: blue and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Nordland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Nordland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Nordland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsNordland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Nordland</defName>
+		<label>Nordland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Nordland, and bearing its colors: blue and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Nordland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Nordland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Nordland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsNordland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Nordland</defName>
+		<label>Nordland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Nordland, and bearing its colors: blue and yellow.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Nordland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Nordland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Nordland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsNordland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_ShirtBasic_Base">
+		<defName>RH_TET_EmpireShirt_Wissenland</defName>
+		<label>Wissenland soldier shirt</label>
+		<description>A shirt worn by the Empire soldiers from the state of Wissenland, and bearing its colors: accented white and grays.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts/Wissenland/ShirtBasic</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts/Wissenland/ShirtBasic</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Wissenland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsWissenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtMid_Base">
+		<defName>RH_TET_EmpireShirt_Mid_Wissenland</defName>
+		<label>Wissenland officer shirt</label>
+		<description>A shirt worn by the low level Empire officers from the state of Wissenland, and bearing its colors: accented white and grays.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Mid/Wissenland/ShirtMid</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Mid/Wissenland/ShirtMid</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Wissenland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsWissenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShirtHigh_Base">
+		<defName>RH_TET_EmpireShirt_High_Wissenland</defName>
+		<label>Wissenland high officer shirt</label>
+		<description>A shirt worn by higher ranking Empire officers from the state of Wissenland, and bearing its colors: accented white and grays.</description>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Fine/Wissenland/ShirtFine</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Shirts-Fine/Wissenland/ShirtFine</wornGraphicPath>
+		</apparel>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel_Wissenland</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsWissenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_EmpireShirt_Lordly</defName>
+		<label>Empire lordly shirt</label>
+		<description>A shirt worn by the Empire lords and nobility.</description>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Things/Items/Shirts-Lord/Fancyshirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>110</MaxHitPoints>
+			<WorkToMake>4500</WorkToMake>
+			<Mass>0.35</Mass>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.0</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ArrestSuccessChance>0.20</ArrestSuccessChance>
+			<SocialImpact>0.20</SocialImpact>
+			<PawnBeauty>0.20</PawnBeauty>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Shirts-Lord/Fancyshirt</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Fine</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- Armor -->
+	<ThingDef ParentName="ArmorSmithableBase" Name="RH_TET_Empire_ArmorSmithableBase" Abstract="True">
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>RH_TET_Empire_Armor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
+		<defName>RH_TET_Empire_Armor_Low</defName>
+		<label>Empire basic armor</label>
+		<description>Simple Empire armor. Provides good protection from sharp attacks, and some from blunt attacks.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Basic</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Simple/RH_TET_Empire_Armor_Simple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>4.0</Mass>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<EquipDelay>3.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-.05</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Simple/RH_TET_Empire_Armor_Simple</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_Low</li>
+			</tags>
+			<!--
+		<defaultOutfitTags>
+		  <li>RH_TET_DwarfWarrior</li>
+		</defaultOutfitTags>
+		-->
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
+		<defName>RH_TET_Empire_Armor_Mid</defName>
+		<label>Empire good armor</label>
+		<description>Mid level Empire armor. Provides great protection from sharp attacks, and decent from blunt attacks.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Mid/RH_TET_Empire_Armor_Mid</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>205</MaxHitPoints>
+			<Mass>10</Mass>
+			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>.85</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.16</ArmorRating_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-.3</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Mid/RH_TET_Empire_Armor_Mid</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_Mid</li>
+			</tags>
+			<!--
+		<defaultOutfitTags>
+		  <li>RH_TET_DwarfIronBreaker</li>
+		</defaultOutfitTags>
+		-->
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
+		<defName>RH_TET_Empire_Armor_High</defName>
+		<label>Empire superior armor</label>
+		<description>Empire armor worn by wealthy knights, elector counts, etc. Provides great protection all around.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_High/RH_TET_Empire_Armor_High</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>115</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Gold>1</Gold>
+		</costList>
+		<statBases>
+			<WorkToMake>22500</WorkToMake>
+			<Mass>12</Mass>
+			<MaxHitPoints>235</MaxHitPoints>
+			<StuffEffectMultiplierArmor>0.80</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>.95</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.28</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-.6</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>.78</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_High/RH_TET_Empire_Armor_High</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_High</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_Empire_Cape</defName>
+		<description>A cape that hangs from the shoulders, and covers the back, made from any type of fabric material.</description>
+		<label>Empire cape</label>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Items/Misc/Cape/RH_TET_Empire_Cape</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>25</onGroundRandomRotateAngle>
+		</graphicData>
+		<costStuffCount>75</costStuffCount>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+			<EquipDelay>1.5</EquipDelay>
+			<Beauty>-5</Beauty>
+			<Mass>2.0</Mass>
+			<WorkToMake>12000</WorkToMake>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers><li>Shell</li></layers>
+			<wornGraphicPath>Things/Items/Misc/Cape/RH_TET_Empire_Cape</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
+		<defName>RH_TET_Empire_Armor_Faith</defName>
+		<label>Empire faith armor</label>
+		<description>Empire armor intended for warrior priests. Provides great protection from sharp attacks, and good from blunt attacks.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Sigmar/RH_TET_Empire_Armor_Sigmar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Gold>1</Gold>
+		</costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>10</Mass>
+			<MaxHitPoints>215</MaxHitPoints>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>.90</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-.3</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Sigmar/RH_TET_Empire_Armor_Sigmar</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_Faith</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_Empire_Apparel_Duster</defName>
+		<description>A long coat for blocking the sun and grit of the outdoors. Worn by witch hunters. Does provide a small level of armor, depending upon what it is made of.\n\nThis duster style coat is one of the signature pieces of apparel for the witch hunters. It's appearance causes fearful thoughts in the minds of the guilty and innocent alike. Tales of torture fill the minds of those being questioned by a witch hunter.</description>
+		<label>Empire witch hunter jacket</label>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Advanced</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/WitchHunterJacket/WitchHunterJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>2.5</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.88</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/WitchHunterJacket/Naked</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Fine</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.20,0.20,0.20)</only>
+				</li>
+				<li>
+					<weight>4</weight>
+					<only>(0.10,0.10,0.10)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0.4,0.4,0.4)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_Empire_Apparel_CommonBear</defName>
+		<description>A mantle made from the pelt of a southern (common) bear.\n\nThis type of mantle has been worn as a status symbol for wealthy and powerful people in the Empire of Man for many generations.</description>
+		<label>southern bear mantle</label>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/BearPelts/SouthernBear/RH_TET_Empire_BearPelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<costList>
+			<Cloth>50</Cloth>
+			<Corpse_RH_TET_Bear_Southern>1</Corpse_RH_TET_Bear_Southern>
+		</costList>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>3.5</Mass>
+			<ArmorRating_Sharp>.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<ArrestSuccessChance>0.05</ArrestSuccessChance>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/BearPelts/SouthernBear/RH_TET_Empire_BearPelt</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Fine</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_Empire_Apparel_CaveBear</defName>
+		<description>A mantle made from the pelt of a cave bear.\n\nThis type of mantle has been worn as a status symbol for wealthy and powerful people in the Empire of Man for many generations.</description>
+		<label>cave bear mantle</label>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/BearPelts/CaveBear/RH_TET_Empire_CaveBearPelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<costList>
+			<Cloth>60</Cloth>
+			<Corpse_RH_TET_Bear_Cave>1</Corpse_RH_TET_Bear_Cave>
+		</costList>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>260</MaxHitPoints>
+			<WorkToMake>10500</WorkToMake>
+			<Mass>3.5</Mass>
+			<ArmorRating_Sharp>.90</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.22</ArmorRating_Heat>
+			<Insulation_Cold>38</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+			<ArrestSuccessChance>0.10</ArrestSuccessChance>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/BearPelts/CaveBear/RH_TET_Empire_CaveBearPelt</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Fine</li>
+				<li>RH_TET_Empire_Officer</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_Empire_Apparel_GreatBear</defName>
+		<description>A mantle made from the pelt of a great bear.\n\nThis type of mantle has been worn as a status symbol for wealthy and powerful people in the Empire of Man for many generations.</description>
+		<label>great bear mantle</label>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Advanced</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/BearPelts/GreatBear/RH_TET_Empire_GreatBearPelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<costList>
+			<Cloth>70</Cloth>
+			<Corpse_RH_TET_Bear_Great>1</Corpse_RH_TET_Bear_Great>
+		</costList>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>3.6</Mass>
+			<ArmorRating_Sharp>.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.24</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+			<ArrestSuccessChance>0.10</ArrestSuccessChance>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+			<PawnBeauty>0.05</PawnBeauty>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/BearPelts/GreatBear/RH_TET_Empire_GreatBearPelt</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Fine</li>
+				<li>RH_TET_Empire_Officer</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
+		<defName>RH_TET_Empire_Apparel_IceBear</defName>
+		<description>A mantle made from the pelt of an ice bear.\n\nThis type of mantle has been worn as a status symbol for wealthy and powerful people in the Empire of Man for many generations.</description>
+		<label>ice bear mantle</label>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Advanced</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/BearPelts/IceBear/RH_TET_Empire_IceBearPelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<costList>
+			<Cloth>80</Cloth>
+			<Corpse_RH_TET_Bear_Ice>1</Corpse_RH_TET_Bear_Ice>
+		</costList>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>260</MaxHitPoints>
+			<WorkToMake>11500</WorkToMake>
+			<Mass>3.6</Mass>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.26</ArmorRating_Heat>
+			<Insulation_Cold>60</Insulation_Cold>
+			<Insulation_Heat>16</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.20</SocialImpact>
+			<ArrestSuccessChance>0.15</ArrestSuccessChance>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+			<PawnBeauty>0.10</PawnBeauty>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/BearPelts/IceBear/RH_TET_Empire_IceBearPelt</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Fine</li>
+				<li>RH_TET_Empire_Officer</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+  
+</Defs>

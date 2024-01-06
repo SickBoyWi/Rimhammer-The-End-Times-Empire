@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+	<ThingDef ParentName="HatMakeableBase" Name="RH_TET_Empire_HatMakeableBase" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Headgear</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_WizardHat_Low">
+		<defName>RH_TET_Empire_WizardHat_Low</defName>
+		<label>Empire wizards hat pointed</label>
+		<description>A hat for wizards to wear. Hip with the latest and greatest of Empire wizardry style.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_WizardLow/RH_TET_Empire_Wizard_HatLow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_WizardLow/RH_TET_Empire_Wizard_HatLow</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard</li>
+				<li>RH_TET_Empire_WizardGreat</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.1,0.1,0.1,1)</only>
+				</li>
+				<li><!-- Red -->
+					<weight>10</weight>
+					<only>(.70,0.11,0.11,1)</only>
+				</li>
+				<li><!-- Green -->
+					<weight>10</weight>
+					<only>(0.22,.70,0.22,1)</only>
+				</li>
+				<li><!-- Blue -->
+					<weight>10</weight>
+					<only>(0.1,0.1,.73,1)</only>
+				</li>
+				<li><!-- Gray -->
+					<weight>10</weight>
+					<only>(.43,.43,.43,1)</only>
+				</li>
+				<li><!-- Yellow -->
+					<weight>10</weight>
+					<only>(.68,.68,0.04,1)</only>
+				</li>
+				<li><!-- Brown -->
+					<weight>10</weight>
+					<only>(0.39,0.22,0.05,1)</only>
+				</li>
+				<li><!-- Orange -->
+					<weight>10</weight>
+					<only>(.78,0.46,0.17,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<!--
+	<comps>
+      <li Class="TheEndTimes_Magic.CompApparel_MagicUser" />
+    </comps>
+	-->
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_WizardHat_Low">
+		<defName>RH_TET_Empire_WizardHat_Beasts</defName>
+		<label>Empire Beast wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Beasts wizards.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Beasts/BeastsWizard_Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TameAnimalChance>0.05</TameAnimalChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/WizardApparel/Beasts/BeastsWizard_Hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Beasts</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Beasts</li>
+				<li>RH_TET_Empire_WizardGreat_Beasts</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!--
+	<comps>
+      <li Class="TheEndTimes_Magic.CompApparel_MagicUser" />
+    </comps>
+	-->
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Heavens</defName>
+		<label>Empire Heavens wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Heavens wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Celestial/CelestialCap</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Celestial/CelestialCap</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Celestial</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Celestial</li>
+				<li>RH_TET_Empire_WizardGreat_Celestial</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>10</Steel>
+			<Cloth>30</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Death</defName>
+		<label>Empire Death wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Death wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Spirit/DeathCap</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Spirit/DeathCap</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Spirit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Spirit</li>
+				<li>RH_TET_Empire_WizardGreat_Spirit</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Cloth>45</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.05</MedicalOperationSpeed>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_WizardHat_Low">
+		<defName>RH_TET_Empire_WizardHat_Shadow</defName>
+		<label>Empire Shadow wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Shadow wizards.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Grey/GreyWizard_Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/WizardApparel/Grey/GreyWizard_Hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Shadow</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Shadow</li>
+				<li>RH_TET_Empire_WizardGreat_Shadow</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!--
+	<comps>
+      <li Class="TheEndTimes_Magic.CompApparel_MagicUser" />
+    </comps>
+	-->
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Life</defName>
+		<label>Empire Life wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Life wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Jade/LifeHood</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Jade/LifeHood</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Jade</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Jade</li>
+				<li>RH_TET_Empire_WizardGreat_Jade</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Cloth>45</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalTendSpeed>0.05</MedicalTendSpeed>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Light</defName>
+		<label>Empire Light wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Light wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/White/LightCap</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/White/LightCap</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_White</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_White</li>
+				<li>RH_TET_Empire_WizardGreat_White</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Cloth>45</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalSurgerySuccessChance>0.05</MedicalSurgerySuccessChance>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Gold</defName>
+		<label>Empire Metal wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Metal wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Gold/GoldenMask</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Gold/GoldenMask</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Gold</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Gold</li>
+				<li>RH_TET_Empire_WizardGreat_Gold</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Gold>5</Gold>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SmeltingSpeed>0.05</SmeltingSpeed>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_FeatheredHat</defName>
+		<label>Empire feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/RH_TET_Humans_FloppyHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/RH_TET_Humans_FloppyHat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Fine</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Basic</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<!-- CUT 
+	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Talabheim">
+		<defName>RH_TET_Empire_FeatheredHat_Talabheim</defName>
+		<label>Talabheim feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feather matches the red and white color scheme of the Empire state of Talabheim.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Talabheim/RH_TET_Humans_Floppy_feathered_hat</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Talabheim/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Middenland">
+		<defName>RH_TET_Empire_FeatheredHat_Middenland</defName>
+		<label>Middenland feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feather matches the blue and white color scheme of the Empire state of Middenland.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Middenland/RH_TET_Humans_Floppy_feathered_hat</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Middenland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Averland">
+		<defName>RH_TET_Empire_FeatheredHat_Averland</defName>
+		<label>Averland feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the black and white color scheme of the Empire state of Averland.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Averland/RH_TET_Humans_Floppy_feathered_hat</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Averland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Ostermark">
+		<defName>RH_TET_Empire_FeatheredHat_Ostermark</defName>
+		<label>Ostermark feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the red and yellow color scheme of the Empire state of Ostermark.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostermark/RH_TET_Humans_Floppy_feathered_hat</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostermark/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Ostland">
+		<defName>RH_TET_Empire_FeatheredHat_Ostland</defName>
+		<label>Ostland feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the black and white color scheme of the Empire state of Ostland.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostland/RH_TET_Humans_Floppy_feathered_hat</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Hochland">
+		<defName>RH_TET_Empire_FeatheredHat_Hochland</defName>
+		<label>Hochland feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the red and green color scheme of the Empire state of Hochland.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Hochland/RH_TET_Humans_Floppy_feathered_hat</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Hochland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Stirland">
+		<defName>RH_TET_Empire_FeatheredHat_Stirland</defName>
+		<label>Stirland feathered hat</label>
+		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the yellow and green color scheme of the Empire state of Stirland.</description>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Stirland/RH_TET_Humans_Floppy_feathered_hat</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Stirland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+-->
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_WitchhunterHat">
+		<defName>RH_TET_Empire_WitchhunterHat</defName>
+		<label>Empire witchhunter hat</label>
+		<description>A hat typically worn by Empire witchhunters. Just seeing a person wearing such a hat can cause fear in the heart of people all over the Empire of Man. Wearing such a hat seems to stiffen the will of the wearer.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Witchhunter/RH_TET_Empire_WitchhunterHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Witchhunter/RH_TET_Empire_WitchhunterHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Witchhunter</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(0.0,0.0,0.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_FloppyHat">
+		<defName>RH_TET_Empire_FloppyHat</defName>
+		<label>Empire floppy hat</label>
+		<description>A large floppy hat that keeps the sun and rain off.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Floppy/RH_TET_Humans_Floppy_hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.12</Mass>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Floppy/RH_TET_Humans_Floppy_hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Basic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.54,0.15,1)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(0.9,0.6,0.18,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0.9,0.42,0.23,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_Hood">
+		<defName>RH_TET_Empire_Hood</defName>
+		<label>Empire hood</label>
+		<description>A hood. Keeps the sun out and the rain off. Protects the wearer from the environment.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Hood/RH_TET_Humans_Peasant_hood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.12</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicResistance>-0.20</ToxicResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Hood/RH_TET_Humans_Peasant_hood</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Mid</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.54,0.15,1)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(0.9,0.6,0.18,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0.9,0.42,0.23,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_PeasantHat">
+		<defName>RH_TET_Empire_PeasantHat</defName>
+		<label>Empire peasant hat</label>
+		<description>A cheap and simple hat. Keeps the sun and rain off, and protects a bit from temperature.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Peasant/RH_TET_Humans_Peasant_cap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>1300</WorkToMake>
+			<Mass>0.10</Mass>
+			<StuffEffectMultiplierArmor>0.10</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Peasant/RH_TET_Humans_Peasant_cap</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Basic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.54,0.15,1)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(0.9,0.6,0.18,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0.9,0.42,0.23,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_Toque">
+		<defName>RH_TET_Empire_Toque</defName>
+		<label>Empire baker's toque</label>
+		<description>A toque worn by a baker. Somehow cheers people up.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Toque/RH_TET_Humans_Baker_toques</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>1300</WorkToMake>
+			<Mass>0.12</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Toque/RH_TET_Humans_Baker_toques</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Baker</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_Circlet">
+		<defName>RH_TET_Empire_Circlet</defName>
+		<label>Empire circlet</label>
+		<description>A circlet worn by the faithful of Sigmar. Strengthens the wearers resolve, making them more tolerant of pain.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Circlet/RH_TET_Empire_Circlet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>-0.15</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Circlet/RH_TET_Empire_Circlet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Faithful_Sigmar</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_PuffyHat">
+		<defName>RH_TET_Empire_PuffyHat</defName>
+		<label>Empire puffy hat</label>
+		<description>A large puffy hat that keeps the sun and rain off. Also, looks nice, and would never be worn by a peasant.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Advanced</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Puffy/RH_TET_Humans_PuffyHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.12</Mass>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Puffy/RH_TET_Humans_PuffyHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Fine</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_GreatswordHat">
+		<defName>RH_TET_Empire_GreatswordHat</defName>
+		<label>Empire greatsword's hat</label>
+		<description>A large puffy feathered hat worn by Empire greatswords as a symbol of belonging to that illustrious group</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Advanced</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Greatsword/RH_TET_Humans_Greatsword_hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Greatsword/RH_TET_Humans_Greatsword_hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Fine</li>
+				<li>RH_TET_Empire_Apparel_Headwear_Greatsword</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_CaptainsHat">
+		<defName>RH_TET_Empire_CaptainsHat</defName>
+		<label>Empire captain's hat</label>
+		<description>A large feathered hat worn by Empire catpain's as a symbol of rank and authority. Also, it looks very wealthy.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Advanced</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Captain/RH_TET_Humans_CaptainsHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.58</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Captain/RH_TET_Humans_CaptainsHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Headwear_Fine</li>
+				<li>RH_TET_Empire_Apparel_Headwear_Captain</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_High</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+  
+	<!-- Helmets -->
+	<ThingDef Name="RH_TET_Empire_ArmorHelmetMakeableBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+		<thingCategories>
+			<li>RH_TET_Empire_ArmorHeadgear</li>
+		</thingCategories>
+		<recipeMaker>
+			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
+				<li>RH_TET_Empire_TableAnvil</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
+		<defName>RH_TET_Empire_Helmet_Low</defName>
+		<label>Empire basic helmet</label>
+		<description>A basic Empire helmet.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Basic</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Simple/RH_TET_Empire_Helmet_Simple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!--<shaderType>CutoutComplex</shaderType>-->
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>2.0</Mass>
+			<StuffEffectMultiplierArmor>0.62</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Simple/RH_TET_Empire_Helmet_Simple</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_Low</li>
+			</tags>
+			<!-- TODO JEH Do this once pawn types are added.
+      <defaultOutfitTags>
+        <li>RH_TET_DwarfClansman</li>
+      </defaultOutfitTags>
+	  -->
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
+		<defName>RH_TET_Empire_Helmet_Mid</defName>
+		<label>Empire improved helmet</label>
+		<description>An Empire helmet that offers good protection, and looks good to boot.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Mid/RH_TET_Empire_Helmet_Mid</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!--<shaderType>CutoutComplex</shaderType>-->
+		</graphicData>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Mass>2.5</Mass>
+			<StuffEffectMultiplierArmor>0.72</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.32</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.22</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Mid/RH_TET_Empire_Helmet_Mid</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_Mid</li>
+			</tags>
+			<!-- TODO JEH Do this once pawn types are added.
+      <defaultOutfitTags>
+        <li>RH_TET_DwarfIronBreaker</li>
+      </defaultOutfitTags>
+	  -->
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
+		<defName>RH_TET_Empire_Helmet_High</defName>
+		<label>Empire morion helmet</label>
+		<description>A highly protective, and nice looking Empire helmet.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Fancy/RH_TET_Empire_Morion_Simple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!--<shaderType>CutoutComplex</shaderType>-->
+		</graphicData>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<MaxHitPoints>155</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.78</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.26</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Fancy/RH_TET_Empire_Morion_Simple</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_High</li>
+			</tags>
+			<!-- TODO JEH Do this once pawn types are added.
+      <defaultOutfitTags>
+        <li>RH_TET_DwarfIronBreaker</li>
+      </defaultOutfitTags>
+	  -->
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
+		<defName>RH_TET_Empire_Helmet_Pistoleer</defName>
+		<label>Empire pistoleer helmet</label>
+		<description>A very protective, and nice looking Empire helmet, that is slightly less weighty than usual. Worn by mounted Empire pistoleers.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Pistoleer/RH_TET_Emp_PistoleerHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>11500</WorkToMake>
+			<MaxHitPoints>155</MaxHitPoints>
+			<Mass>2.6</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.34</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.24</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Pistoleer/RH_TET_Emp_PistoleerHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_High</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
+		<defName>RH_TET_Empire_Helmet_Ironside</defName>
+		<label>Empire Nuln Ironside helmet</label>
+		<description>A highly protective, and nice looking Empire helmet made in the style of the Nuln Ironsides.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Ironside/RH_TET_Empire_NulnIronside</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>11500</WorkToMake>
+			<MaxHitPoints>155</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.79</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.28</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Ironside/RH_TET_Empire_NulnIronside</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_High</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
+		<defName>RH_TET_Empire_Ulric_WolfHelm</defName>
+		<label>Empire wolf helmet</label>
+		<description>A helm worn by the Empire warrior priests of Ulric. Animal skin shaped and stretched to look like a wolf's head, built on a steel helm.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Wolf/RH_TET_Empire_WolfHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!--<shaderType>CutoutComplex</shaderType>-->
+		</graphicData>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>70</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>155</MaxHitPoints>
+			<Mass>2.7</Mass>
+			<StuffEffectMultiplierArmor>0.80</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Wolf/RH_TET_Empire_WolfHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Faithful_Ulric</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+  
+</Defs>

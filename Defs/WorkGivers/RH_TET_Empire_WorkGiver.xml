@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_CollectHoney</defName>
+		<label>collect honey</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_CollectHoney</giverClass>
+		<workType>Growing</workType>
+		<verb>collect</verb>
+		<gerund>collecting</gerund>
+		<priorityInType>91</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+  
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_DoBillsCaptureQueenBee</defName>
+		<label>capture a queen bee</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Handling</workType>
+		<priorityInType>90</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RH_TET_Empire_BeeHive</li>
+		</fixedBillGiverDefs>
+		<verb>capture queen bee</verb>
+		<gerund>capturing queen bee</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_TakeMeadOutOfFermenter</defName>
+		<label>take mead out of fermenter</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_TakeMeadOutOfFermenter</giverClass>
+		<workType>Hauling</workType>
+		<verb>take mead</verb>
+		<gerund>taking mead from</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+  
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_FillFermentingBarrel</defName>
+		<label>fill fermenter</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_FillFermenter</giverClass>
+		<workType>Hauling</workType>
+		<verb>fill</verb>
+		<gerund>filling</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+  
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_PutBrineIntoSmoker</defName>
+		<label>put meat in smoker</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_PutBrineIntoSmoker</giverClass>
+		<workType>Hauling</workType>
+		<verb>fill</verb>
+		<gerund>filling</gerund>
+		<priorityInType>100</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_TakeSmokedMeatFromSmoker</defName>
+		<label>take smoked meat from smoker</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_TakeSmokedMeatFromSmoker</giverClass>
+		<workType>Hauling</workType>
+		<verb>take smoked meat</verb>
+		<gerund>taking smoked meat from</gerund>
+		<priorityInType>100</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_DoBillsMagicBench</defName>
+		<label>craft magic item</label>
+		<giverClass>TheEndTimes_Magic.WorkGiver_DoBillMagicBench</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>111</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RH_TET_Empire_MagicBench</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+  
+	<WorkGiverDef>
+		<defName>RH_TET_DoSmithing</defName>
+		<label>work</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_DoBillEmpire</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RH_TET_TableSmithy</li>
+			<li>RH_TET_Empire_TableAnvil</li>
+			<li>RH_TET_Empire_TableForge</li>
+		</fixedBillGiverDefs>
+		<verb>smith</verb>
+		<gerund>smithing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+  
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_DoBillsRepair_Smith</defName>
+		<label>work</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_DoBillEmpire</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RH_TET_Empire_BlastingBench</li>
+		</fixedBillGiverDefs>
+		<verb>smith</verb>
+		<gerund>smithing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+  
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_DoBillsRepair_Tailor</defName>
+		<label>work</label>
+		<giverClass>TheEndTimes_Empire.WorkGiver_DoBillEmpire</giverClass>
+		<workType>Tailoring</workType>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RH_TET_Empire_HandTailoringBench</li>
+		</fixedBillGiverDefs>
+		<verb>tailor</verb>
+		<gerund>tailoring</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_DoBillsCook</defName>
+		<label>Prepare food at cooking location</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>110</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RH_TET_Empire_Hearth</li>
+		</fixedBillGiverDefs>
+		<verb>Cook</verb>
+		<gerund>Cooking</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RH_TET_Empire_DoBillsWeave</defName>
+		<label>Weave at a loom</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Tailoring</workType>
+		<priorityInType>110</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RH_TET_Empire_LoomBench</li>
+		</fixedBillGiverDefs>
+		<verb>weave</verb>
+		<gerund>weaving</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+</Defs>

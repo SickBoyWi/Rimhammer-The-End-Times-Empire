@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+	<!-- Handwear -->
+	<ThingDef Name="RH_TET_Empire_HandwearBase" ParentName="ApparelBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<thingCategories>
+			<li>RH_TET_Empire_Handwear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>RH_TET_Empire_HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HandwearBase">
+		<defName>RH_TET_Empire_TrooperGloves</defName>
+		<label>Empire trooper gloves</label>
+		<description>A pair of gloves worn by a rank and file soldier. Crafted in the standard style of the Empire of Man.</description>
+		<graphicData>
+			<texPath>Things/Items/Handwear/TrooperGloves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>1600</WorkToMake>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.24</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+			<displayPriority>206</displayPriority>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HandwearBase">
+		<defName>RH_TET_Empire_DuelistGloves</defName>
+		<label>Empire duelist gloves</label>
+		<description>A pair of gloves worn by a wealthy soldier, or light cavalryman. Crafted in the standard style of the Empire of Man.</description>
+		<graphicData>
+			<texPath>Things/Items/Handwear/DuelistGloves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Mass>0.35</Mass>
+			<Flammability>1.0</Flammability>
+			<WorkToMake>2000</WorkToMake>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+			<displayPriority>207</displayPriority>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<!-- Handwear Armored -->
+	<ThingDef Name="RH_TET_Empire_HandwearArmorBase" ParentName="ApparelBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<thingCategories>
+			<li>RH_TET_Empire_Handwear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
+				<li>RH_TET_Empire_TableAnvil</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<tradeTags>
+			<li>Armor</li>
+			<li>RH_TET_Armor</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HandwearArmorBase">
+		<defName>RH_TET_Empire_TrooperGauntlets</defName>
+		<label>Empire gauntlets</label>
+		<description>A pair of armored gloves worn by a wealthy soldier, or cavalryman. Crafted in the standard style of the Empire of Man.</description>
+		<graphicData>
+			<texPath>Things/Items/Handwear/TrooperGauntlets</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<WorkToMake>3000</WorkToMake>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.75</Flammability>
+			<EquipDelay>2.0</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Basic</researchPrerequisite>
+			<displayPriority>208</displayPriority>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HandwearArmorBase">
+		<defName>RH_TET_Empire_KnightsGauntlets</defName>
+		<label>Empire knights gauntlets</label>
+		<description>A fine pair of armored gloves worn by a knights of the Empire. Crafted in the standard style of the Empire of Man.</description>
+		<graphicData>
+			<texPath>Things/Items/Handwear/KnightGauntlets</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2.3</Mass>
+			<WorkToMake>5500</WorkToMake>
+			<StuffEffectMultiplierArmor>0.68</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>.88</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.75</Flammability>
+			<EquipDelay>3.0</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
+			<displayPriority>208</displayPriority>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>65</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	</ThingDef>
+  
+</Defs>

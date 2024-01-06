@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- TODO - ADD ALL EMPIRE PAWN KINDS TO THE SOURCE CODE UTIL METHOD CHECK. -->
+
+  <PawnKindDef>
+    <defName>RH_TET_Empire_WizardScenario</defName>
+    <race>Human</race>
+    <combatPower>65</combatPower>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_WizardStandard</li>
+          <li>RH_TET_Empire_WizardGreat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>22</minGenerationAge>
+    <maxGenerationAge>42</maxGenerationAge>
+    <apparelTags>
+      <li>RH_TET_Empire_Apparel_Wizard</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1000</max>
+    </apparelMoney>
+    <weaponTags>
+      <li>RH_TET_Empire_Wizard</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>150</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.05</techHediffsChance>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="RH_TET_EmpireWizardPawnKind" Abstract="True">
+    <race>Human</race>
+    <combatPower>65</combatPower>
+    <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>RH_TET_Empire_Cheese</invFoodDef>
+    <weaponTags>
+      <li>RH_TET_Empire_Wizard</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="RH_TET_EmpireWizardPawnKind">
+    <defName>RH_TET_Empire_WizardStandard</defName>
+    <label>Empire wizard</label>
+    <defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelTags>
+     <li>RH_TET_Empire_Apparel_Wizard</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+    <factionLeader>false</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_WizardStandard</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+	<!-- TODO Give wizards special stuff?
+    <inventoryOptions>
+      <skipChance>0.2</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>200</min>
+            <max>250</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	-->
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="RH_TET_EmpireWizardPawnKind">
+    <defName>RH_TET_Empire_WizardGreat</defName>
+    <label>Empire great wizard</label>
+    <factionLeader>true</factionLeader>
+    <combatPower>120</combatPower>
+	<!-- TODO This needs to change to default Empire faction. -->
+    <defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_WizardGreat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>40</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelTags>
+     <li>RH_TET_Empire_Apparel_Wizard</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>500</min>
+      <max>2500</max>
+    </weaponMoney>
+	<!-- TODO Give wizards special stuff?
+    <inventoryOptions>
+      <skipChance>0.2</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>200</min>
+            <max>250</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	-->
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="RH_TET_EmpireWizardPawnKind">
+    <defName>RH_TET_Empire_WizardChaos</defName>
+    <label>Chaos wizard</label>
+    <defaultFactionType>RH_TET_Outcasts</defaultFactionType>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelTags>
+     <li>RH_TET_Empire_Apparel_Wizard</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+    <factionLeader>false</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_WizardChaos</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+	<!-- TODO Give wizards special stuff?
+    <inventoryOptions>
+      <skipChance>0.2</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>200</min>
+            <max>250</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	-->
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="RH_TET_EmpireWizardPawnKind">
+    <defName>RH_TET_Empire_WizardGreatChaos</defName>
+    <label>Chaos great wizard</label>
+    <factionLeader>true</factionLeader>
+    <combatPower>120</combatPower>
+    <defaultFactionType>RH_TET_Outcasts</defaultFactionType>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_WizardGreatChaos</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>40</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelTags>
+     <li>RH_TET_Empire_Apparel_Wizard</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>500</min>
+      <max>2500</max>
+    </weaponMoney>
+	<!-- TODO Give wizards special stuff?
+    <inventoryOptions>
+      <skipChance>0.2</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>200</min>
+            <max>250</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	-->
+  </PawnKindDef>
+
+
+<!-- Faith Pawns -->
+  <PawnKindDef Name="RH_TET_EmpireFaithfulPawnKind" Abstract="True">
+    <race>Human</race>
+    <combatPower>65</combatPower>
+    <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>RH_TET_Empire_Cheese</invFoodDef>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RH_TET_EmpireFaithfulPawnKind">
+    <defName>RH_TET_Empire_FaithfulSigmar</defName>
+    <label>Sigmar's Faithful</label>
+    <defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_Pants</li>
+      <li>RH_TET_Empire_Circlet</li>
+      <li>RH_TET_Empire_Armor_Faith</li>
+      <li>RH_TET_Empire_Cape</li>
+    </apparelRequired>       
+	<hairTags>
+		<li>RH_TET_EmpireNone</li>
+	</hairTags>
+	<weaponTags>
+      <li>RH_TET_Empire_Faithful_Sigmar</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1100</max>
+    </weaponMoney>
+    <factionLeader>false</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_FaithfulSigmar</li>
+          <li>RH_TET_Empire_Faithful</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RH_TET_EmpireFaithfulPawnKind">
+    <defName>RH_TET_Empire_FaithfulShallya</defName>
+    <label>Shallya's Faithful</label>
+    <defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_Pants</li>
+      <li>RH_TET_Empire_WizardRobeLow</li>
+      <li>RH_TET_Empire_Hood</li>
+      <li>RH_TET_Empire_Cape</li>
+    </apparelRequired> 
+    <apparelColor>(200,200,200)</apparelColor>
+	<hairTags>
+		<li>RH_TET_Empire</li>
+		<li>Rural</li>
+	</hairTags>
+    <factionLeader>false</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_FaithfulShallya</li>
+          <li>RH_TET_Empire_Faithful</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>RH_TET_Potion_Healing</thingDef>
+          <countRange>
+            <min>2</min>
+            <max>3</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RH_TET_EmpireFaithfulPawnKind">
+    <defName>RH_TET_Empire_FaithfulUlric</defName>
+    <label>Ulric's Faithful</label>
+    <defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_Pants</li>
+      <li>RH_TET_Empire_Ulric_WolfHelm</li>
+      <li>RH_TET_Empire_Armor_Faith</li>
+      <li>RH_TET_Empire_Cape</li>
+    </apparelRequired>      
+	<hairTags>
+		<li>RH_TET_Empire</li>
+		<li>Rural</li>
+	</hairTags>
+	<weaponTags>
+      <li>RH_TET_Empire_Faithful_Ulric</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1100</max>
+    </weaponMoney>
+    <factionLeader>false</factionLeader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_FaithfulUlric</li>
+          <li>RH_TET_Empire_Faithful</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+  </PawnKindDef>
+  
+</Defs>

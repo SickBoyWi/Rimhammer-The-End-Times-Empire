@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>RH_TET_Empire_AteHoney</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<showBubble>true</showBubble>
+		<icon>Mote/RH_TET_Empire_Honey</icon>
+		<stages>
+			<li>
+				<label>ate honey</label>
+				<description>I ate some delicious honey! I could go for more of that.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RH_TET_Empire_ListeningToLute</defName>
+		<workerClass>TheEndTimes_Empire.ThoughtWorker_ListeningToLute</workerClass>
+		<stages>
+			<li>
+				<label>listening to lute</label>
+				<description>The lute gives me comfort, and faith in humanity.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+	<ThoughtDef>
+		<defName>RH_TET_Empire_PraisedSigmar</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>attended ceremony of Sigmar</label>
+				<description>We praised Sigmar, and his blessing is upon us.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+</Defs>

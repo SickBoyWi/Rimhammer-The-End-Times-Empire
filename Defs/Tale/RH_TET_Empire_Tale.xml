@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TaleDef>
+		<defName>RH_TET_Empire_ClaimedHammer</defName>
+		<label>obtained Hammer of Sigmar</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Volatile</type>
+		<baseInterest>50</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef]'s caravan defeating beastmen near a temple</li>
+				<li>image->[PAWN_nameFull] running towards a [Enemy], [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] wielding a [Weapon], [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] swinging a [Weapon], [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] standing as tall as a building, [circumstance_group]</li>
+				<li>circumstance_phrase->wearing a [AdjectiveBadass] look in [PAWN_possessive] eyes</li>
+				<li>circumstance_phrase->wearing a [AdjectiveAngsty] look in [PAWN_possessive] eyes</li>
+				<li>circumstance_phrase->roaring in victory</li>
+				<li>circumstance_phrase->covered in [Gore]</li>
+				<li>desc_sentence->[Quantity_adjphrase] [Enemy]s cower from the assault.</li>
+				<li>desc_sentence->[Quantity_adjphrase] [Enemy]s flee the area.</li>
+				<li>desc_sentence->[Quantity_adjphrase] [Enemy]s are visibly wounded.</li>
+				<li>desc_sentence->A [Community] burns in the distance.</li>
+				<li>desc_sentence->A [Community] smokes in the distance.</li>
+				<li>desc_sentence->The ground is coated in [Gore].</li>
+				<li>desc_sentence->[Quantity_adjphrase] [PersonJob]s flee the area.</li>
+				<li>desc_sentence->[Quantity_adjphrase] [Animal]s flee the area.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+ 
+	<TaleDef>
+		<defName>RH_TET_Empire_EffigyGathering</defName>
+		<label>praised Sigmar</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Expirable</type>
+		<baseInterest>0.7</baseInterest>
+		<maxPerPawn>1</maxPerPawn>
+		<expireDays>3</expireDays>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[pawn_nameShortDef] held a ceremony</li>
+				<li>image->[pawn_nameFull] stood at the Effigy of Sigmar to call upon Sigmar [circumstance_group]</li>
+				<li>circumstance_phrase->with hammer held high</li>
+				<li>circumstance_phrase->while chanting</li>
+				<li>desc_sentence->[pawn_pronoun] tried to forstall the end times.</li>
+				<li>desc_sentence->[pawn_possessive] eyes wide, as the lightning flashed around [pawn_objective].</li>
+				<li>desc_sentence->[pawn_pronoun] was shouting the holy name Sigmar.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+  
+</Defs>

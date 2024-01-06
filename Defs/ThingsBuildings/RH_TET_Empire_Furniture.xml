@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RH_TET_Empire_FurnitureBase" ParentName="BuildingBase" Abstract="True">
+		<designationCategory>Furniture</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>RH_TET_Empire_BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+  
+	<ThingDef Name="RH_TET_Empire_FurnitureWithQualityBase" ParentName="RH_TET_Empire_FurnitureBase" Abstract="True">
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_FurnitureBase" Name="RH_TET_Empire_BedBase" Abstract="True">
+		<thingClass>Building_Bed</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+		</comps>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<passability>PassThroughOnly</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<buildingTags>
+				<li>Bed</li>
+			</buildingTags>
+		</building>
+	</ThingDef>
+ 
+	<ThingDef Name="RH_TET_Empire_BedWithQualityBase" ParentName="RH_TET_Empire_BedBase" Abstract="True">
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="RH_TET_Empire_ArtableBedBase" ParentName="RH_TET_Empire_BedWithQualityBase" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
+  
+	<ThingDef Name="RH_TET_Empire_ArtableFurnitureBase" ParentName="RH_TET_Empire_FurnitureWithQualityBase" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<ThingDef Abstract="True" ParentName="RH_TET_Empire_FurnitureWithQualityBase" Name="RH_TET_Empire_TableNoGatherBase">
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<canOverlapZones>false</canOverlapZones>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+  
+	<ThingDef Abstract="True" ParentName="RH_TET_Empire_FurnitureWithQualityBase" Name="RH_TET_Empire_TableBase">
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<canOverlapZones>false</canOverlapZones>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Eat</surfaceType>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_FurnitureBase">
+		<defName>RH_TET_Empire_CeilingLight_Low</defName>
+		<label>Empire ceiling light basic</label>
+		<description>An Empire ceiling light. Rather crude, but effective at lighting spaces. Used in work rooms, homes of the lower classes (if they can afford it), and perhaps mines.\n\nThe folk of the Empire are a rare spark of civilization in the otherwise harsh tribal world of greenskins, chaos, and skaven. Bringing light to the dark is a strong example of that civilization.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_CeilingLightLow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<uiIconPath>UI/Menu/RH_TET_Empire_CeilingLightLow_MenuIcon</uiIconPath>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<WorkToBuild>45</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.7</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<fuelFilter>
+					<thingDefs>
+						<li>RH_TET_AnimalFat</li>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<clearBuildingArea>false</clearBuildingArea>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Lighting_Basic</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+		<placeWorkers>
+			<li>TheEndTimes_Empire.PlaceWorker_UnderCeiling</li>
+		</placeWorkers>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture_Light</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_FurnitureBase">
+		<defName>RH_TET_Empire_CeilingLight_Mid</defName>
+		<label>Empire ceiling light</label>
+		<description>An Empire light to hang from the ceiling. Visually appealing, and functional. Used in bedrooms, dining areas, and perhaps work rooms.\n\nThe folk of the Empire are a rare spark of civilization in the otherwise harsh tribal world of greenskins, chaos, and skaven. Bringing light to the dark is a strong example of that civilization. This fixture brings that light in abudnance.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_CeilingLantern</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>.75</drawSize>
+		</graphicData>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<passability>Standable</passability>
+		<uiIconPath>UI/Menu/RH_TET_Empire_CeilingLightMid_MenuIcon</uiIconPath>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>225</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>10</WoodLog>
+			<Steel>45</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.5</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0005</fuelConsumptionPerTickInRain>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>RH_TET_AnimalFat</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<clearBuildingArea>false</clearBuildingArea>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Lighting_Advanced</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+		<placeWorkers>
+			<li>TheEndTimes_Empire.PlaceWorker_UnderCeiling</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture_Light</li>
+		</tradeTags>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_FurnitureBase">
+		<defName>RH_TET_Empire_CeilingLight_High</defName>
+		<label>Empire chandelier</label>
+		<description>An elaborate Empire ceiling light. It's gothic looking, and is intricate in its design. Intended to be used in the most honored rooms.\n\nEmpire elector counts and lords would have no less than this in their dining halls, meeting rooms, and perhaps even bedrooms.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_CeilingLightHigh</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<uiIconPath>UI/Menu/RH_TET_Empire_CeilingLightHigh_MenuIcon</uiIconPath>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>5</Beauty>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.7</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>RH_TET_AnimalFat</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>15</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<clearBuildingArea>false</clearBuildingArea>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Lighting_Advanced</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+		<placeWorkers>
+			<li>TheEndTimes_Empire.PlaceWorker_UnderCeiling</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture_Light</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>RH_TET_Empire_MeditationPad</defName>
+		<thingClass>TheEndTimes_Magic.Building_MagicMeditationSpot</thingClass>
+		<label>Meditation Cushion</label>
+		<graphicData>
+			<texPath>Things/Buildings/Magic/RH_TET_Magic_MeditationPad</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+			<drawSize>(1.2)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<useHitPoints>true</useHitPoints>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Comfort>1.0</Comfort>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<description>A place to meditate in comfort, will restore magic, failty, or action ability. Used by magic, faith, and ability action users.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<pathCost>1</pathCost>
+		<fillPercent>0.10</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<rotatable>false</rotatable>
+		<designationCategory>RH_TET_Empire_Buildings</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<category>Building</category>
+		<thingCategories>
+			<li>RH_TET_Empire_BuildingsFurniture</li>
+		</thingCategories>
+		<passability>Standable</passability>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<defaultPlacingRot>South</defaultPlacingRot>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_TableBase">
+		<defName>RH_TET_Empire_Table1x2c</defName>
+		<label>Empire table (1x2)</label>
+		<description>A small table built in the style of the women and men of the Empire. Sturdy, good looking, and very functional.\n\nThese tables can be found in the home of any mid level or higher Empire person. Higher quality than what you'd expect in the hovel of the poor, but not nearly as large or elaborate as what you would expect of a noble.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Table1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0.75</Beauty>
+		</statBases>
+		<size>(1,2)</size>
+		<costStuffCount>30</costStuffCount>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_TableBase">
+		<defName>RH_TET_Empire_Table2x2c</defName>
+		<label>Empire table (2x2)</label>
+		<description>A medium sized table built in the style of the women and men of the Empire. Sturdy, good looking, and very functional.\n\nThese tables can be found in the home of any mid level or higher Empire person, or even lesser lords.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Tabe2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Mass>12</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>55</costStuffCount>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_TableBase">
+		<defName>RH_TET_Empire_Table3x3c</defName>
+		<label>Empire table (3x3)</label>
+		<description>A large sized table built in the style of the women and men of the Empire. Sturdy, good looking, and very functional.\n\nThese tables can be found in the home of any higher level Empire person, or including lords.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Tabe3x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6, 6)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>3500</WorkToBuild>
+			<Mass>24</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<size>(3,3)</size>
+		<costStuffCount>115</costStuffCount>
+		<rotatable>false</rotatable>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_TableBase">
+		<defName>RH_TET_Empire_Table2x4c</defName>
+		<label>Empire table (2x4)</label>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Table2x4</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,6)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Mass>22</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+		</statBases>
+		<size>(2,4)</size>
+		<costStuffCount>110</costStuffCount>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_FurnitureWithQualityBase">
+		<defName>RH_TET_Empire_Shelf</defName>
+		<label>Empire shelf</label>
+		<description>A shelf for storing things. Items stored in this will not affect room beauty and they won&apos;t deteriorate, even if outside.\n\nEvery castle will have a proper storage room, and these shelves are what helps make that happen.\n\nEXTENDED STORAGE NOTE: If you&apos;re using the Extended Storage mod, this shelf will automatically have the ability to store six times more than a normal shelf can store. It can hold anything you&apos;d like, except buildings. Make sure you set what you want it to hold, as it defaults to Raw Resources. If you are not using the Extended Storage mod, this will function like a normal shelf.</description>
+		<thingClass>Building_Storage</thingClass>
+		<size>(2,1)</size>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Shelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.9</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.75</staticSunShadowHeight>
+		<pathCost>90</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>20</Mass>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<maxItemsInCell>4</maxItemsInCell>
+			<storageGroupTag>Shelf</storageGroupTag>
+			<blueprintClass>Blueprint_Storage</blueprintClass>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Foods</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+						<li>Items</li>
+						<li>Weapons</li>
+						<li>Apparel</li>
+						<li>BodyParts</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+			<paintable>true</paintable>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Plants</li>
+						<li>Buildings</li>
+					</disallowedCategories>
+					<disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
+						<li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+					</disallowedThingDefs>
+					<specialFiltersToDisallow>
+						<li>AllowLargeCorpses</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+		<tickerType>Normal</tickerType>
+		<drawGUIOverlay>False</drawGUIOverlay>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc12</designationHotKey>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_FurnitureWithQualityBase">
+		<defName>RH_TET_Empire_Cabinet</defName>
+		<label>Empire cabinet</label>
+		<description>An elaborate cabinet for storing things. Items stored in this will not affect room beauty and they won&apos;t deteriorate, even if outside.\n\nEvery lord will have a private cabinet for storing their most important possessions.\n\nEXTENDED STORAGE NOTE: If you&apos;re using the Extended Storage mod, this shelf will automatically have the ability to store six times more than a normal shelf can store. It can hold anything you&apos;d like, except buildings. Make sure you set what you want it to hold, as it defaults to Raw Resources. If you are not using the Extended Storage mod, this will function like a normal shelf.</description>
+		<thingClass>Building_Storage</thingClass>
+		<size>(2,1)</size>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Cabinet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.9</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.75</staticSunShadowHeight>
+		<pathCost>90</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<MaxHitPoints>275</MaxHitPoints>
+			<Mass>24</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<maxItemsInCell>4</maxItemsInCell>
+			<storageGroupTag>Shelf</storageGroupTag>
+			<blueprintClass>Blueprint_Storage</blueprintClass>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Foods</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+						<li>Items</li>
+						<li>Weapons</li>
+						<li>Apparel</li>
+						<li>BodyParts</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+			<paintable>true</paintable>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Plants</li>
+						<li>Buildings</li>
+					</disallowedCategories>
+					<disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
+						<li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+					</disallowedThingDefs>
+					<specialFiltersToDisallow>
+						<li>AllowLargeCorpses</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+		<tickerType>Normal</tickerType>
+		<drawGUIOverlay>False</drawGUIOverlay>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc12</designationHotKey>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_ArtableFurnitureBase">
+		<defName>RH_TET_Empire_Armoire</defName>
+		<label>Empire dresser</label>
+		<description>A dresser for a bedroom. Gives a decent comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</description>
+		<size>(2,1)</size>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Armoire</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.8,.9)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.75</staticSunShadowHeight>
+		<pathCost>60</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>15</Mass>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+		</statBases>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<designationHotKey>Misc12</designationHotKey>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.10</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_FurnitureWithQualityBase">
+		<defName>RH_TET_Empire_Stool</defName>
+		<label>Empire stool</label>
+		<description>A simple platform on which to sit, constructed in the style of The Empire. Not very comfortable, but much better than nothing. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Stool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Comfort>0.5</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<pathCost>30</pathCost>
+		<designationHotKey>Misc6</designationHotKey>
+		<fillPercent>0.20</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_BedWithQualityBase">
+		<defName>RH_TET_Empire_Bed</defName>
+		<label>Empire bed</label>
+		<description>A cozy mattress and sheets on a gothic frame for the folks of the Empire to rest on.\n\nWhile most the poor sleep on the floor, any one above their station would certainly have a bed in their home.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Bed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>EndTable</li>
+					<li>Dresser</li>
+					<li>RH_TET_Empire_EndTable</li>
+					<li>RH_TET_Empire_Armoire</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>145</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1.5</Beauty>
+			<WorkToBuild>900</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>60</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc2</designationHotKey>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<uiIconScale>0.90</uiIconScale>
+		<designationCategory>Furniture</designationCategory>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArtableBedBase">
+		<defName>RH_TET_Empire_DoubleBed</defName>
+		<label>Empire double bed</label>
+		<description>A cozy mattress and sheets on a bed frame for the folk of the Empire to rest on. Double wide, so two can sleep.\n\nGood for those in a couple, but works for a single person as well. Getting good rest when sleeping helps make the men and women of the Empire more alert, and capable of dealing with the many threats that assail them.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_BedDouble</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>EndTable</li>
+					<li>Dresser</li>
+					<li>RH_TET_Empire_EndTable</li>
+					<li>RH_TET_Empire_Armoire</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>210</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>52</Mass>
+			<Comfort>0.75</Comfort>
+			<Beauty>3.5</Beauty>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>95</costStuffCount>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>60</pathCost>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc3</designationHotKey>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<uiIconScale>0.90</uiIconScale>
+		<designationCategory>Furniture</designationCategory>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_TableNoGatherBase">
+		<defName>RH_TET_Empire_EndTable</defName>
+		<label>Empire end table</label>
+		<description>A small gothic looking bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.\n\nA place to keep their most needed items at night is necessary for everyone, women and men of the Empire not excluded.</description>
+		<surfaceType>Item</surfaceType>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_EndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1050</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+		</statBases>
+		<pathCost>60</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costStuffCount>30</costStuffCount>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.08</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+			</li>
+		</comps>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<designationCategory>Furniture</designationCategory>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture</li>
+		</tradeTags>
+	</ThingDef>
+ 
+	<ThingDef ParentName="BuildingBase">
+		<defName>RH_TET_Empire_Brazier</defName>
+		<label>Empire brazier</label>
+		<description>A brazier for lighting and heating area, built in the style of the Empire. People need light to move and work at full speed. Can be automatically refueled with wood or coal. Produces a good amount of heat and light.\n\nLight gives the men and women of the Empire comfort, as it keeps the dark things at bay. Heat is always welcome in a cold and drafty castle.</description>
+		<category>Building</category>
+		<thingCategories>
+			<li>RH_TET_Empire_BuildingsFurniture</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/RH_TET_Empire_Brazier</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+			<drawSize>(1.2)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Menu/RH_TET_Empire_Brazier_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>8</pathCost>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Lighting_Basic</li>
+		</researchPrerequisites>
+		<fillPercent>0.15</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<Mass>20</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>30.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>RH_TET_Coal</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>.1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>16</heatPerSecond>
+				<heatPushMaxTemperature>25</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<designationHotKey>Misc10</designationHotKey>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture_Light</li>
+		</tradeTags>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_ArtableFurnitureBase">
+		<defName>RH_TET_Empire_DiningChair</defName>
+		<label>Empire dining chair</label>
+		<description>A comfortable and attractive human-sized chair ornamented in the style of the Empire. Can be used at tables, work stations, and elsewhere.\n\nNo lord or wealthy person in the Empire would be caught with basic chairs around; they'd hire an artisan to construct one of these comfortable and great looking chairs.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_DiningChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.7</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>6</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+			<Comfort>1.0</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<pathCost>30</pathCost>
+		<designationHotKey>Misc7</designationHotKey>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArtableBedBase">
+		<defName>RH_TET_Empire_RoyalBed</defName>
+		<label>Empire royal bed</label>
+		<description>A luxurious gold-inlaid bed fit for the the lords, ladies, and heros of the Empire. Very comfortable and beautiful, it is a work of fine art. Sleeps two.\n\Empire lords, ladies, and even wealthy merchants would likely have one of these beds. Keeping order and light in the world is hard work, and a proper bed helps get the rest needed to accomplish the work; even if said bed is a bit over the top.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_BedRoyal</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.53,2.53)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RH_TET_Empire_EndTable</li>
+					<li>RH_TET_Empire_Armoire</li>
+					<li>EndTable</li>
+					<li>Dresser</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>70000</WorkToBuild>
+			<Mass>60</Mass>
+			<Beauty>85</Beauty>
+			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+			<Comfort>0.90</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<Gold>50</Gold>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>60</pathCost>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc4</designationHotKey>
+		<techLevel>Medieval</techLevel>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<uiIconScale>0.90</uiIconScale>
+		<designationCategory>Furniture</designationCategory>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>RH_TET_Empire_WallLight</defName>
+		<label>Empire wall light</label>
+		<description>A small enclosed metal fixture, attached to the wall for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood or animal fat. Produces no heat.\n\nGiven the importance of light to the people of the Empire,and its significance in keeping the creatures of darkness at bay, these wall lights are popular throughout Empire castles and cities. The fact that it is enclosed makes it useful for lighting outdoor spaces.</description>
+		<thingClass>TheEndTimes_Empire.Building_WallLight</thingClass>
+		<category>Building</category>
+		<thingCategories><li>RH_TET_Empire_BuildingsFurniture</li></thingCategories>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Wall_Light</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>true</drawRotated>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Lighting_Advanced</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<uiIconPath>UI/Menu/RH_TET_Empire_Wall_Light_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+		<rotatable>true</rotatable>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>8</pathCost>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<Mass>10</Mass>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<costList>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>.5</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+			<li>TheEndTimes_Empire.PlaceWorker_OnWalls</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.6</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<fuelFilter>
+					<thingDefs>
+						<li>RH_TET_AnimalFat</li>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<designationHotKey>Misc10</designationHotKey>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture_Light</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="RH_TET_Empire_WallLight_On" ParentName="BuildingBase">
+		<defName>RH_TET_Empire_WallLight_On</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Empire_Wall_Light</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>TheEndTimes_Empire.Building_WallLight</thingClass>
+		<label>Wall light (On)</label>
+		<description>None.</description>
+		<category>Mote</category>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<altitudeLayer>ItemImportant</altitudeLayer>
+		<passability>Standable</passability>
+		<destroyable>false</destroyable>
+		<rotatable>false</rotatable>
+		<clearBuildingArea>false</clearBuildingArea>
+		<selectable>false</selectable>
+		<coversFloor>false</coversFloor>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>None</tradeability>
+		<isAutoAttackableMapObject>false</isAutoAttackableMapObject>
+	</ThingDef>
+  
+	<ThingDef Name="RH_TET_Empire_WallLightGlower">
+		<defName>RH_TET_Empire_WallLightGlower</defName>
+		<thingClass>TheEndTimes_Empire.WallLightGlower</thingClass>
+		<label>Empire wall light</label>
+		<description>A small enclosed metal fixture attached to the wall for lighting an area. Folk of the Empire need light to move, and work at full speed. Can be automatically refueled with wood or animal fat. Produces a tiny amount of heat.</description>
+		<category>Attachment</category>
+		<graphicData>
+			<texPath>Things/Buildings/Furniture/RH_TET_Sconce_Blank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<altitudeLayer>Floor</altitudeLayer>
+		<passability>Standable</passability>
+		<destroyable>false</destroyable>
+		<rotatable>false</rotatable>
+		<clearBuildingArea>false</clearBuildingArea>
+		<selectable>false</selectable>
+		<coversFloor>false</coversFloor>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>None</tradeability>
+		<isAutoAttackableMapObject>false</isAutoAttackableMapObject>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>RH_TET_Empire_OutsideLight</defName>
+		<label>Pole Light</label>
+		<description>An enclosed metal cage on a wooden pole. Creates light, and a small amount of heat. Intended for outdoor lighting purposes. Since it's enclosed, rain or weather do not affect it. Great for lighting paths, walkways, mines, and more.\n\nLight and order are synonymous in the Empire, and brightening up those dark old world nights grants comfort to the men and women of the Empire.\n\nRotating this will give you different style options.</description>
+		<thingClass>Building</thingClass>
+		<size>(1,1)</size>
+		<drawerType>RealtimeOnly</drawerType>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>75</pathCost>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<canOverlapZones>false</canOverlapZones>
+		<selectable>true</selectable>
+		<thingCategories>
+			<li>RH_TET_Empire_BuildingsFurniture</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<category>Building</category>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture_Light</li>
+		</tradeTags>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/RH_TET_Empire_OutsideLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Buildings/Misc/RH_TET_Empire_OutsideLight</uiIconPath>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.75</fillPercent>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Mass>10</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>25</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.1</fuelConsumptionRate>
+				<fuelCapacity>40.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>RH_TET_AnimalFat</li>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>.5</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+				<heatPushMaxTemperature>15</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Lighting_Basic</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>RH_TET_Empire_SignPostLight</defName>
+		<label>Sign Pole Light</label>
+		<description>A signpost, directing travelers to their destination, providing light, and marking the area as a part of the Empire of Man.\n\nLight and order are synonymous in the Empire, and brightening up those dark old world nights grants comfort to the men and women of the Empire.\n\nRotating this will give you different style options.</description>
+		<thingClass>Building</thingClass>
+		<size>(1,1)</size>
+		<drawerType>RealtimeOnly</drawerType>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>75</pathCost>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<canOverlapZones>false</canOverlapZones>
+		<selectable>true</selectable>
+		<thingCategories>
+			<li>RH_TET_Empire_BuildingsFurniture</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<category>Building</category>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture_Light</li>
+		</tradeTags>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/RH_TET_Empire_OutsideSign</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Buildings/Misc/RH_TET_Empire_OutsideSign</uiIconPath>
+		<fillPercent>0.75</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<Mass>12</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Steel>15</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.1</fuelConsumptionRate>
+				<fuelCapacity>40.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>RH_TET_AnimalFat</li>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>.5</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+				<heatPushMaxTemperature>15</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Lighting_Basic</li>
+			<li>RH_TET_Empire_Furniture</li>
+		</researchPrerequisites>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<!-- Banner Base -->
+	<ThingDef ParentName="RH_TET_Empire_FurnitureWithQualityBase" Name="RH_TET_Empire_BannerBase" Abstract="True">
+		<designationCategory>RH_TET_Empire_Buildings</designationCategory>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		<pathCost>10</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+		</statBases>
+		<canOverlapZones>true</canOverlapZones>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<filthLeaving>Filth_Trash</filthLeaving>
+		<uiIconScale>0.7</uiIconScale>
+		<costList>
+			<Cloth>100</Cloth>
+			<Gold>10</Gold>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Averland</defName>
+		<label>Empire banner - Averland</label>
+		<description>An Empire war banner in the colors of Averland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsAverland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Averland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Hochland</defName>
+		<label>Empire banner - Hochland</label>
+		<description>An Empire war banner in the colors of Hochland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsHochland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Hochland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Middenland</defName>
+		<label>Empire banner - Middenland</label>
+		<description>An Empire war banner in the colors of Middenland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsMiddenland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Middenland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Ostermark</defName>
+		<label>Empire banner - Ostermark</label>
+		<description>An Empire war banner in the colors of Ostermark. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsOstermark</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Ostermark_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Ostland</defName>
+		<label>Empire banner - Ostland</label>
+		<description>An Empire war banner in the colors of Ostland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsOstland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Ostland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+ 
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Stirland</defName>
+		<label>Empire banner - Stirland</label>
+		<description>An Empire war banner in the colors of Stirland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsStirland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Stirland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Talabheim</defName>
+		<label>Empire banner - Talabheim</label>
+		<description>An Empire war banner in the colors of Talabheim. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsTalabheim</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Talabecland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Reikland</defName>
+		<label>Empire banner - Reikland</label>
+		<description>An Empire war banner in the colors of Reikland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsReikland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Reikland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Nordland</defName>
+		<label>Empire banner - Nordland</label>
+		<description>An Empire war banner in the colors of Nordland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsNordland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Nordland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_Wissenland</defName>
+		<label>Empire banner - Wissenland</label>
+		<description>An Empire war banner in the colors of Wissenland. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_ColorsWissenland</li>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Wissenland_Banner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!-- Non state specific banners -->
+	<ThingDef ParentName="RH_TET_Empire_BannerBase">
+		<defName>RH_TET_Empre_Banner_GhalMaraz</defName>
+		<label>Empire war banner</label>
+		<description>An Empire war banner depicting the glory of Ghal Maraz, and the strength of the nation. Carried to battle when the armies march to war. Kept safe when home, and has the benefit of adding beauty to a room.</description>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/Ghal_Maraz_Banner_Pole</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>RH_TET_Empire_WallBanner_GhalMaraz</defName>
+		<label>Empire small wall war banner</label>
+		<description>A war banner of the Empire of Man, intended to be hung from a wall.\n\nAdds beauty, and sense of national pride.\n\nThis version is intended to be used on standard sized walls, both inside and outside. Rotating this object will give you different interesting options for its appearance.</description>
+		<category>Building</category>
+		<thingCategories><li>RH_TET_Empire_BuildingsFurniture</li></thingCategories>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/WallBanner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawRotated>true</drawRotated>
+			<drawSize>1.2</drawSize>
+			<drawOffsetNorth>(0,0,0)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,0)</drawOffsetSouth>
+			<drawOffsetEast>(0.5,0,0)</drawOffsetEast>
+			<drawOffsetWest>(-0.5,0,0)</drawOffsetWest>
+		</graphicData>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<rotatable>true</rotatable>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<constructEffect>ConstructDirt</constructEffect>
+		<pathCost>8</pathCost>
+		<fillPercent>0.10</fillPercent>
+		<statBases>
+			<Mass>5</Mass>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>30</Beauty>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+		<selectable>true</selectable>
+		<costList>
+			<WoodLog>25</WoodLog>
+			<Cloth>100</Cloth>
+			<Gold>1</Gold>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>.80</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>TheEndTimes_Empire.PlaceWorker_OnWalls</li>
+		</placeWorkers>
+		<designationCategory>Furniture</designationCategory>
+		<designationHotKey>Misc10</designationHotKey>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture</li>
+		</tradeTags>
+	</ThingDef>
+ 
+	<ThingDef ParentName="BuildingBase">
+		<defName>RH_TET_Empire_WallBannerLarge_GhalMaraz</defName>
+		<label>Empire large wall war banner</label>
+		<description>A war banner of the Empire of Man, intended to be hung from a wall.\n\nAdds beauty, and sense of national pride.\n\nThis version is intended to be used on large sized walls (like the Empire Curtain Walls), outside. Rotating this object will give you different interesting options for its appearance.</description>
+		<category>Building</category>
+		<thingCategories><li>RH_TET_Empire_BuildingsFurniture</li></thingCategories>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/WallBannerLarge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawRotated>true</drawRotated>
+			<drawSize>1.3</drawSize>
+			<drawOffsetNorth>(0,0,-.7)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-.7)</drawOffsetSouth>
+			<drawOffsetEast>(-0.3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(0.4,0,0)</drawOffsetWest>
+		</graphicData>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_FurnitureAdvanced</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<uiIconScale>0.90</uiIconScale>
+		<rotatable>true</rotatable>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<constructEffect>ConstructDirt</constructEffect>
+		<pathCost>8</pathCost>
+		<fillPercent>0.10</fillPercent>
+		<statBases>
+			<Mass>8</Mass>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>45</Beauty>
+			<MarketValue>1600</MarketValue>
+		</statBases>
+		<selectable>true</selectable>
+		<costList>
+			<WoodLog>35</WoodLog>
+			<Cloth>150</Cloth>
+			<Gold>3</Gold>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>.80</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>TheEndTimes_Empire.PlaceWorker_OnWalls</li>
+		</placeWorkers>
+		<designationCategory>Furniture</designationCategory>
+		<designationHotKey>Misc10</designationHotKey>
+		<tradeTags>
+			<li>RH_TET_Empire_Furniture</li>
+		</tradeTags>
+	</ThingDef>
+ 
+</Defs>

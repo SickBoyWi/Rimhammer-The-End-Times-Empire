@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+	<defName>RH_TET_EmpireOfMan</defName>
+	<label>The Empire</label>
+	<fixedName>Empire of Man</fixedName>
+    <description>The Empire of Man. The men and women of the Empire represent human civilization. They stand firm against the greenskins, skaven, chaos, and all other threats to order. Builders, magic users, warriors, researchers, all manner of civilians, and more make them up.</description>
+    <colorSpectrum>
+      <li>(0.35, 0.35, 0.35)</li>
+      <li>(0.5, 0.50, 0.50)</li>
+    </colorSpectrum>
+    <pawnsPlural>humans</pawnsPlural>
+    <settlementGenerationWeight>0.5</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>elector count</leaderTitle>
+    <factionIconPath>World/EmpireBase</factionIconPath>
+	<allowedCultures><li>RH_TET_Empire_Culture</li></allowedCultures>
+	<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority IgnoreIfNoMatchingField="True">92</configurationListOrderPriority>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<!--
+    <startingGoodwill>
+      <min>30</min>
+      <max>70</max>
+    </startingGoodwill>
+	-->
+	<settlementNameMaker>RH_TET_NamerEmpireBase</settlementNameMaker>
+	<techLevel>Medieval</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>RH_TET_Empire_Backstory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+	<geneticVariance>0.6</geneticVariance>
+	<!--
+	<hairTags>
+      <li>RH_TET_Empire</li>
+      <li>Rural</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>0</min>
+      <max>0</max>
+    </naturalColonyGoodwill>
+	-->
+    <caravanTraderKinds>
+      <li>RH_TET_Empire_Caravan_BulkGoods</li>
+      <li>RH_TET_Empire_Caravan_CombatSupplier</li>
+      <li>RH_TET_Empire_Caravan_Mercenaries</li>
+      <li>RH_TET_Empire_Caravan_Wizard</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+			<RH_TET_Empire_Civilian>100</RH_TET_Empire_Civilian>
+			<RH_TET_Empire_FreeCompany_Melee>50</RH_TET_Empire_FreeCompany_Melee>
+			<RH_TET_Empire_FreeCompany_Ranged>35</RH_TET_Empire_FreeCompany_Ranged>
+			<RH_TET_Empire_Flagellant>20</RH_TET_Empire_Flagellant>
+			<RH_TET_Empire_Spearman>20</RH_TET_Empire_Spearman>
+			<RH_TET_Empire_Swordsman>20</RH_TET_Empire_Swordsman>
+			<RH_TET_Empire_Crossbowman>20</RH_TET_Empire_Crossbowman>
+			<RH_TET_Empire_Handgunner>15</RH_TET_Empire_Handgunner>
+			<RH_TET_Empire_Halberdier>10</RH_TET_Empire_Halberdier>
+			<RH_TET_Empire_Mastiff>10</RH_TET_Empire_Mastiff>
+			<RH_TET_Empire_Greatsword>5</RH_TET_Empire_Greatsword>
+			<RH_TET_Empire_Pistolier>5</RH_TET_Empire_Pistolier>
+			<RH_TET_Empire_WizardStandard>5</RH_TET_Empire_WizardStandard>
+			<RH_TET_Empire_WizardGreat>2</RH_TET_Empire_WizardGreat>
+			<RH_TET_Empire_FaithfulShallya>2</RH_TET_Empire_FaithfulShallya>
+			<RH_TET_Empire_FaithfulSigmar>1</RH_TET_Empire_FaithfulSigmar>
+			<RH_TET_Empire_FaithfulUlric>1</RH_TET_Empire_FaithfulUlric>
+			<RH_TET_Empire_FreeCompanyCaptain_Melee>2</RH_TET_Empire_FreeCompanyCaptain_Melee>
+			<RH_TET_Empire_Captain_Melee>1</RH_TET_Empire_Captain_Melee>
+			<RH_TET_Empire_Cook>1</RH_TET_Empire_Cook>
+			<RH_TET_Empire_Captain_Ranged>1</RH_TET_Empire_Captain_Ranged>
+			<RH_TET_Empire_Grenadier>1</RH_TET_Empire_Grenadier>
+			<RH_TET_Empire_Witchhunter>.5</RH_TET_Empire_Witchhunter>
+		</options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+			<RH_TET_Empire_FreeCompany_Melee>100</RH_TET_Empire_FreeCompany_Melee>
+			<RH_TET_Empire_FreeCompany_Ranged>75</RH_TET_Empire_FreeCompany_Ranged>
+			<RH_TET_Empire_Spearman>70</RH_TET_Empire_Spearman>
+			<RH_TET_Empire_Swordsman>70</RH_TET_Empire_Swordsman>
+			<RH_TET_Empire_Crossbowman>60</RH_TET_Empire_Crossbowman>
+			<RH_TET_Empire_Handgunner>60</RH_TET_Empire_Handgunner>
+			<RH_TET_Empire_Halberdier>50</RH_TET_Empire_Halberdier>
+			<RH_TET_Empire_Flagellant>20</RH_TET_Empire_Flagellant>
+			<RH_TET_Empire_Greatsword>10</RH_TET_Empire_Greatsword>
+			<RH_TET_Empire_Pistolier>10</RH_TET_Empire_Pistolier>
+			<RH_TET_Empire_Mastiff>10</RH_TET_Empire_Mastiff>
+			<RH_TET_Empire_FreeCompanyCaptain_Melee>5</RH_TET_Empire_FreeCompanyCaptain_Melee>
+			<RH_TET_Empire_FreeCompanyCaptain_Ranged>5</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+			<RH_TET_Empire_Captain_Melee>5</RH_TET_Empire_Captain_Melee>
+			<RH_TET_Empire_Captain_Ranged>5</RH_TET_Empire_Captain_Ranged>
+			<RH_TET_Empire_WizardStandard>5</RH_TET_Empire_WizardStandard>
+			<RH_TET_Empire_Grenadier>5</RH_TET_Empire_Grenadier>
+			<RH_TET_Empire_WizardGreat>2</RH_TET_Empire_WizardGreat>
+			<RH_TET_Empire_Witchhunter>2</RH_TET_Empire_Witchhunter>
+			<RH_TET_Empire_FaithfulSigmar>1</RH_TET_Empire_FaithfulSigmar>
+			<RH_TET_Empire_FaithfulUlric>1</RH_TET_Empire_FaithfulUlric>
+		</options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <RH_TET_Empire_Trader>1</RH_TET_Empire_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+        </carriers>
+        <guards>
+			<RH_TET_Empire_Civilian>50</RH_TET_Empire_Civilian>
+			<RH_TET_Empire_FreeCompany_Melee>75</RH_TET_Empire_FreeCompany_Melee>
+			<RH_TET_Empire_FreeCompany_Ranged>65</RH_TET_Empire_FreeCompany_Ranged>
+			<RH_TET_Empire_Flagellant>35</RH_TET_Empire_Flagellant>
+			<RH_TET_Empire_Spearman>20</RH_TET_Empire_Spearman>
+			<RH_TET_Empire_Swordsman>20</RH_TET_Empire_Swordsman>
+			<RH_TET_Empire_Crossbowman>20</RH_TET_Empire_Crossbowman>
+			<RH_TET_Empire_Handgunner>15</RH_TET_Empire_Handgunner>
+			<RH_TET_Empire_Pistolier>15</RH_TET_Empire_Pistolier>
+			<RH_TET_Empire_Halberdier>10</RH_TET_Empire_Halberdier>
+			<RH_TET_Empire_Mastiff>10</RH_TET_Empire_Mastiff>
+			<RH_TET_Empire_FreeCompanyCaptain_Melee>10</RH_TET_Empire_FreeCompanyCaptain_Melee>
+			<RH_TET_Empire_FreeCompanyCaptain_Ranged>5</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+			<RH_TET_Empire_Captain_Melee>5</RH_TET_Empire_Captain_Melee>
+			<RH_TET_Empire_Captain_Ranged>5</RH_TET_Empire_Captain_Ranged>
+			<RH_TET_Empire_WizardStandard>2</RH_TET_Empire_WizardStandard>
+			<RH_TET_Empire_WizardGreat>1</RH_TET_Empire_WizardGreat>
+			<RH_TET_Empire_Witchhunter>1</RH_TET_Empire_Witchhunter>
+			<RH_TET_Empire_Grenadier>1</RH_TET_Empire_Grenadier>
+			<RH_TET_Empire_Cook>2</RH_TET_Empire_Cook>
+			<RH_TET_Empire_FaithfulSigmar>.5</RH_TET_Empire_FaithfulSigmar>
+			<RH_TET_Empire_FaithfulUlric>.5</RH_TET_Empire_FaithfulUlric>
+		</guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+			<RH_TET_Empire_Civilian>50</RH_TET_Empire_Civilian>
+			<RH_TET_Empire_FreeCompany_Melee>25</RH_TET_Empire_FreeCompany_Melee>
+			<RH_TET_Empire_FreeCompany_Ranged>25</RH_TET_Empire_FreeCompany_Ranged>
+			<RH_TET_Empire_Spearman>100</RH_TET_Empire_Spearman>
+			<RH_TET_Empire_Swordsman>100</RH_TET_Empire_Swordsman>
+			<RH_TET_Empire_Crossbowman>75</RH_TET_Empire_Crossbowman>
+			<RH_TET_Empire_Handgunner>75</RH_TET_Empire_Handgunner>
+			<RH_TET_Empire_Halberdier>60</RH_TET_Empire_Halberdier>
+			<RH_TET_Empire_Greatsword>40</RH_TET_Empire_Greatsword>
+			<RH_TET_Empire_Pistolier>25</RH_TET_Empire_Pistolier>
+			<RH_TET_Empire_Captain_Melee>10</RH_TET_Empire_Captain_Melee>
+			<RH_TET_Empire_Captain_Ranged>10</RH_TET_Empire_Captain_Ranged>
+			<RH_TET_Empire_Mastiff>10</RH_TET_Empire_Mastiff>
+			<RH_TET_Empire_FreeCompanyCaptain_Melee>5</RH_TET_Empire_FreeCompanyCaptain_Melee>
+			<RH_TET_Empire_FreeCompanyCaptain_Ranged>5</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+			<RH_TET_Empire_WizardStandard>5</RH_TET_Empire_WizardStandard>
+			<RH_TET_Empire_WizardGreat>2</RH_TET_Empire_WizardGreat>
+			<RH_TET_Empire_Witchhunter>2</RH_TET_Empire_Witchhunter>
+			<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>
+			<RH_TET_Empire_Cook>1</RH_TET_Empire_Cook>
+			<RH_TET_Empire_FaithfulSigmar>1</RH_TET_Empire_FaithfulSigmar>
+			<RH_TET_Empire_FaithfulUlric>1</RH_TET_Empire_FaithfulUlric>
+		</options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>	
+	<modExtensions>
+		<li Class="KCSG.FactionSettlement">
+			<useStructureLayout>True</useStructureLayout>
+			<chooseFromlayouts>
+				<li>RH_TET_Empire_Base1</li>
+				<li>RH_TET_Empire_Base2</li>
+				<li>RH_TET_Empire_Base3</li>
+				<li>RH_TET_Empire_Base4</li>
+				<li>RH_TET_Empire_Base5</li>
+				<li>RH_TET_Empire_Base6</li>
+			</chooseFromlayouts>
+		</li>
+		<li Class="VFECore.FactionDefExtension">
+			<siegeParameterSet>RH_TET_Empire_Siege</siegeParameterSet>
+		</li>
+	</modExtensions>
+  </FactionDef>
+
+  <CultureDef>
+    <defName>RH_TET_Empire_Culture</defName>
+    <label>Empire of Man</label>
+    <description>The culture Empire of Man. Humans with basic firearm and steam power capability, not far surpassing medieval.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Rustican</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/Expanding/Town</iconPath>
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Rustic</category>
+        <priority>2</priority>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Animalist</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>RH_TET_Empire</tag>
+        <baseWeight>5</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>RH_TET_EmpireBeard</tag>
+        <baseWeight>.25</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>0.25</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+  
+</Defs>

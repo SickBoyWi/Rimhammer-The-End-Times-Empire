@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>RH_TET_Empire_PlayerFaith</defName>
+		<label>Empire Settlement</label>
+		<description>Your village.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>citizen</pawnSingular>
+		<pawnsPlural>citizens</pawnsPlural>
+		<basicMemberKind>RH_TET_Empire_FaithScenario</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RH_TET_Empire_Faithful</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/PlayerEmpireSettlement</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+		<factionNameMaker>RH_TET_NamerEmpireBase</factionNameMaker>
+		<settlementNameMaker>RH_TET_NamerEmpireBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<hairTags>
+			<li>RH_TET_Empire</li>
+			<li>Rural</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+	-->
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>RH_TET_Empire_PlayerWizard</defName>
+		<label>Empire Settlement</label>
+		<description>Your village.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>citizen</pawnSingular>
+		<pawnsPlural>citizens</pawnsPlural>
+		<basicMemberKind>RH_TET_Empire_WizardScenario</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RH_TET_Empire_WizardStandard</li>
+					<li>RH_TET_Empire_WizardGreat</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/PlayerEmpireSettlement</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+		<factionNameMaker>RH_TET_NamerEmpireBase</factionNameMaker>
+		<settlementNameMaker>RH_TET_NamerEmpireBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<hairTags>
+			<li>RH_TET_Empire</li>
+			<li>Rural</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>RH_TET_Empire_PlayerColony</defName>
+		<label>Empire Settlement</label>
+		<description>Your village.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>citizen</pawnSingular>
+		<pawnsPlural>citizens</pawnsPlural>
+		<basicMemberKind>RH_TET_EmpireVillager</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RH_TET_Empire_Backstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/PlayerEmpireSettlement</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+		<factionNameMaker>RH_TET_NamerEmpireBase</factionNameMaker>
+		<settlementNameMaker>RH_TET_NamerEmpireBase</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<hairTags>
+			<li>RH_TET_Empire</li>
+			<li>Rural</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>

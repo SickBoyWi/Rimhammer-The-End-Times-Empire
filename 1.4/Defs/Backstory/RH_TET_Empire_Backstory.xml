@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- base -->
+	<AlienRace.AlienBackstoryDef Name="RH_TET_Empire_Backstory" Abstract="True">
+		<spawnCategories>
+			<li>RH_TET_Empire_Backstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef Name="RH_TET_Empire_ChildBackstory" ParentName="RH_TET_Empire_Backstory" Abstract="True">
+		<spawnCategories>
+			<li>RH_TET_Empire_Faithful</li>
+			<li>RH_TET_Empire_Special</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- childhood -->
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_Farmer_Child_Backstory</defName>
+		<title>Farm child</title>
+		<titleShort>farm child</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] younger years working on the family farm. [PAWN_possessive] family would occasionally be called on to fight off orc or beastman raids, and had a duty to the Empire to provide food for the bigger cities.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_StreetRat_Child_Backstory</defName>
+		<title>Street rat</title>
+		<titleShort>street rat</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] younger years surviving on the streets of one of the larger cities of the Empire. [PAWN_pronoun] became good at talking [PAWN_possessive] way out of trouble, but also learned to fight for times that talking wouldn't work.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_AbandonedChild</defName>
+		<title>Abandoned child</title>
+		<titleShort>abandoned</titleShort>
+		<baseDesc>[PAWN_nameDef] was abandoned. [PAWN_pronoun] he was left in the wild to struggle, but somehow managed to survive long enough for a passing Empire trading caravan to pick [PAWN_objective] up.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_Orphan</defName>
+		<title>Orphan child</title>
+		<titleShort>orphan</titleShort>
+		<baseDesc>[PAWN_nameDef] was an orphan. Stories go that the "Count’s Men" passed by one night.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-1</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_Abductee</defName>
+		<title>Abucted child</title>
+		<titleShort>abducted</titleShort>
+		<baseDesc>[PAWN_nameDef] was abducted in from [PAWN_possessive] home in Stirland. Rescued from the child snatcher by a group Witch Hunters, [PAWN_pronoun] was then given some basic military training while traveling with them.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_AccursedChild</defName>
+		<title>Accursed child</title>
+		<titleShort>accursed</titleShort>
+		<baseDesc>[PAWN_nameDef] was prophesied to be a child of chaos. Struggling with life as an outcast, [PAWN_pronoun] ended up being exorcised by a priest of Sigmar.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_AdventurousYouth</defName>
+		<title>Adventurous youth</title>
+		<titleShort>adventurous</titleShort>
+		<baseDesc>[PAWN_nameDef] longed for adventure, but [PAWN_possessive] parents were as hard headed and rigid as the rest of Stirland. One night [PAWN_pronoun] ran away from home, to find the much needed adventure.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_SerfChild</defName>
+		<title>Serf child</title>
+		<titleShort>serf</titleShort>
+		<baseDesc>[PAWN_nameDef] was a serf, toiling away at the farmstead. One day [PAWN_nameDef] simply had enough; [PAWN_pronoun] dropped everthing, and walked off.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Construction</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_SurvivorChild</defName>
+		<title>Survivor child</title>
+		<titleShort>survivor</titleShort>
+		<baseDesc>[PAWN_nameDef] survived when [PAWN_possessive] village was burned down by ravaging greenskins. [PAWN_pronoun] swore to get vengence upon not just the orcs responsible, but all orcs.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_OutsiderChild</defName>
+		<title>Outsider child</title>
+		<titleShort>outsider</titleShort>
+		<baseDesc>[PAWN_nameDef] traveled to Stirland as a child, with [PAWN_possessive] family. [PAWN_pronoun] never managed to fit in with the locals, and started to dabble in more unsavory activites.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_SquireChild</defName>
+		<title>Squire child</title>
+		<titleShort>squire</titleShort>
+		<baseDesc>[PAWN_nameDef] was training as a squire to one of the knights of Stirland. The time spent around the upper echelons of society offered [PAWN_objective] valuable life experience.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Artistic</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_NobleChild</defName>
+		<title>Aristocrat child</title>
+		<titleShort>aristocrat</titleShort>
+		<baseDesc>[PAWN_nameDef] came form a noble family. [PAWN_pronoun] was constanly bored by the life, and was drawn to adventure. It was that feeling that caused [PAWN_objective] to leave his home.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Mining</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
+		<defName>RH_TET_Empire_VillageChild</defName>
+		<title>Village child</title>
+		<titleShort>villager</titleShort>
+		<baseDesc>[PAWN_nameDef] was born in a village in Stirland. Spending time like the rest of the children there, living in the rural backwaters.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<!-- adulthood -->
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Farmer_Backstory</defName>
+		<title>Farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>Tilling, hoeing, guiding ox carts, purchasing seed, planning field production, managing the farm, planting seeds, and predicting the harvest. All of those things and more were [PAWN_nameDef]'s job. [PAWN_pronoun] had a duty to provide food for the Empire, and [PAWN_pronoun] never once fell short, despite the orc and beastmen raids that occurred with somewhat regular frequency.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Cook_Backstory</defName>
+		<title>Cook</title>
+		<titleShort>cook</titleShort>
+		<baseDesc>[PAWN_nameDef] was a cook for the armies of the Empire. [PAWN_pronoun] had one focus, and that was keeping the soldiers fed. That had the benefit of making sure [PAWN_pronoun] always got the best of the available food!</baseDesc>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Grunt_Backstory</defName>
+		<title>Army grunt</title>
+		<titleShort>army grunt</titleShort>
+		<baseDesc>[PAWN_nameDef] was an Empire army grunt. [PAWN_possessive] jobs included digging latrines and fortifications, hauling whatever needed to be hauled, and occasionally weilding a spear to fight off raids.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>-4</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_PickPocket_Backstory</defName>
+		<title>Pick pocket</title>
+		<titleShort>thief</titleShort>
+		<baseDesc>[PAWN_nameDef] was a vagrant in a city, surviving on [PAWN_possessive] wits, with no fear of breaking the law.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Actor</defName>
+		<title>Travelling actor</title>
+		<titleShort>actor</titleShort>
+		<baseDesc>[PAWN_nameDef] travelled with [PAWN_possessive] acting company, putting on shows and entertaining the people of the Empire.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Adventurer</defName>
+		<title>Adventurer</title>
+		<titleShort>adventurer</titleShort>
+		<baseDesc>[PAWN_nameDef] was an adventurer, lusting for fame and fortune. [PAWN_pronoun] traveled the country, and beyond; occasionally joining with others, and occasionally alone.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-3</value>
+			</li>
+			<li>
+				<key>Artistic</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Blacksmith</defName>
+		<title>Blacksmith</title>
+		<titleShort>blacksmith</titleShort>
+		<baseDesc>[PAWN_nameDef] ran a smithy in [PAWN_possessive] village in Nordland.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_BountyHunter</defName>
+		<title>Bounty hunter</title>
+		<titleShort>bounty hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] was a bounty hunter. [PAWN_pronoun] sought out criminals on [PAWN_possessive] own, and marauding orcs, goblin, and occasionally skaven with a band of others.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>-1</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Brigand</defName>
+		<title>Former brigand</title>
+		<titleShort>brigand</titleShort>
+		<baseDesc>[PAWN_nameDef] used to be a thug and a menace; [PAWN_pronoun] would prey on the weak and vulnerable.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>-1</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>-2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_CivilServant</defName>
+		<title>Civil servant</title>
+		<titleShort>civil servant</titleShort>
+		<baseDesc>[PAWN_nameDef] was a civil servant for the local lord. [PAWN_possessive] jobs included collecting taxes, ensuring arrests happened, settling minor disputes, and more.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>-1</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Social</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Hunter</defName>
+		<title>Hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] hunted in the local woods. [PAWN_pronoun] was responsible for bringing in game for the town, and [PAWN_pronoun] made a decent living doing it.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-4</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Criminal</defName>
+		<title>Criminal</title>
+		<titleShort>criminal</titleShort>
+		<baseDesc>[PAWN_nameDef] was dragged to enlist in the army of the Empire as a prisoner. It was enlistment or death, so the choice was obvious.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-3</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>-3</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Scout</defName>
+		<title>Scout</title>
+		<titleShort>scout</titleShort>
+		<baseDesc>As a scout, [PAWN_nameDef]'s kept on lookout around [PAWN_possessive] village, to be sure there were no raids or enemies nearby.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Smuggler</defName>
+		<title>Smuggler</title>
+		<titleShort>smuggler</titleShort>
+		<baseDesc>[PAWN_nameDef] lived outside the law, smuggling goods from point A to point B, and making much gold along the way.</baseDesc>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Nurse</defName>
+		<title>Nurse</title>
+		<titleShort>nurse</titleShort>
+		<baseDesc>[PAWN_nameDef] worked in a hospital in Nuln. [PAWN_pronoun] spent most of [PAWN_possessive] time triaging patients, and handling cases that didn't require a doctor.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Caring</li>
+			<li>Cooking</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Thief</defName>
+		<title>Thief</title>
+		<titleShort>thief</titleShort>
+		<baseDesc>[PAWN_nameDef] stole to make a living. Sneaking into the homes of knights and other nobility in order to make a living.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
+		<defName>RH_TET_Empire_Hermit</defName>
+		<title>Hermit</title>
+		<titleShort>hermit</titleShort>
+		<baseDesc>[PAWN_nameDef] lived as a hermit, shunning the more civilized areas of the Empire in order to live mostly alone in the wilderness.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

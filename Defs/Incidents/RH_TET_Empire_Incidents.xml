@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<IncidentDef>
+		<defName>RH_TET_Empire_FaithfulHunted</defName>
+		<label>hunted faithful</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>TheEndTimes_Empire.IncidentWorker_HuntedFaithful</workerClass>
+		<baseChance>2</baseChance>
+		<populationEffect>IncreaseHard</populationEffect>
+		<minRefireDays>120</minRefireDays>
+		<earliestDay>30</earliestDay>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>RH_TET_Empire_WizardHunted</defName>
+		<label>hunted faithful</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>TheEndTimes_Empire.IncidentWorker_HuntedWizard</workerClass>
+		<baseChance>2</baseChance>
+		<populationEffect>IncreaseHard</populationEffect>
+		<minRefireDays>120</minRefireDays>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>RH_TET_Empire_TrollsNearby</defName>
+		<label>nearby trolls</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>TheEndTimes_Empire.IncidentWorker_TrollsNearby</workerClass>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>13</minRefireDays>
+	</IncidentDef>
+  
+</Defs>

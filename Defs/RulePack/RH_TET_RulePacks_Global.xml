@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>RH_TET_NamerEmpireBase</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[pack]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>pack</keyword>
+					<path>NameBanks/RH_TET_Empire_Settlement</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>RH_TET_Empire_Namer</defName>
+		<include>
+			<li>TalkTopicsUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Male] [sur]</li>
+				<li>name->[Female] [sur]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Male</keyword>
+					<path>NameBanks/RH_TET_Empire_Names</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Female</keyword>
+					<path>NameBanks/RH_TET_Empire_Female_Names</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>sur</keyword>
+					<path>NameBanks/RH_TET_Empire_Surnames</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

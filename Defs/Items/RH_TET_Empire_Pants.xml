@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="RH_TET_Empire_ApparelMakeableBasePants" ParentName="ApparelMakeableBase" Abstract="True">
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBasePants">
+		<defName>RH_TET_Empire_PantsLow</defName>
+		<label>Empire pants</label>
+		<description>A set of basic Empire soldier's pants.</description>
+		<graphicData>
+			<texPath>Things/Items/Pants/RH_TET_Empire_Pants_Low</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>2.5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Mid</li>
+				<li>RH_TET_Empire_Soldier</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<!-- Armored Pants -->
+	<ThingDef Name="RH_TET_Empire_ArmoredApparelMakeableBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
+				<li>RH_TET_Empire_TableAnvil</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="RH_TET_Empire_ArmoredPantsMidMakeableBase" ParentName="RH_TET_Empire_ArmoredApparelMakeableBase" Abstract="True">
+		<costList>
+			<Cloth>35</Cloth>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>190</MaxHitPoints>
+			<WorkToMake>3200</WorkToMake>
+			<Mass>1.8</Mass>
+			<EquipDelay>2.2</EquipDelay>
+	  
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+	  
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Fine</li>
+				<li>RH_TET_Empire_Apparel_Officer</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_ArmoredPantsMidMakeableBase">
+		<defName>RH_TET_Empire_PantsMid_All</defName>
+		<label>Empire sergeant pants</label>
+		<description>A set of armored Empire army pants, worn by mid level officers. Covers the legs, and provides good armor.</description>
+		<graphicData>
+			<texPath>Things/Items/Pants/Sergeant_Pants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_Armor_Improved</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmoredApparelMakeableBase">
+		<defName>RH_TET_Empire_PantsHigh</defName>
+		<label>Empire officer pants</label>
+		<description>A set of armored Empire army pants, worn by the highest ranking officers. Provides very good armor for legs.</description>
+		<graphicData>
+			<texPath>Things/Items/Pants/RH_TET_Empire_Pants_High</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Cloth>45</Cloth>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>230</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>2.2</Mass>
+			<EquipDelay>2.5</EquipDelay>
+	  
+			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+	  
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Fine</li>
+				<li>RH_TET_Empire_Apparel_Officer</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!--
+   <colorGenerator Class="ColorGenerator_Options">
+     <options>
+       <li>
+         <weight>10</weight>
+         <only>(1.0,1.0,1.0,1)</only>
+       </li>
+     </options>
+   </colorGenerator>
+   -->
+		<thingCategories>
+			<li>RH_TET_Empire_Apparel</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

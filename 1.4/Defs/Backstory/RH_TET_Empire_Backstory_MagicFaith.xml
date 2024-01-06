@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Wizard -->
+	
+	<!-- SAVE High magic backstory examples
+  <AlienRace.AlienBackstoryDef>
+    <defName>RH_TET_Empire_WizardHigh</defName>
+    <title>wind of Qhaysh user</title>
+    <titleShort>Qhaysh user</titleShort>
+    <baseDesc>[PAWN_nameDef] has studied how to wield Qhaysh, the high magic wielded by the best of mages. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>1</value>
+      </li>
+      <li>
+        <key>Medicine</key>
+        <value>1</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>RH_TET_Empire_WizardStandard</li>
+    </spawnCategories>
+    <forcedTraitsChance>
+      <li>
+        <defName>Kind</defName>
+        <chance>20</chance>
+      </li>
+    </forcedTraitsChance>
+	<forcedTraits>
+		<RH_TET_LoreOfHighTrait>1</RH_TET_LoreOfHighTrait>
+	</forcedTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>RH_TET_Empire_GreatWizardHigh</defName>
+    <title>wind of Qhaysh gifted</title>
+    <titleShort>Qhaysh gifted</titleShort>
+    <baseDesc>[PAWN_nameDef] can sense and wield Qhaysh, the high magic associated with the most powerful of wizards. Qhaysh has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Medicine</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>RH_TET_Empire_WizardGreat</li>
+    </spawnCategories>
+    <forcedTraitsChance>
+      <li>
+        <defName>Kind</defName>
+        <chance>20</chance>
+      </li>
+    </forcedTraitsChance>
+	<forcedTraits>
+		<RH_TET_LoreOfHighTrait>3</RH_TET_LoreOfHighTrait>
+	</forcedTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+  </AlienRace.AlienBackstoryDef>
+  -->
+  
+	<!-- Adulthood -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardBeasts</defName>
+		<title>wind of Ghur user</title>
+		<titleShort>Ghur user</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Ghur, the amber magic associated with Beasts. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_Beasts</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Immunity</defName>
+				<chance>20</chance>
+				<degree>1</degree>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfBeastsTrait>1</RH_TET_LoreOfBeastsTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardBeasts</defName>
+		<title>wind of Ghur gifted</title>
+		<titleShort>Ghur favorite</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Ghur, the amber magic associated with Beasts. Ghur has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_Beasts</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Immunity</defName>
+				<chance>20</chance>
+				<degree>1</degree>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfBeastsTrait>3</RH_TET_LoreOfBeastsTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	
+	
+	
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardDeath</defName>
+		<title>wind of Shyish user</title>
+		<titleShort>Shyish user</titleShort>
+		<baseDesc>[PAWN_nameDef] has studied how to wield Shyish, the purple magic associated with Death. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_Spirit</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfDeathTrait>1</RH_TET_LoreOfDeathTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardDeath</defName>
+		<title>wind of Shyish gifted</title>
+		<titleShort>Shyish gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Shyish, the purple magic associated with Death. Shyish has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_Spirit</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfDeathTrait>3</RH_TET_LoreOfDeathTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardShadow</defName>
+		<title>wind of Ulgu user</title>
+		<titleShort>Ulgu user</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Ulgu, the gray magic associated with shadows. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_Grey</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfShadowTrait>1</RH_TET_LoreOfShadowTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardShadow</defName>
+		<title>wind of Ulgu gifted</title>
+		<titleShort>Ulgu gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Ulgu, the gray magic associated with shadows. Ulgu has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_Grey</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfShadowTrait>3</RH_TET_LoreOfShadowTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardFire</defName>
+		<title>wind of Aqshy user</title>
+		<titleShort>Aqshy user</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Aqshy, the red magic associated with fire. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_Bright</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Pyromaniac</defName>
+				<chance>35</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfFireTrait>1</RH_TET_LoreOfFireTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardFire</defName>
+		<title>wind of Aqshy gifted</title>
+		<titleShort>Aqshy gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Aqshy, the red magic associated with fire. Aqshy has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_Bright</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Pyromaniac</defName>
+				<chance>35</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfFireTrait>3</RH_TET_LoreOfFireTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardHeavens</defName>
+		<title>wind of Azyr user</title>
+		<titleShort>Azyr user</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Azyr, the blue magic associated with heavens. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_Celestial</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfHeavensTrait>1</RH_TET_LoreOfHeavensTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardHeavens</defName>
+		<title>wind of Azyr gifted</title>
+		<titleShort>Azyr gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Azyr, the blue magic associated with heavens. Azyr has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_Celestial</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfHeavensTrait>3</RH_TET_LoreOfHeavensTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardMetal</defName>
+		<title>wind of Chamon user</title>
+		<titleShort>Chamon user</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Chamon, the yellow magic associated with metal. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_Gold</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfMetalTrait>1</RH_TET_LoreOfMetalTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardMetal</defName>
+		<title>wind of Chamon gifted</title>
+		<titleShort>Chamon gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Chamon, the yellow magic associated with metal. Chamon has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_Gold</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfMetalTrait>3</RH_TET_LoreOfMetalTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardLife</defName>
+		<title>wind of Ghyran user</title>
+		<titleShort>Ghyran user</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Ghyran, the green magic associated with life. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_Jade</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfLifeTrait>1</RH_TET_LoreOfLifeTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardLife</defName>
+		<title>wind of Ghyran gifted</title>
+		<titleShort>Ghyran gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Ghyran, the green magic associated with life. Ghyran has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Mining</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_Jade</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfLifeTrait>3</RH_TET_LoreOfLifeTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardLight</defName>
+		<title>wind of Hysh user</title>
+		<titleShort>Hysh user</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Hysh, the white magic associated with light. [PAWN_possessive] innate abilities combined with studies have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard_White</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfLightTrait>1</RH_TET_LoreOfLightTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardLight</defName>
+		<title>wind of Hysh gifted</title>
+		<titleShort>Hysh gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] can sense and wield Hysh, the white magic associated with light. Hysh has always flowed well, and easy for [PAWN_nameDef]. [PAWN_possessive] strong innate abilities combined with years of study have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreat_White</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_LoreOfLightTrait>3</RH_TET_LoreOfLightTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Adulthood - Non Player (Outcast Faction) -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardNurgle</defName>
+		<title>lore of Nurgle user</title>
+		<titleShort>Nurgle user</titleShort>
+		<baseDesc>[PAWN_nameDef] has been gifted by the god Nurgle with magic powers. [PAWN_possessive] innate abilities combined with Nurgle's gift have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardChaos</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Gourmand</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfNurgleTrait>1</RH_TET_LoreOfNurgleTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardNurgle</defName>
+		<title>lore of Nurgle gifted</title>
+		<titleShort>Nurgle gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] has been gifted by the god Nurgle with magic powers. Nurgle has gifted [PAWN_nameDef] with more power than most. [PAWN_possessive] strong innate abilities combined with Nurgle's gift have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreatChaos</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Gourmand</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfNurgleTrait>3</RH_TET_LoreOfNurgleTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardChaos</defName>
+		<title>lore of Chaos user</title>
+		<titleShort>Chaos Undivided user</titleShort>
+		<baseDesc>[PAWN_nameDef] has been gifted by the dark gods with magic powers. [PAWN_possessive] innate abilities combined with the godly gifts have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardChaos</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Greedy</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfChaosUndividedTrait>1</RH_TET_LoreOfChaosUndividedTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardChaos</defName>
+		<title>lore of Chaos gifted</title>
+		<titleShort>Chaos Undivided gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] has been gifted by the dark gods with magic powers. The gods gifted [PAWN_nameDef] with more power than most. [PAWN_possessive] strong innate abilities combined with the gifts of the gods have crafted [PAWN_possessive] into a powerful magic user.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreatChaos</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Greedy</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfChaosUndividedTrait>3</RH_TET_LoreOfChaosUndividedTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardSlaanesh</defName>
+		<title>lore of Slaanesh user</title>
+		<titleShort>Slaanesh magic user</titleShort>
+		<baseDesc>[PAWN_nameDef] has been gifted by the dark god Slaanesh with magic powers. [PAWN_possessive] innate abilities combined with the godly gift of Slaanesh have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardChaos</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Masochist</defName>
+				<chance>80</chance>
+			</li>
+			<li>
+				<defName>Bisexual</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfSlaaneshTrait>1</RH_TET_LoreOfSlaaneshTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_GreatWizardSlaanesh</defName>
+		<title>lore of Slaanesh gifted</title>
+		<titleShort>Slaanesh gifted</titleShort>
+		<baseDesc>[PAWN_nameDef] has been gifted by the dark god Slaanesh with magic powers. The god has gifted [PAWN_nameDef] with more power than most. [PAWN_possessive] innate abilities combined with the godly gift of Slaanesh have crafted [PAWN_objective] into a wizard.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardGreatChaos</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Masochist</defName>
+				<chance>90</chance>
+			</li>
+			<li>
+				<defName>Bisexual</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_LoreOfSlaaneshTrait>3</RH_TET_LoreOfSlaaneshTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Childhood -->
+	
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardWild</defName>
+		<title>wildling</title>
+		<titleShort>wild</titleShort>
+		<baseDesc>[PAWN_nameDef] was born to a poor country family. [PAWN_pronoun] was sent away from home at a young age because [PAWN_possessive] parents recognized there was something different about [PAWN_objective]. [PAWN_pronoun] somehow survived in the wilds. After living in isolation for years with no mutation, [PAWN_pronoun] came to realize it was the winds of magic that [PAWN_pronoun] was sensing, not the darker powers of chaos. [PAWN_pronoun] returned to civilization, and sought the magic users in a large city for guidance.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>1</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard</li>
+			<li>RH_TET_Empire_WizardGreat</li>
+			<li>RH_TET_Empire_WizardChaos</li>
+			<li>RH_TET_Empire_WizardGreatChaos</li>
+			<li>RH_TET_Empire_WizardStandard_Beasts</li>
+			<li>RH_TET_Empire_WizardGreat_Beasts</li>
+			<li>RH_TET_Empire_WizardStandard_Bright</li>
+			<li>RH_TET_Empire_WizardGreat_Bright</li>
+			<li>RH_TET_Empire_WizardStandard_Celestial</li>
+			<li>RH_TET_Empire_WizardGreat_Celestial</li>
+			<li>RH_TET_Empire_WizardStandard_Spirit</li>
+			<li>RH_TET_Empire_WizardGreat_Spirit</li>
+			<li>RH_TET_Empire_WizardStandard_Grey</li>
+			<li>RH_TET_Empire_WizardGreat_Grey</li>
+			<li>RH_TET_Empire_WizardStandard_Jade</li>
+			<li>RH_TET_Empire_WizardGreat_Jade</li>
+			<li>RH_TET_Empire_WizardStandard_White</li>
+			<li>RH_TET_Empire_WizardGreat_White</li>
+			<li>RH_TET_Empire_WizardStandard_Gold</li>
+			<li>RH_TET_Empire_WizardGreat_Gold</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardRich</defName>
+		<title>born rich</title>
+		<titleShort>rich</titleShort>
+		<baseDesc>[PAWN_nameDef] was born to a wealthy family in the city of Altdorf. [PAWN_pronoun] could sense the winds of magic from a very young age, and [PAWN_possessive] parents had the resources to have [PAWN_possessive] schooling in magic started early. [PAWN_pronoun] and [PAWN_possessive] abilities are part of the pride of a very prideful family.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard</li>
+			<li>RH_TET_Empire_WizardGreat</li>
+			<li>RH_TET_Empire_WizardChaos</li>
+			<li>RH_TET_Empire_WizardGreatChaos</li>
+			<li>RH_TET_Empire_WizardStandard_Beasts</li>
+			<li>RH_TET_Empire_WizardGreat_Beasts</li>
+			<li>RH_TET_Empire_WizardStandard_Bright</li>
+			<li>RH_TET_Empire_WizardGreat_Bright</li>
+			<li>RH_TET_Empire_WizardStandard_Celestial</li>
+			<li>RH_TET_Empire_WizardGreat_Celestial</li>
+			<li>RH_TET_Empire_WizardStandard_Spirit</li>
+			<li>RH_TET_Empire_WizardGreat_Spirit</li>
+			<li>RH_TET_Empire_WizardStandard_Grey</li>
+			<li>RH_TET_Empire_WizardGreat_Grey</li>
+			<li>RH_TET_Empire_WizardStandard_Jade</li>
+			<li>RH_TET_Empire_WizardGreat_Jade</li>
+			<li>RH_TET_Empire_WizardStandard_White</li>
+			<li>RH_TET_Empire_WizardGreat_White</li>
+			<li>RH_TET_Empire_WizardStandard_Gold</li>
+			<li>RH_TET_Empire_WizardGreat_Gold</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WizardsChild</defName>
+		<title>wizard's child</title>
+		<titleShort>wizard's child</titleShort>
+		<baseDesc>[PAWN_nameDef] was born to mother that was a great wizard. Perhaps [PAWN_pronoun] inherited the skill from her; although that idea is commonly deemed not possible by scholars. Regardless of where the skills came from, they were there and recognized early. [PAWN_possessive] mother taught him the ways of magic as soon as she recognized the talent in [PAWN_objective].She was a very smart woman, and focused on not just magic training, but discipline and a well rounded study regimen.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WizardStandard</li>
+			<li>RH_TET_Empire_WizardGreat</li>
+			<li>RH_TET_Empire_WizardChaos</li>
+			<li>RH_TET_Empire_WizardGreatChaos</li>
+			<li>RH_TET_Empire_WizardStandard_Beasts</li>
+			<li>RH_TET_Empire_WizardGreat_Beasts</li>
+			<li>RH_TET_Empire_WizardStandard_Bright</li>
+			<li>RH_TET_Empire_WizardGreat_Bright</li>
+			<li>RH_TET_Empire_WizardStandard_Celestial</li>
+			<li>RH_TET_Empire_WizardGreat_Celestial</li>
+			<li>RH_TET_Empire_WizardStandard_Spirit</li>
+			<li>RH_TET_Empire_WizardGreat_Spirit</li>
+			<li>RH_TET_Empire_WizardStandard_Grey</li>
+			<li>RH_TET_Empire_WizardGreat_Grey</li>
+			<li>RH_TET_Empire_WizardStandard_Jade</li>
+			<li>RH_TET_Empire_WizardGreat_Jade</li>
+			<li>RH_TET_Empire_WizardStandard_White</li>
+			<li>RH_TET_Empire_WizardGreat_White</li>
+			<li>RH_TET_Empire_WizardStandard_Gold</li>
+			<li>RH_TET_Empire_WizardGreat_Gold</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<!-- START FAITH BACKSTORIES -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_FaithfulSigmar</defName>
+		<title>faithful of Sigmar</title>
+		<titleShort>Sigmar's faithful</titleShort>
+		<baseDesc>[PAWN_nameDef] has been blessed by Sigmar, and can wield a portion of the god's power.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_FaithfulSigmar</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_SigmarTrait>1</RH_TET_SigmarTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_FaithfulShallya</defName>
+		<title>faithful of Shallya</title>
+		<titleShort>Shallya's faithful</titleShort>
+		<baseDesc>[PAWN_nameDef] has been blessed by Shallya, and can wield a portion of the god's power.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_FaithfulShallya</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_ShallyaTrait>1</RH_TET_ShallyaTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_FaithfulUlric</defName>
+		<title>faithful of Ulric</title>
+		<titleShort>Ulric's faithful</titleShort>
+		<baseDesc>[PAWN_nameDef] has been blessed by Ulric, and can wield a portion of the god's power.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>1</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_FaithfulUlric</li>
+		</spawnCategories>
+		<forcedTraits>
+			<RH_TET_UlricTrait>1</RH_TET_UlricTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

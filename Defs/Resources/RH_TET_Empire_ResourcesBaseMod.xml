@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>RH_TET_MineableSulfur</defName>
+		<label>mineable sulfur</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(200,198,122)</color>
+			<colorTwo>(245,244,199)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<description>A natural vein of sulfur.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>RH_TET_Sulfur</mineableThing>
+			<mineableYield>40</mineableYield>
+			<mineableScatterCommonality>.8</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>20</min>
+				<max>30</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+  
+	<ThingDef ParentName="RockBase">
+		<defName>RH_TET_MineableSaltpeter</defName>
+		<label>mineable saltpeter</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(243,240,190)</color>
+			<colorTwo>(255,255,255)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1250</MaxHitPoints>
+		</statBases>
+		<description>A natural vein of saltpeter.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>RH_TET_Saltpeter</mineableThing>
+			<mineableYield>40</mineableYield>
+			<mineableScatterCommonality>.4</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>10</min>
+				<max>15</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RH_TET_Sulfur</defName>
+		<label>sulfur</label>
+		<description>A lump of raw stinky sulfur. Can be used to make black powder.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/Sulfur</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<tickerType>Rare</tickerType>
+		<statBases>
+			<MarketValue>.25</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>0.25</Mass>
+			<DeteriorationRate>0.35</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>5</deepCommonality>
+		<deepCountPerPortion>35</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>15</min>
+			<max>30</max>
+		</deepLumpSizeRange>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+  
+	<ThingDef ParentName="ResourceBase">
+		<defName>RH_TET_Saltpeter</defName>
+		<label>saltpeter</label>
+		<description>Raw saltpeter. Can be used to make black powder.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/Saltpeter</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<tickerType>Rare</tickerType>
+		<statBases>
+			<MarketValue>.5</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>0.45</Mass>
+			<DeteriorationRate>0.35</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>2.5</deepCommonality>
+		<deepCountPerPortion>35</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>8</min>
+			<max>12</max>
+		</deepLumpSizeRange>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+  
+	<ThingDef ParentName="ResourceBase">
+		<defName>RH_TET_BlackPowder</defName>
+		<label>black powder</label>
+		<description>Used for warmachine rounds, to make things explode!</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/BlackPowder</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<statBases>
+			<MarketValue>4.5</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>0.45</Mass>
+			<DeteriorationRate>0.35</DeteriorationRate>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>
+					<min>30</min>
+					<max>60</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+  
+</Defs>

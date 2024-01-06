@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>RH_TET_Empire_MagicWeapon_Runefang</defName>
+		<label>Runefang</label>
+		<description>Runefangs are the magical swords which serve as the badges of office of the Elector Counts of the Empire.\n\nThe Runefangs were created by the renowned Dwarf Runesmith Alaric the Mad, and were intended for the tribal leaders who had united under the rule of Sigmar. Runefangs are blades of unsurpassed power able to carve through gromril and Dragon scale.\n\nPossession of a Runefang increases a pawns social standing, negotiation ability, trade price discount, and arrest success chance.</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/Runefang</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4)</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>2</Mass>
+			<MarketValue>5000</MarketValue>
+			<Flammability>0</Flammability>
+		</statBases>
+		<smeltable>false</smeltable>
+		<thingCategories Inherit="False">
+			<li>RH_TET_EmpireWeaponsMagic</li>
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+				<verticalFlipNorth>false</verticalFlipNorth>
+				<!--
+		  <angleAdjustmentWest>45</angleAdjustmentWest>
+		  <angleAdjustmentEast>0</angleAdjustmentEast>
+		  -->
+				<northOffset>(0.2,0,0.2)</northOffset>
+				<eastOffset>(-.05,0,0.1)</eastOffset>
+				<westOffset>(0,0,0.1)</westOffset>
+				<southOffset>(0.0,0,0.1)</southOffset>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.25</NegotiationAbility>
+			<ArrestSuccessChance>0.50</ArrestSuccessChance>
+			<TradePriceImprovement>0.10</TradePriceImprovement>
+			<SocialImpact>0.50</SocialImpact>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>RH_TET_Empire_Magic_Melee</li>
+		</weaponTags>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<thingSetMakerTags>
+			<li>Empire_MagicWeapons</li>
+		</thingSetMakerTags>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>48</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>1.5</armorPenetration>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>46</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>1.5</armorPenetration>
+			</li>
+			<li>
+				<label>hilt</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2</cooldownTime>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

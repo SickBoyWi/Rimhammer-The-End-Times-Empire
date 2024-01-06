@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_BuildingsArt</defName>
+		<label>Empire</label>
+		<parent>BuildingsArt</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_BuildingsJoy</defName>
+		<label>Empire</label>
+		<parent>BuildingsJoy</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_BuildingsFurniture</defName>
+		<label>Empire</label>
+		<parent>BuildingsFurniture</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_BuildingsFurnitureRugs</defName>
+		<label>Rugs</label>
+		<parent>RH_TET_Empire_BuildingsFurniture</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_BuildingsProduction</defName>
+		<label>Empire</label>
+		<parent>BuildingsProduction</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Artillery</defName>
+		<label>Empire artillery ammo</label>
+		<parent>Manufactured</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Buildings</defName>
+		<label>Empire</label>
+		<parent>Buildings</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_BuildingsSecurity</defName>
+		<label>Empire</label>
+		<parent>BuildingsSecurity</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_BuildingsDoors</defName>
+		<label>doors and gates</label>
+		<parent>RH_TET_Empire_Buildings</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel</defName>
+		<label>Empire</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Talabheim</defName>
+		<label>Talabheim</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Middenland</defName>
+		<label>Middenland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Averland</defName>
+		<label>Averland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Ostermark</defName>
+		<label>Ostermark</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Ostland</defName>
+		<label>Ostland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Hochland</defName>
+		<label>Hochland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Stirland</defName>
+		<label>Stirland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Nordland</defName>
+		<label>Nordland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Reikland</defName>
+		<label>Reikland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Apparel_Wissenland</defName>
+		<label>Wissenland</label>
+		<parent>RH_TET_Empire_Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Headgear</defName>
+		<label>Empire</label>
+		<parent>Headgear</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_ArmorHeadgear</defName>
+		<label>Empire</label>
+		<parent>ArmorHeadgear</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Armor</defName>
+		<label>Empire</label>
+		<parent>ApparelArmor</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_WeaponsMelee</defName>
+		<label>Empire</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_WeaponsMelee_Standards</defName>
+		<label>Standards</label>
+		<parent>RH_TET_Empire_WeaponsMelee</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields</defName>
+		<label>shields</label>
+		<parent>RH_TET_Empire_WeaponsMelee</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Talabheim</defName>
+		<label>Talabheim</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Middenland</defName>
+		<label>Middenland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Averland</defName>
+		<label>Averland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Ostermark</defName>
+		<label>Ostermark</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Ostland</defName>
+		<label>Ostland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Stirland</defName>
+		<label>Stirland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Hochland</defName>
+		<label>Hochland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Reikland</defName>
+		<label>Reikland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Nordland</defName>
+		<label>Nordland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Shields_Wissenland</defName>
+		<label>Wissenland</label>
+		<parent>RH_TET_Empire_Shields</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_WeaponsRanged</defName>
+		<label>Empire</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+	<!-- pulled from base mod -->
+	<ThingCategoryDef>
+		<defName>RH_TET_PreservedFoods</defName>
+		<label>preserved foods</label>
+		<parent>FoodRaw</parent>
+		<iconPath>UI/Icons/ThingCategories/AnimalProductRaw</iconPath>
+	</ThingCategoryDef>
+
+	<!-- copied from magic mod -->
+	<ThingCategoryDef>
+		<defName>RH_TET_WeaponsMagic</defName>
+		<label>magic weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_EmpireWeaponsMagic</defName>
+		<label>Empire</label>
+		<parent>RH_TET_WeaponsMagic</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Footwear</defName>
+		<label>Empire</label>
+		<parent>Footwear</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RH_TET_Empire_Handwear</defName>
+		<label>Empire</label>
+		<parent>Handwear</parent>
+	</ThingCategoryDef>
+	
+</Defs>

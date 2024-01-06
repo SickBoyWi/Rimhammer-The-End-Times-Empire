@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_Sabre_Low</defName>
+		<label>Empire saber</label>
+		<description>An Empire sabre. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Sabre_mid</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>60</costStuffCount>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<Mass>0.85</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_Sabre_High</defName>
+		<label>Empire improved saber</label>
+		<description>A fine Empire sabre. Great for stabbing or slashing. It's very light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Sabre_fancy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>80</costStuffCount>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.8</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_Rapier_Low</defName>
+		<label>Empire rapier</label>
+		<description>An Empire rapier, with a cupped hand guard. Good for stabbing mostly, but can make shallow cuts on the slashing attack. It's very light and nimble, which gives it some advantages over regular swords, just don't try to parry anything other than another rapier with it.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Rapier_cup</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>55</costStuffCount>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>0.75</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_Rapier_High</defName>
+		<label>Empire improved rapier</label>
+		<description>An fine Empire rapier, with a cupped hand guard. Good for stabbing mostly, but can make shallow cuts on the slashing attack. It's very light and nimble, which gives it some advantages over regular swords, just don't try to parry anything other than another rapier with it.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Rapier_grand</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>75</costStuffCount>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>10500</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.35</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_FryingPan</defName>
+		<label>Empire frying pan</label>
+		<description>An Empire frying pan for cooking. Improves cook speed, and works as a decent weapon in a fight.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_FryingPan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>60</costStuffCount>
+		<equippedStatOffsets>
+			<CookSpeed>.10</CookSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_FryingPan</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<Mass>0.85</Mass>
+		</statBases>
+		<!--<equippedAngleOffset>-60</equippedAngleOffset>-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>pan</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Cooking</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+  
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_Sword_Low</defName>
+		<label>Empire sword</label>
+		<description>An Empire sword. Good for stabbing or slashing.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Sword_simple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>60</costStuffCount>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+			<li>RH_TET_Empire_Melee_Sword_Basic</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+  
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_Sword_High</defName>
+		<label>Empire improved sword</label>
+		<description>A nice Empire sword. Good looking, and very effective at stabbing and slashing. Finely crafted, and therefore quicker in combat than many counterparts.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Sword_elaborate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Gold>1</Gold>
+		</costList>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+			<li>RH_TET_Empire_Melee_Sword_High</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.05</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- ==================== Base for Spears and Halberds ==================== -->
+	<ThingDef Name="RH_TET_SpearHalberdBase" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,0.60)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.1,0,0.60)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.60)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.1,0,0.60)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_SpearHalberdBase">
+		<defName>RH_TET_Empire_Spear_Low</defName>
+		<label>Empire spear</label>
+		<description>A fighting spear with a metal tip. Used by Empire infantry for its effectiveness against mounted enemies.</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Spear_simple</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<WoodLog>60</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+			<li>RH_TET_Empire_Melee_Spear_Basic</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RH_TET_EmpireSpearLow_Proj</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>5</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.4</armorPenetration>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>RH_TET_EmpireSpearLow_Proj</defName>
+		<label>Empire spear</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_SpearLow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_SpearHalberdBase">
+		<defName>RH_TET_Empire_Spear_High</defName>
+		<label>Empire improved spear</label>
+		<description>A very well made fighting spear with a metal tip. Used by Empire infantry for its effectiveness against mounted enemies.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Spear_fancy</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RH_TET_EmpireSpearHigh_Proj</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>5</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<armorPenetration>0.55</armorPenetration>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>RH_TET_EmpireSpearHigh_Proj</defName>
+		<label>Empire spear</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_SpearHigh</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>19</damageAmountBase>
+			<armorPenetrationBase>0.28</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_SpearHalberdBase">
+		<defName>RH_TET_Empire_Halberd_Low</defName>
+		<label>Empire halberd</label>
+		<description>A large head on a long wooden pole. Used by Empire infantry for its effectiveness against mounted enemies, and it's strength.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Halberd_fancy</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<WoodLog>80</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+			<li>RH_TET_Empire_Melee_Halberd_Basic</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RH_TET_EmpireHalberdLow_Proj</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>5</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<armorPenetration>0.45</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>RH_TET_EmpireHalberdLow_Proj</defName>
+		<label>Empire halberd</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_HalberdLow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_SpearHalberdBase">
+		<defName>RH_TET_Empire_Halberd_High</defName>
+		<label>Empire improved halberd</label>
+		<description>A large and finely crafted head on a long wooden pole. Used by Empire infantry for its effectiveness against mounted enemies, and it's strength.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Halberd_elaborate</texPath>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<WoodLog>80</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeHand_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RH_TET_EmpireHalberdHigh_Proj</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>5</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>26</power>
+				<armorPenetration>0.55</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>RH_TET_EmpireHalberdHigh_Proj</defName>
+		<label>Empire halberd</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_HalberdHigh</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Flails ==================== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>RH_TET_Empire_Flail_Low</defName>
+		<label>Empire wooden flail</label>
+		<description>A wooden flail. It's a hard spiked wooden head attached to a wooden handle.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Flail_wooden</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>1.1</Mass>
+		</statBases>
+		<equippedAngleOffset>-50</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeGreat_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+			<li>RH_TET_Empire_Melee_Flail_Basic</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>RH_TET_Empire_Flail_High</defName>
+		<label>Empire improved flail</label>
+		<description>A fine Empire flail. It's a hard spiked metal head attached to a wooden handle via a chain.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Flail_fancy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>2.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-50</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeGreat_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- ==================== Greatswords ==================== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_GreatSword_Low</defName>
+		<label>Empire greatsword</label>
+		<description>A massive Empire sword. Takes two hands to wield, but does much damage.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Greatsword_simple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Great_Low</li>
+			<li>RH_TET_Empire_Melee_Greatsword_Basic</li>
+		</weaponTags>
+		<costStuffCount>150</costStuffCount>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>4.0</Mass>
+		</statBases>
+		<equippedAngleOffset>-30</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>38</power>
+				<cooldownTime>2.7</cooldownTime>
+				<armorPenetration>1.0</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeGreat_Basic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_GreatSword_High</defName>
+		<label>Empire improved greatsword</label>
+		<description>A finely crafted massive Empire sword. Takes two hands to wield, but does much damage.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Greatsword_fancy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Great_High</li>
+			<li>RH_TET_Empire_Melee_Greatsword_High</li>
+		</weaponTags>
+		<costStuffCount>205</costStuffCount>
+		<statBases>
+			<WorkToMake>27000</WorkToMake>
+			<Mass>4.0</Mass>
+		</statBases>
+		<equippedAngleOffset>-30</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>38</power>
+				<cooldownTime>2.7</cooldownTime>
+				<armorPenetration>1.2</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeGreat_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_GreatSword_Carroburg</defName>
+		<label>Empire Carroburg greatsword</label>
+		<description>A finely crafted massive Empire sword, in the style unique to Carroburg. Takes two hands to wield, but does much damage. Lighter than a standard design greatsword, making it slightly faster to wield.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Greatsword_Carroburg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Great_High</li>
+			<li>RH_TET_Empire_Melee_Greatsword_High</li>
+		</weaponTags>
+		<costStuffCount>205</costStuffCount>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>3.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-30</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Gold>2</Gold>
+		</costList>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.1</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.1</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>38</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetration>1.2</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeGreat_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>RH_TET_Empire_GreatHammer_Sigmar</defName>
+		<label>Empire great hammer</label>
+		<description>A fine great hammer, crafted by the men of the Empire. Amazing for cracking heads and busting up enemies, regardless of their armor. Can stun enemies.\n\nThese great hammers are made in the name of Sigmar, and are intended for the warrior priests of Sigmar to wield.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Greathammer_Sigmar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>125</costStuffCount>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>4.0</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+		<costList>
+			<WoodLog>50</WoodLog>
+			<Gold>1</Gold>
+		</costList>
+		<weaponTags>
+			<li>RH_TET_Empire_Faithful_Sigmar</li>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>39</power>
+				<cooldownTime>2.7</cooldownTime>
+				<armorPenetration>1.25</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeGreat_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RH_TET_Empire_GreatAxe_Ulric</defName>
+		<label>Empire great axe</label>
+		<description>A fine great axe, crafted by the men of the Empire. Amazing for the heads or limbs from enemies, regardless of their armor.\n\nThese great hammers are made in the name of Ulric, and are intended for the warrior priests of Ulric to wield.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Greataxe_Ulric</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>RH_TET_Empire_Faithful_Ulric</li>
+		</weaponTags>
+		<costStuffCount>130</costStuffCount>
+		<statBases>
+			<WorkToMake>25500</WorkToMake>
+			<Mass>4.0</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee</li>
+		</thingCategories>
+		<costList>
+			<WoodLog>60</WoodLog>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>39</power>
+				<cooldownTime>2.7</cooldownTime>
+				<armorPenetration>1.3</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Weapons_MeleeGreat_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+	</ThingDef>
+ 
+	<!-- ============ Standards ============ -->
+	<ThingDef Name="RH_TET_StandardBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
+		<graphicData>
+			<drawSize>1.8</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Cloth>50</Cloth>
+		</costList>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RH_TET_EmpireSpearHigh_Proj</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>5</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>21</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RH_TET_Empire_Weapons</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_WeaponsMelee_Standards</li>
+		</thingCategories>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,1.10)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.1,0,1.10)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,1.10)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.1,0,1.10)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Averland</defName>
+		<label>Empire Averland standard</label>
+		<description>A standard for the Empire state of Averland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardAverland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsAverland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Hochland</defName>
+		<label>Empire Hochland standard</label>
+		<description>A standard for the Empire state of Hochland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardHochland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsHochland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Middenland</defName>
+		<label>Empire Middenland standard</label>
+		<description>A standard for the Empire state of Middenland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardMiddenland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsMiddenland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Ostermark</defName>
+		<label>Empire Ostermark standard</label>
+		<description>A standard for the Empire state of Ostermark, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardOstermark</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsOstermark</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Ostland</defName>
+		<label>Empire Ostland standard</label>
+		<description>A standard for the Empire state of Ostland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardOstland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsOstland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Stirland</defName>
+		<label>Empire Stirland standard</label>
+		<description>A standard for the Empire state of Stirland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardStirland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsStirland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Talabheim</defName>
+		<label>Empire Talabheim standard</label>
+		<description>A standard for the Empire state of Talabheim, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardTalabecland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsTalabheim</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Nordland</defName>
+		<label>Empire Nordland standard</label>
+		<description>A standard for the Empire state of Nordland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardNordland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsNordland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Reikland</defName>
+		<label>Empire Reikland standard</label>
+		<description>A standard for the Empire state of Reikland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardReikland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsReikland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_Wissenland</defName>
+		<label>Empire Wissenland standard</label>
+		<description>A standard for the Empire state of Wissenland, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardWissenland</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_ColorsWissenland</li>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_StandardBase">
+		<defName>RH_TET_Empire_Standard_State</defName>
+		<label>Empire war standard</label>
+		<description>A warbanner standard for the Empire, mounted to a spear pole. Raises the spirits of those around it, and make a reasonably effective weapon.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_BattleStandardSigmar</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+ 
+</Defs>

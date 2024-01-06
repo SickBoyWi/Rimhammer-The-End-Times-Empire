@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RH_TET_Empire>Rimhammer - The End Times - Empire</RH_TET_Empire>
+
+	<!-- Honey stuff -->
+	<RH_TET_Empire_FlowersAvailable>Flowers in range</RH_TET_Empire_FlowersAvailable>
+	<RH_TET_Empire_HoneyReady>Honey progress</RH_TET_Empire_HoneyReady>
+	<RH_TET_Empire_TimeRemaining>Remaining time {0}</RH_TET_Empire_TimeRemaining>
+	<RH_TET_Empire_QueenBeeDeadTemp>A queen bee perished due to the temperature.</RH_TET_Empire_QueenBeeDeadTemp>
+	<RH_TET_Empire_QueenBeeDeadTime>A queen bee died due to being kept in a jar too long.</RH_TET_Empire_QueenBeeDeadTime>
+	<RH_TET_Empire_ContainsMustMead>Contains {0} / {1} mead must.</RH_TET_Empire_ContainsMustMead>
+	<RH_TET_Empire_ContainsMead>Contains {0} / {1} mead.</RH_TET_Empire_ContainsMead>
+	<RH_TET_Empire_NoMustMead>need mead must</RH_TET_Empire_NoMustMead>
+
+	<!-- Jerky stuff -->
+	<RH_TET_Empire_ContainsSmoking>Contains {0} / {1} smoking meat.</RH_TET_Empire_ContainsSmoking>
+	<RH_TET_Empire_ContainsSmokingMeat>Contains {0} / {1} smoked meat.</RH_TET_Empire_ContainsSmokingMeat>
+	<RH_TET_Empire_Smoked>smoked</RH_TET_Empire_Smoked>
+	<RH_TET_Empire_SmokingProgress>{0} smoked, {1} time remaining.</RH_TET_Empire_SmokingProgress>
+	<RH_TET_Empire_SmokerOutOfIdealTemperature>Outside ideal temperature, current smoking rate {0}.</RH_TET_Empire_SmokerOutOfIdealTemperature>
+	<RH_TET_Empire_IdealSmokingTemperature>Ideal smoking temperature</RH_TET_Empire_IdealSmokingTemperature>
+	<RH_TET_Empire_NoBrinedMeat>need brined meat</RH_TET_Empire_NoBrinedMeat>
+	
+	<!-- Incidents -->
+	<!-- Faithful Hunted -->
+	<RH_TET_Empire_RefugeeChasedTitle>Faithful hunted at {0}</RH_TET_Empire_RefugeeChasedTitle>
+	<RH_TET_Empire_RefugeeChasedInitial>{PAWN_titleIndef} named {PAWN_nameDef} contacts you magically from nearby. {PAWN_pronoun} is being hunted by {2} from {3}!\n\n{PAWN_pronoun} asks for sanctuary, and offers to join your group. {PAWN_pronoun} apologizes for not being able to provide more information, but does promise to use the powers of faith that {PAWN_pronoun} has been granted in order to assist your cause. \n\nBe warned - if you accept, you'll have to fight off the {2} on {PAWN_possessive} tail. Their group is large, as {PAWN_nameDef} is a powerful person, it is composed of:\n\n{4}</RH_TET_Empire_RefugeeChasedInitial>
+	<RH_TET_Empire_RefugeeChasedInitial_Accept>Offer sanctuary</RH_TET_Empire_RefugeeChasedInitial_Accept>
+	<RH_TET_Empire_RefugeeChasedInitial_Reject>Ignore the message</RH_TET_Empire_RefugeeChasedInitial_Reject>
+	<RH_TET_Empire_RefugeeChasedRejected>{1_labelShort} accepts your decision, and will move on.</RH_TET_Empire_RefugeeChasedRejected>
+	<RH_TET_Empire_RefugeeChasedMagicTitle>Wizard hunted at {0}</RH_TET_Empire_RefugeeChasedMagicTitle>
+	<RH_TET_Empire_RefugeeChasedMagicInitial>{PAWN_titleIndef} named {PAWN_nameDef} contacts you magically from nearby. {PAWN_pronoun} is being hunted by {2} from {3}!\n\n{PAWN_pronoun} asks for sanctuary, and offers to join your group. {PAWN_pronoun} apologizes for not being able to provide more information, but does promise to use the powers of magic that {PAWN_pronoun} has been granted in order to assist your cause. \n\nBe warned - if you accept, you'll have to fight off the {2} on {PAWN_possessive} tail. Their group is large, as {PAWN_nameDef} is a powerful person, it is composed of:\n\n{4}</RH_TET_Empire_RefugeeChasedMagicInitial>
+	<RH_TET_LabelTrollsWandersIn>Trolls Wander In</RH_TET_LabelTrollsWandersIn>
+	<RH_TET_TrollsWandersIn>A group of trolls has wandered into the area.\n\nExtremely stupid, though aggressive by nature, these beasts can be dangerous when confronted. Their hide is very useful, and their hearts are valuable for making magic items.\n\nThe trolls will lurk around the area until destroyed.</RH_TET_TrollsWandersIn>
+	
+	<!-- Building Stuff -->
+	<RH_TET_Empire_WallNeeded>Must be placed on walls.</RH_TET_Empire_WallNeeded>
+	<RH_TET_Empire_OpenSpaceNeeded>Must have open space in front.</RH_TET_Empire_OpenSpaceNeeded>
+	<RH_TET_Empire_PlaceWorker_UnderCeiling>Must be placed under a roof.</RH_TET_Empire_PlaceWorker_UnderCeiling><RH_TET_WarnBoth>Must be placed on a wall, facing an open tile.</RH_TET_WarnBoth>
+	<RH_TET_WarnNeedWall>Must be placed on a wall.</RH_TET_WarnNeedWall>
+	<RH_TET_WarnBlocked>Must be facing an open tile.</RH_TET_WarnBlocked>
+	<RH_TET_DestroyedBlocked>Light destroyed because it was blocked.</RH_TET_DestroyedBlocked>
+	<RH_TET_DestroyedWall>Light destroyed because wall was destroyed.</RH_TET_DestroyedWall>
+	
+	<!-- Quest stuff -->
+	<RH_TET_Empire_SigmarHammerHelp>You've reached the location of Ghal Maraz, the legendary Hammer of Sigmar that is held by the foul beastmen. Defeat them, and claim the hammer as your own!\n\nThis hammer is used in conjunction with the Effigy of Sigmar to smite all the foes of Order in a large area around of the planet.</RH_TET_Empire_SigmarHammerHelp>
+	<RH_TET_Empire_HostileReasonSigmarHammer>They believe Ghal Maraz is theirs to destroy. They will fight for it!</RH_TET_Empire_HostileReasonSigmarHammer>
+	<RH_TET_Empire_ReclaimedSigmarHammerLabel>Warhammer Obtained</RH_TET_Empire_ReclaimedSigmarHammerLabel>
+	<RH_TET_Empire_ReclaimedSigmarHammerDesc>The beastmen at the {0} have been destroyed.\n\nIt was a glorious day for the Empire! Claim the warhammer Ghal Maraz as your own, and return home with it.\n\nThe much coveted warhammer will be needed when the folk of the Empire call upon Sigmar to smite the foes of Order and attempt to stop the End Times. Build the Effigy of Sigmar, and have your chosen hero equip Ghal Maraz, and call upon the power of Sigmar at the effigy.</RH_TET_Empire_ReclaimedSigmarHammerDesc>
+	<RH_TET_Empire_FailedToClaimHammerLabel>Your Attack Was Repelled</RH_TET_Empire_FailedToClaimHammerLabel>
+	<RH_TET_Empire_FailedToClaimHammerDesc>Your attempt to capture Ghal Maraz failed. Any of your attackers that survived are probably slaves, dying in agony, or being eaten by beastmen.\n\nPerhaps you can try again later, although your enemies would certainly have rebuilt their defenses by then.</RH_TET_Empire_FailedToClaimHammerDesc>
+	<RH_TET_Empire_LeaveCommand>Leave</RH_TET_Empire_LeaveCommand>
+	<RH_TET_Empire_LeaveCommandDesc>Form a caravan and leave.</RH_TET_Empire_LeaveCommandDesc>
+	<RH_TET_Empire_CaravanArrivedAt/>
+	<RH_TET_Empire_SigmarHammerSiteInfo>Ghal Maraz is here, and beastmen are attempting to get it.</RH_TET_Empire_SigmarHammerSiteInfo>
+	<RH_TET_Empire_SigmarHammerSiteBeastsInfo>There are 40 beastmen at this location.</RH_TET_Empire_SigmarHammerSiteBeastsInfo>
+	
+	<!-- Effigy of Sigmar stuff. -->
+	<RH_TET_Empire_PoweringUp>Powering up</RH_TET_Empire_PoweringUp>
+	<RH_TET_Empire_Cancel>Cancel</RH_TET_Empire_Cancel>
+	<RH_TET_Empire_CommandCancelPowering>Cancel powering up of the Effigy. You can restart again later. This will release all energy, causing no damage, and stop the extra raids from happening.</RH_TET_Empire_CommandCancelPowering>
+	<RH_TET_Empire_PoweringCancelled>Powering up of Effigy of Sigmar cancelled.</RH_TET_Empire_PoweringCancelled>
+	<RH_TET_Empire_CommandPower>Begin Powering</RH_TET_Empire_CommandPower>
+	<RH_TET_Empire_CommandPowerDesc>Hold a ceremony that will begin with the gathering of all those available, and the wielder of the weapon of power standing before the effigy to call upon Sigmar to smite all nearby foes. Upon completion of the ceremony, the effigy will power up, and then release that power to destroy all foes in a large radius of the world. The powering up will take 15 days, and once complete, you will have achieved victory.</RH_TET_Empire_CommandPowerDesc>
+	<RH_TET_Empire_CommandPowerDescUnavailable>You have no pawns available with Ghal Maraz, or the Hammer of Ulric. One of those mighty weapons is required in order to begin powering the Effigy. You also must own the effigy, should you not already.</RH_TET_Empire_CommandPowerDescUnavailable>
+	<RH_TET_Empire_CommandPowerDescUnavailablePowered>Effigy is already fully powered.</RH_TET_Empire_CommandPowerDescUnavailablePowered>
+	<RH_TET_Empire_CommandSmite>Smite All Foes</RH_TET_Empire_CommandSmite>
+	<RH_TET_Empire_CommandSmiteDesc>Destroy all foes on the map, and in a wide radius of the planet. This is how the Empire folks win the game.</RH_TET_Empire_CommandSmiteDesc>
+	<RH_TET_Empire_CommandSmiteDescUnavailable>The effigy must be fully charged in order to smite all foes.</RH_TET_Empire_CommandSmiteDescUnavailable>
+	<RH_TET_Empire_PoweringCeremonyAlready>Powering up already.</RH_TET_Empire_PoweringCeremonyAlready>
+	<RH_TET_Empire_EffigyNoInstigator>No able bodied pawn available that is equipped with Ghal Maraz or the Hammer of Ulric.</RH_TET_Empire_EffigyNoInstigator>
+	<RH_TET_Empire_EffigyNoEffigy>The Effigy of Sigmar is currently unavailable.</RH_TET_Empire_EffigyNoEffigy>
+	<RH_TET_Empire_EffigyPoweringAlready>The Effigy of Sigmar is already powering.</RH_TET_Empire_EffigyPoweringAlready>
+	<RH_TET_Empire_EffigyAbortPowering>Aborting Effigy of Sigmar power up.</RH_TET_Empire_EffigyAbortPowering>
+	<RH_TET_Empire_EffigyGathering>The people gather for the Effigy of Sigmar powering up ceremony.</RH_TET_Empire_EffigyGathering>
+	<RH_TET_Empire_Victory>Congratulations! You've succeeded in your quest. The Effigy of Sigmar has powered completely, and released that power in a destructive blast that destroyed all enemies of Order in a very large radius. If every Empire settlement does their part, the entire world should be purged of evil, and will become a safe place to live for good folk.\n\nYour stalwart defenses have stood against everything the foul beastmen and chaos monsters could throw at them, and your victory is well deserved.\n\nThis mod was developed by Johnny Hastings (@SickBoyWI). Special thanks to @Dino's Bar and Grill for the fantastic artwork he generously donated his time and skills for that went into this mod; it made the Rimhammer - The End Times mod series that much more great.\n\nThank you for playing.\n\nYou're free to call it a win for now, or keep playing and see what else happens in the world. If that's the case, hit the escape key to return to the game.\n\nPlease look me up on Patreon, or Ko-Fi and donate what you feel this was worth! I'm one guy who spends a whole lot of time on these mods. This Empire mod took over a year to complete by itself. If you enjoyed it, then please show your love! I'll be encouraged to finish the other factions/races that much quicker if everyone contributes.</RH_TET_Empire_Victory>
+	<RH_TET_Empire_AttendingEffigyCere>Attending Effigy of Sigmar power up ceremony.</RH_TET_Empire_AttendingEffigyCere>
+	<RH_TET_Empire_ReflectingOnCeremony>Reflecting on Effigy of Sigmar power up ceremony.</RH_TET_Empire_ReflectingOnCeremony>
+	<RH_TET_Empire_Initiating>Ceremony honoring Sigmar in progress</RH_TET_Empire_Initiating>
+	<RH_TET_Empire_SmitingFoes>Ready to smite all foes!</RH_TET_Empire_SmitingFoes>
+	<RH_TET_Empire_NotInUse>Resting</RH_TET_Empire_NotInUse>
+	
+</LanguageData>

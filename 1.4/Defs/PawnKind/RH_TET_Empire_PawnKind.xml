@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- TODO - ADD ALL EMPIRE PAWN KINDS TO THE SOURCE CODE UTIL METHOD CHECK. -->
+
+	<PawnKindDef Abstract="True" Name="RH_TET_EmpirePlayerPawnKind">
+		<race>Human</race>
+		<combatPower>30</combatPower>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RH_TET_Empire_Backstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>RH_TET_Empire_Bread</invFoodDef>
+		<initialResistanceRange>0~0</initialResistanceRange>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RH_TET_EmpirePlayerPawnKind">
+		<defName>RH_TET_EmpireVillager</defName>
+		<label>Empire villager</label>
+		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>RH_TET_Empire_Mid</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>400</min>
+			<max>600</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+	<PawnKindDef Name="RH_TET_EmpirePawnKind" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>RH_TET_Empire_Bread</invFoodDef>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<!--
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+	-->
+		<inventoryOptions>
+			<skipChance>0.70</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>90</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>30~100</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RH_TET_Empire_Backstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<initialWillRange>1~3</initialWillRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Civilian</defName>
+		<label>civilian</label>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Basic</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Mid</li>
+		</apparelTags>
+		<apparelMoney>300~500</apparelMoney>
+		<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+		</weaponTags>
+		<weaponMoney>150~300</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Trader</defName>
+		<label>Empire trader</label>
+		<combatPower>40</combatPower>
+		<trader>true</trader>
+		<gearHealthRange>1~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Fine</li>
+		</apparelTags>
+		<apparelMoney>600~1000</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Pistol_High</li>
+		</weaponTags>
+		<weaponMoney>500~800</weaponMoney>
+		<techHediffsChance>0.01</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Flagellant</defName>
+		<label>flagellant</label>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.2~0.8</gearHealthRange>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>100~300</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Flail_Basic</li>
+		</weaponTags>
+		<weaponMoney>130~300</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>100~500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_FreeCompany_Melee</defName>
+		<label>free company</label>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</apparelTags>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Basic</li>
+		</weaponTags>
+		<weaponMoney>150~300</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_FreeCompanyCaptain_Melee</defName>
+		<label>free company captain</label>
+		<combatPower>50</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>RH_TET_Empire_Armor_Mid</li>
+		</apparelTags>
+		<apparelMoney>500~800</apparelMoney>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_High</li>
+		</weaponTags>
+		<weaponMoney>400~800</weaponMoney>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_FreeCompany_Ranged</defName>
+		<label>free company</label>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</apparelTags>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Ranged_Low</li>
+		</weaponTags>
+		<weaponMoney>200~400</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Huntsman</defName>
+		<label>huntsman</label>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Basic</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Mid</li>
+			<li>RH_TET_Empire_Apparel_Headwear_fine</li>
+		</apparelTags>
+		<apparelMoney>300~600</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Huntsman</li>
+		</weaponTags>
+		<weaponMoney>250~600</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>6~18</initialResistanceRange>
+		<initialWillRange>1~2</initialWillRange>
+		<apparelColor>(68,101,0)</apparelColor>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<favoriteColor>(68,101,0)</favoriteColor>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_FreeCompanyCaptain_Ranged</defName>
+		<label>free company captain</label>
+		<combatPower>60</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>RH_TET_Empire_Armor_Mid</li>
+		</apparelTags>
+		<apparelMoney>500~800</apparelMoney>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Ranged_High</li>
+		</weaponTags>
+		<weaponMoney>400~800</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+  
+	<!-- Start of proper Empire soldiery. -->
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Spearman</defName>
+		<label>spearman</label>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Soldier</li>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</apparelTags>
+		<apparelMoney>400~600</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Spear_Basic</li>
+		</weaponTags>
+		<weaponMoney>150~300</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>15~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Swordsman</defName>
+		<label>swordsman</label>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Soldier</li>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</apparelTags>
+		<apparelMoney>400~600</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Sword_Basic</li>
+		</weaponTags>
+		<weaponMoney>150~300</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>15~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Halberdier</defName>
+		<label>halberdier</label>
+		<combatPower>40</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Soldier</li>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</apparelTags>
+		<apparelMoney>400~600</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Halberd_Basic</li>
+		</weaponTags>
+		<weaponMoney>250~350</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>15~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Greatsword</defName>
+		<label>greatsword</label>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Officer</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Greatsword</li>
+			<li>RH_TET_Empire_Armor_Mid</li>
+			<li>RH_TET_Empire_Armor_High</li>
+		</apparelTags>
+		<apparelMoney>500~800</apparelMoney>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Greatsword_Basic</li>
+		</weaponTags>
+		<weaponMoney>500~900</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>20~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Crossbowman</defName>
+		<label>crossbowman</label>
+		<combatPower>70</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Soldier</li>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</apparelTags>
+		<apparelMoney>300~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Ranged_Crossbow_Basic</li>
+		</weaponTags>
+		<weaponMoney>300~500</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>15~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Handgunner</defName>
+		<label>handgunner</label>
+		<combatPower>75</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Soldier</li>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</apparelTags>
+		<apparelMoney>300~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Ranged_Handgun_Basic</li>
+		</weaponTags>
+		<weaponMoney>350~500</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>15~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Pistolier</defName>
+		<label>pistolier</label>
+		<combatPower>75</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Soldier</li>
+			<li>RH_TET_Empire_Armor_mid</li>
+		</apparelTags>
+		<apparelMoney>500~800</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Pistol_Low</li>
+		</weaponTags>
+		<weaponMoney>300~500</weaponMoney>
+		<techHediffsChance>0.01</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>20~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Captain_Melee</defName>
+		<label>captain</label>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>1~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Officer</li>
+			<li>RH_TET_Empire_Armor_High</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Captain</li>
+		</apparelTags>
+		<apparelMoney>800~1200</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Sword_High</li>
+			<li>RH_TET_Empire_Melee_Greatsword_High</li>
+		</weaponTags>
+		<weaponMoney>350~600</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Captain_Ranged</defName>
+		<label>captain</label>
+		<combatPower>60</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>1~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Officer</li>
+			<li>RH_TET_Empire_Armor_High</li>
+			<li>RH_TET_Empire_Apparel_Headwear_Captain</li>
+		</apparelTags>
+		<apparelMoney>800~1200</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Ranged_High</li>
+		</weaponTags>
+		<weaponMoney>350~600</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Grenadier</defName>
+		<label>gremadier</label>
+		<combatPower>90</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>1~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Officer</li>
+			<li>RH_TET_Empire_Armor_Mid</li>
+		</apparelTags>
+		<apparelMoney>800~1200</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Sapper</li>
+		</weaponTags>
+		<canBeSapper>true</canBeSapper>
+		<weaponMoney>620~800</weaponMoney>
+		<techHediffsChance>0.01</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+		<requiredWorkTags>
+			<li>Mining</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<inventoryOptions>
+			<skipChance>0.75</skipChance>
+			<thingDef>Silver</thingDef>
+			<countRange>
+				<min>10</min>
+				<max>20</max>
+			</countRange>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Cook</defName>
+		<label>cook</label>
+		<combatPower>30</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<isFighter>true</isFighter>
+		<chemicalAddictionChance>0.01</chemicalAddictionChance>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<invNutrition>5.0</invNutrition>
+		<gearHealthRange>.8~2</gearHealthRange>
+		<weaponMoney>250~300</weaponMoney>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_FryingPan</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_BasicShirt</li>
+			<li>Apparel_Pants</li>
+			<li>RH_TET_Empire_Toque</li>
+		</apparelRequired>
+		<apparelColor>(225,225,225)</apparelColor>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
+  
+</Defs>

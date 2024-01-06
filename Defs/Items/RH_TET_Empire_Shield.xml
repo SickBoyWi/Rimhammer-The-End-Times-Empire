@@ -1,0 +1,1583 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality" Name="RH_TET_Empire_ShieldBase" Abstract="True">
+		<equipmentType>None</equipmentType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase" Name="RH_TET_Empire_ShieldBase_Low" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Armor_Basic</li></researchPrerequisites>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Mass>2.0</Mass>
+		</statBases>
+		<equippedAngleOffset>10</equippedAngleOffset>
+		<weaponTags>
+			<li>RH_TET_Empire_Armor_Low</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9.0</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>buckle</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9.0</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase" Name="RH_TET_Empire_ShieldBase_Mid" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Armor_Improved</li></researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2.7</Mass>
+		</statBases>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<weaponTags>
+			<li>RH_TET_Empire_Armor_Mid</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>buckle</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase" Name="RH_TET_Empire_ShieldBase_High" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Armor_Advanced</li></researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<Gold>2</Gold>
+		</costList>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<MaxHitPoints>240</MaxHitPoints>
+			<Mass>3.3</Mass>
+		</statBases>
+		<equippedAngleOffset>5</equippedAngleOffset>
+		<weaponTags>
+			<li>RH_TET_Empire_Armor_High</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.0</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>buckle</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.0</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Talabheim</defName>
+		<label>Talabheim shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the red and white colors of the Empire state of Talabheim.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Talabheim/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Talabheim</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Talabheim/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Talabheim</defName>
+		<label>Talabheim improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the red and white colors of the Empire state of Talabheim.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Talabheim/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Talabheim</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Talabheim/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Talabheim</defName>
+		<label>Talabheim fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the red and white colors of the Empire state of Talabheim.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Talabheim/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Talabheim</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Talabheim/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Middenland</defName>
+		<label>Middenland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the blue and white colors of the Empire state of Middenland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Middenland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Middenland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Middenland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Middenland</defName>
+		<label>Middenland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the blue and white colors of the Empire state of Middenland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Middenland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Middenland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Middenland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Middenland</defName>
+		<label>Middenland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the blue and white colors of the Empire state of Middenland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Middenland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Middenland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Middenland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Averland</defName>
+		<label>Averland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the black and yellow colors of the Empire state of Averland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Averland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Averland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Averland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Averland</defName>
+		<label>Averland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the black and yellow colors of the Empire state of Averland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Averland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Averland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Averland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Averland</defName>
+		<label>Averland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the black and yellow colors of the Empire state of Averland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Averland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Averland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Averland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Ostermark</defName>
+		<label>Ostermark shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the red and yellow colors of the Empire state of Ostermark.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Ostermark/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Ostermark</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Ostermark/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Ostermark</defName>
+		<label>Ostermark improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the red and yellow colors of the Empire state of Ostermark.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Ostermark/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Ostermark</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Ostermark/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Ostermark</defName>
+		<label>Ostermark fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the red and yellow colors of the Empire state of Ostermark.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Ostermark/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Ostermark</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Ostermark/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Ostland</defName>
+		<label>Ostland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the black and white colors of the Empire state of Ostland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Ostland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Ostland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Ostland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Ostland</defName>
+		<label>Ostland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the black and white colors of the Empire state of Ostland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Ostland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Ostland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Ostland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Ostland</defName>
+		<label>Ostland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the black and white colors of the Empire state of Ostland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Ostland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Ostland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Ostland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Hochland</defName>
+		<label>Hochland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the red and green colors of the Empire state of Hochland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Hochland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Hochland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Hochland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Hochland</defName>
+		<label>Hochland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the red and green colors of the Empire state of Hochland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Hochland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Hochland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Hochland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Hochland</defName>
+		<label>Hochland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the red and green colors of the Empire state of Hochland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Hochland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Hochland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Hochland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Stirland</defName>
+		<label>Stirland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the yellow and green colors of the Empire state of Stirland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Stirland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Stirland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Stirland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Stirland</defName>
+		<label>Stirland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the yellow and green colors of the Empire state of Stirland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Stirland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Stirland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Stirland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Stirland</defName>
+		<label>Stirland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the yellow and green colors of the Empire state of Stirland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Stirland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Stirland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Stirland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Reikland</defName>
+		<label>Reikland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the accented white (or fawn) colors of the Empire state of Reikland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Reikland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Reikland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Reikland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsReikland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Reikland</defName>
+		<label>Reikland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the accented white (or fawn) colors of the Empire state of Reikland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Reikland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Reikland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Reikland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsReikland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Reikland</defName>
+		<label>Reikland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the accented white (or fawn) colors of the Empire state of Reikland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Reikland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Reikland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Reikland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsReikland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Nordland</defName>
+		<label>Nordland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the blue and yellow colors of the Empire state of Nordland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Nordland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Nordland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Nordland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsNordland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Nordland</defName>
+		<label>Nordland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the blue and yellow colors of the Empire state of Nordland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Nordland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Nordland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Nordland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsNordland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Nordland</defName>
+		<label>Nordland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the blue and yellow colors of the Empire state of Nordland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Nordland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Nordland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Nordland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsNordland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Low">
+		<defName>RH_TET_Empire_Shield_Low_Wissenland</defName>
+		<label>Wissenland shield</label>
+		<description>An Empire soldier's shield. Easy to make, but only provides minimal protection. Painted in the white and gray colors of the Empire state of Wissenland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Wissenland/RH_TET_Empire_Shield_low</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Wissenland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<texPath>Things/Items/Shields/Wissenland/RH_TET_Empire_Shield_low</texPath>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.1)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsWissenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_Mid">
+		<defName>RH_TET_Empire_ShieldMid_Wissenland</defName>
+		<label>Wissenland improved shield</label>
+		<description>A sturdy Empire shield. Made mostly of metal, and provides good protection. Painted in the white and gray colors of the Empire state of Wissenland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Wissenland/RH_TET_Empire_Shield_mid</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Wissenland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Wissenland/RH_TET_Empire_Shield_mid</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.3, 0.053, -0.2)</westOffset>
+					<eastOffset>(0.3, -0.017, -0.2)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.4</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.25</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsWissenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ShieldBase_High">
+		<defName>RH_TET_Empire_ShieldHigh_Wissenland</defName>
+		<label>Wissenland fine shield</label>
+		<description>An elaborate Empire shield. Very well built. Typically carried by officers, not rank and file troops. Painted in the white and gray colors of the Empire state of Wissenland.</description>
+		<graphicData>
+			<texPath>Things/Items/Shields/Wissenland/RH_TET_Empire_Shield_high</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>RH_TET_Empire_Shields_Wissenland</li>
+		</thingCategories>
+		<comps>
+			<li Class="PawnShields.CompProperties_Shield">
+				<!-- Rendering systems -->
+				<wieldedGraphic>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<texPath>Things/Items/Shields/Wissenland/RH_TET_Empire_Shield_high</texPath>
+					<drawSize>(1.0, 1.0)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</wieldedGraphic>
+				<renderProperties>
+					<northOffset>(0.2, -0.017, -0.2)</northOffset>
+					<southOffset>(0.2, 0.033, -0.3)</southOffset>
+					<westOffset>(-0.2, 0.053, -0.1)</westOffset>
+					<eastOffset>(0.2, -0.017, -0.1)</eastOffset>
+					<flipRotation>true</flipRotation>
+					<renderWhenPeaceful>false</renderWhenPeaceful>
+				</renderProperties>
+				<!-- Blocking system (Optional???) -->
+				<canBlockRanged>true</canBlockRanged>
+				<canBlockMelee>true</canBlockMelee>
+				<meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+				<rangedBlockChanceFactor>0.3</rangedBlockChanceFactor>
+				<!-- Shield damage system (Optional) -->
+				<shieldTakeDamage>true</shieldTakeDamage>
+				<shieldTakeDamageFactor>1.2</shieldTakeDamageFactor>
+				<!-- Auto discard system (Optional) -->
+				<canBeAutoDiscarded>true</canBeAutoDiscarded>
+				<healthAutoDiscardThreshold>0.1</healthAutoDiscardThreshold>
+				<!-- Shield fatigue system (Optional) -->
+				<useFatigue>true</useFatigue>
+				<damageToFatigueFactor>0.005</damageToFatigueFactor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_ColorsWissenland</li></researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+	
+</Defs>

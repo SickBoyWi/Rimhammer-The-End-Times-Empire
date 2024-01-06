@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>RH_TET_Empire_CollectHoney</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_CollectHoney</driverClass>
+		<reportString>collecting honey from TargetA.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>RH_TET_Empire_FillFermenter</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_FillFermenter</driverClass>
+		<reportString>filling TargetA.</reportString>
+		<suspendable>false</suspendable>
+	</JobDef>
+
+	<JobDef>
+		<defName>RH_TET_Empire_TakeMeadOutOfFermenter</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_TakeMeadOutOfFermenter</driverClass>
+		<reportString>taking mead out of TargetA.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>RH_TET_Empire_PutBrineIntoSmoker</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_PutBrineIntoSmoker</driverClass>
+		<reportString>putting brined meat into TargetA.</reportString>
+		<suspendable>false</suspendable>
+	</JobDef>
+
+	<JobDef>
+		<defName>RH_TET_Empire_TakeBrinedMeatFromSmoker</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_TakeBrinedMeatFromSmoker</driverClass>
+		<reportString>taking brined meat out of TargetA.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>RH_TET_Empire_PlayLute</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_PlayLute</driverClass>
+		<reportString>playing TargetA.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>1</joyMaxParticipants>
+		<joySkill>Artistic</joySkill>
+		<joyXpPerTick>0.0015</joyXpPerTick>
+		<joyKind>RH_TET_Music</joyKind>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>RH_TET_Empire_AttendFire</defName>
+		<driverClass>JobDriver_WatchBuilding</driverClass>
+		<reportString>Tending to and stoking fire.</reportString>
+		<joyDuration>3000</joyDuration>
+		<joyMaxParticipants>1</joyMaxParticipants>
+		<joyGainRate>0.8</joyGainRate>
+		<joyKind>Meditative</joyKind>
+	</JobDef>
+  
+	<JobDef>
+		<defName>RH_TET_Empire_WatchFire</defName>
+		<driverClass>JobDriver_WatchTelevision</driverClass>
+		<reportString>Watching fire.</reportString>
+		<joyDuration>3000</joyDuration>
+		<joyMaxParticipants>2</joyMaxParticipants>
+		<joyGainRate>0.5</joyGainRate>
+		<joyKind>Meditative</joyKind>
+	</JobDef>
+  
+	<JobDef>
+		<defName>RH_TET_Empire_EffigyBeginHoldBeginPoweringCere</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_EffigyHoldCeremony</driverClass>
+		<reportString>holding effigy ceremony.</reportString>
+		<joyDuration>1500</joyDuration>
+		<joyGainRate>2</joyGainRate>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<joyMaxParticipants>30</joyMaxParticipants>
+		<joyKind>RH_TET_Empire_Worship</joyKind>
+	</JobDef>
+
+	<JobDef>
+		<defName>RH_TET_Empire_EffigyGathering</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_EffigyAttendCeremony</driverClass>
+		<reportString>attending ceremony.</reportString>
+		<joyDuration>250</joyDuration>
+		<joyGainRate>2</joyGainRate>
+		<joyMaxParticipants>30</joyMaxParticipants>
+		<joyKind>RH_TET_Empire_Worship</joyKind>
+	</JobDef>
+
+	<!--
+	<JobDef>
+		<defName>RH_TET_Empire_EffigyReflectOnPowering</defName>
+		<driverClass>TheEndTimes_Empire.JobDriver_ReflectOnResult</driverClass>
+		<reportString>reflecting on ceremony.</reportString>
+		<joyDuration>400</joyDuration>
+		<joyGainRate>1</joyGainRate>
+		<joyMaxParticipants>30</joyMaxParticipants>
+		<joyKind>RH_TET_Empire_Worship</joyKind>
+	</JobDef>
+	-->
+	
+</Defs>

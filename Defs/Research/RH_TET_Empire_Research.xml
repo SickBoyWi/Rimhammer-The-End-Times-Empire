@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--TODO - MOVE CREMATORIUM TO PRODUCTION RESEARCH -->
+  
+	<ResearchTabDef>
+		<defName>RH_TET_Empire_Tab</defName>
+		<label>The Empire</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef Name="RH_TET_EmpireResearch" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<tab>RH_TET_Empire_Tab</tab>
+		<requiredResearchBuilding>RH_TET_Empire_ResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectTagDef>
+		<defName>RH_TET_Empire_ProjectTag</defName>
+	</ResearchProjectTagDef>
+
+	<!-- Column 1 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsAverland</defName>
+		<label>Averland Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the black and yellow colors of the Empire state of Averland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.10</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsHochland</defName>
+		<label>Hochland Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the green and red colors of the Empire state of Hochland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.65</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsMiddenland</defName>
+		<label>Middenland Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the blue and white colors of the Empire state of Middenland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.2</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsNordland</defName>
+		<label>Nordland Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the blue and yellow colors of the Empire state of Nordland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.75</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsOstermark</defName>
+		<label>Ostermark Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the red and yellow colors of the Empire state of Ostermark.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.3</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsOstland</defName>
+		<label>Ostland Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the black and white colors of the Empire state of Ostland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.85</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsReikland</defName>
+		<label>Reik Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the red accented white (or fawn) colors of the Empire state of Reikland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>3.4</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsStirland</defName>
+		<label>Stirland Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the green and yellow colors of the Empire state of Stirland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>3.95</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsTalabheim</defName>
+		<label>Talabheim Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the red and white colors of the Empire state of Talabheim.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.5</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_ColorsWissenland</defName>
+		<label>Wissenland Colors</label>
+		<description>Unlocks the ability to make Empire military clothing, banners/standards, and shields in the gray and white colors of the Empire state of Wissenland.</description>
+		<baseCost>50</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.05</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Column 2 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Furniture</defName>
+		<label>Furniture</label>
+		<description>Unlocks the ability to make Empire furniture.</description>
+		<baseCost>200</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>ComplexFurniture</li>
+		</prerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.10</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Medicine</defName>
+		<label>Medicine</label>
+		<description>Unlocks the ability for Empire to make high quality medicine, much more effective than basic fungal or herbal medicine.\n\nCombining certain key ingredients can make the efficacy of natural medicines much more effictive.</description>
+		<baseCost>1000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.90</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Ranged_Basic</defName>
+		<label>Ranged Weaponry</label>
+		<description>Unlocks the ability to make basic Empire crossbows and huntsmans bows. Powerful weapons, with great range.</description>
+		<baseCost>600</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_StructureBasic</defName>
+		<label>Walls &amp; Structure</label>
+		<description>Allows for the building of Empire walls. These are sturdier structures than most.</description>
+		<baseCost>300</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>Stonecutting</li>
+		</prerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_DoorsBasic</defName>
+		<label>Doors</label>
+		<description>Allows for the building of basic Empire doors.</description>
+		<baseCost>300</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.65</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Cooking</defName>
+		<label>Cooking</label>
+		<description>Allows colonists to cook the foods of The Empire.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>3.40</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Gardening_Basic</defName>
+		<label>Gardening</label>
+		<description>Allows colonists to grow plants specific to the Empire of man.</description>
+		<baseCost>100</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.05</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Brewing</defName>
+		<label>Brewing</label>
+		<description>Allows colonists to make mead from bee's honey.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>Brewing</li>
+		</prerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.65</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Art</defName>
+		<label>Art</label>
+		<description>Allows colonists to make Empire themed art statues.</description>
+		<baseCost>250</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>5.15</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Column 3 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Joy_Basic</defName>
+		<label>Recreation</label>
+		<description>Allows colonists to make things intented for recreation.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.90</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_DoorsAdvanced</defName>
+		<label>Strong Doors</label>
+		<description>Allows for the building of strong Empire doors. They're well built, and will stand up to much abuse. They even look nice.\n\nGiven the horrors lurking around the olde worlde, especially in The End Times, it makes sense for the folk of the Empire to have the strongest door that they possibly can.</description>
+		<baseCost>700</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_DoorsBasic</li>
+		</prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.45</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_GatesBasic</defName>
+		<label>Gates</label>
+		<description>Allows for the building of Empire gates. Reasonably strong, made of wood and iron.\n\nThe people of the Empire require strong protection from greenskin and chaotic armies that frequently assault them. These gates and sturdy castle walls are often the first non-human step in that defense.</description>
+		<baseCost>450</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_DoorsBasic</li>
+		</prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.10</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_CookingAdvanced</defName>
+		<label>Food Preservation</label>
+		<description>Allows colonists of the Empire to preserve food.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Cooking</li>
+		</prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.60</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Gardening_Advanced</defName>
+		<label>Bee Keeping</label>
+		<description>Allows colonists to to set up artificial bee hives, which bees will settle in, and then begin producing honey. Honey can be used to make food, as a delicious treat, or to make alcoholic mead for drinking.</description>
+		<baseCost>750</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Gardening_Basic</li>
+		</prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>4.05</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Faith</defName>
+		<label>Faith</label>
+		<description>Unlocks the ability to make idols of the gods at a sculpting spot. The idols can then be used by pawns of the appropriate faith to create relics from which they will learn additional faith powers.</description>
+		<baseCost>12000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Art</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<!-- Column 4 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Weaving</defName>
+		<label>Weaving</label>
+		<description>Allows colonists to build a loom, and create rugs. Rugs beautify a room, and help control filth.</description>
+		<baseCost>1500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.75</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_BlackPowder</defName>
+		<label>Black Powder</label>
+		<description>Allows colonists to make black powder. Mineable saltpeter and sulfur can then be combined with wood for charcoal at a munitions bench, to be turned into black powder. Black powder is used to make rounds for black powder warmachines.</description>
+		<baseCost>1500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>1.90</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_RepairBasic</defName>
+		<label>Apparel Repair</label>
+		<description>Unlocks the ability for Empire folk to repair apparel at an Empire tailor bench.\n\nThe olde world is tough on clothing and apparel. Being able to repair clothing is a must, as resources can become scarce.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.65</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Weapons_MeleeHand_Basic</defName>
+		<label>Melee Hand Weapons</label>
+		<description>Unlocks the ability to make basic Empire melee hand weapons. Spears, swords, and halberds.</description>
+		<baseCost>350</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>4.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Apparel_Basic</defName>
+		<label>Apparel</label>
+		<description>Unlocks the ability to make Empire apparel. Shirts, pants, hats, and so on.</description>
+		<baseCost>300</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>5.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<!-- Column 5 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_StructureCastles</defName>
+		<label>Castle Walls</label>
+		<description>Allows for the building of Empire castle walls.</description>
+		<baseCost>800</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_StructureBasic</li>
+		</prerequisites>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_GatesAdvanced</defName>
+		<label>Strong Gates</label>
+		<description>Allows for the building of strong Empire gates. Solid metal or stone gates that can stand up to some real abuse.\n\nKeeping the people alive, and sending back their greenskin and chaos foes is a priority for Empire leadership. Gates such as this allow the men and women of the Empire to feel safe when inside the castle or settlement. They also allow time for the organizing of a proper defense should a foe's army appear on the horizon.</description>
+		<baseCost>1150</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_DoorsAdvanced</li>
+			<li>RH_TET_Empire_GatesBasic</li>
+		</prerequisites>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>3.25</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Armor_Basic</defName>
+		<label>Armor</label>
+		<description>Unlocks the ability to make basic Empire armor. Helmets, and body armor.</description>
+		<baseCost>800</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>RH_TET_Empire_Apparel_Basic</li>
+		</prerequisites>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>5.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Apparel_Mid</defName>
+		<label>Improved Apparel</label>
+		<description>Unlocks the ability to make better Empire apparel. Shirts, pants, hats, and so on.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Apparel_Basic</li>
+		</prerequisites>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>5.70</researchViewY>
+	</ResearchProjectDef>
+ 
+	<!-- Column 6 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Lighting_Basic</defName>
+		<label>Light &amp; Temperature</label>
+		<description>Unlocks the ability to make basic Empire light and temperature buildings. This includes ceiling lights, passive coolers, and braziers.\n\nNothing keeps the evils of the dark away like a good well lit area. The men and women of the Empire have embrace the light.</description>
+		<baseCost>250</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</prerequisites>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>0.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Gunsmithing_Basic</defName>
+		<label>Firearms</label>
+		<description>Allows for construction of basic Empire flint lock rifles and pistols.</description>
+		<baseCost>750</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>RH_TET_Empire_Ranged_Basic</li>
+			<li>RH_TET_Empire_BlackPowder</li>
+		</prerequisites>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>1.10</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Magic</defName>
+		<label>Basic Magic Items</label>
+		<description>Allows Empire wizards to craft basic magic items.</description>
+		<baseCost>2500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>2.60</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Weapons_MeleeGreat_Basic</defName>
+		<label>Melee Great Weaponry</label>
+		<description>Unlocks the ability to make basic Empire melee great weapons. Flails and greatswords.</description>
+		<baseCost>400</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Weapons_MeleeHand_Basic</li>
+		</prerequisites>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>4.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<!-- Column 7 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_StructureCastlesAdvanced</defName>
+		<label>Advanced Castle Walls</label>
+		<description>Allows for the building of Empire castle walls with arrow slits, so that the walls can be fired through.</description>
+		<baseCost>1000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_StructureCastles</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_RepairAdvanced</defName>
+		<label>Armor &amp; Weapon Repair</label>
+		<description>Unlocks the ability for Empire folk to repair armor, shields, and weapons at a forge. Also firearms at an Empire blasing bench.\n\nThe constant threats again the Empire of man means that weapons and armor get much use. In between battles, it's important to get armor and weapons repaired, and back in great fighting shape.</description>
+		<baseCost>1250</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_RepairBasic</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>3.70</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Weapons_MeleeHand_Advanced</defName>
+		<label>Improved Melee Hand Weaponry</label>
+		<description>Unlocks the ability to make very fine Empire hand weaponry. Weapons that not only look impressive, but do a relatively impressive job as well.</description>
+		<baseCost>1750</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Weapons_MeleeGreat_Basic</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>4.30</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Armor_Improved</defName>
+		<label>Improved Armor</label>
+		<description>Unlocks the ability to make improved Empire armor. Armor that looks good, and protects well. Includes helmets, and body armor.</description>
+		<baseCost>2000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Armor_Basic</li>
+			<li>RH_TET_Empire_Apparel_Mid</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>5.45</researchViewY>
+	</ResearchProjectDef>
+  
+	<!-- Column 8 -->
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_FurnitureAdvanced</defName>
+		<label>Improved Furniture</label>
+		<description>Unlocks the ability to make improved Empire furniture.</description>
+		<baseCost>650</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Furniture</li>
+		</prerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>0.55</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Warmachines_Basic</defName>
+		<label>Warmachines</label>
+		<description>Allows for the building of Empire warmachines. This basic level will allow cannons and mortars.</description>
+		<baseCost>2500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_BlackPowder</li>
+			<li>RH_TET_Empire_Gunsmithing_Basic</li>
+		</prerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>1.15</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Gunsmithing_Advanced</defName>
+		<label>Improved Firearms</label>
+		<description>Allows for construction of improved Empire rifles and pistols.</description>
+		<baseCost>2000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Gunsmithing_Basic</li>
+		</prerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>1.70</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_MagicIntermediate</defName>
+		<label>Intermediate Magic Items</label>
+		<description>Allows Empire wizards to craft intermediate magic items.</description>
+		<baseCost>3000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Magic</li>
+		</prerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>2.55</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_GatesMassive</defName>
+		<label>Massive Gates</label>
+		<description>Allows for the building of massively sized, and very strong Empire gates. They are solid metal and stone constructed gates, they look great, and they can stand up to much abuse.\n\nAs the End Times proceed, stronger gates will be required to keep the people of the Empire safe.</description>
+		<baseCost>2000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_GatesAdvanced</li>
+		</prerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>3.30</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Weapons_MeleeGreat_Advanced</defName>
+		<label>Improved Melee Great Weaponry</label>
+		<description>Unlocks the ability to make fine Empire melee great weapons. Flails and greatswords.</description>
+		<baseCost>2000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Weapons_MeleeHand_Advanced</li>
+		</prerequisites>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>4.80</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Column 9 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_StructureCurtainWalls</defName>
+		<label>Massive Curtain Walls</label>
+		<description>Allows for the building of massive defensive Empire curtain walls.</description>
+		<baseCost>2000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_StructureCastlesAdvanced</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>2.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Lighting_Advanced</defName>
+		<label>Advanced Light &amp; Heat</label>
+		<description>Unlocks the ability to make advanced Empire lighting and heat buildings. Better ceiling lights and hearths; as well as wall mounted lights.\n\nWealthy family homes in any Empire city have a hearth, and most respectable rooms will have appropriately nice ceiling and wall lights. Pushing back the darkness of the night is considered a sign of civilization, and even the most uncouth of Empire citizens won't attempt to refute that logic.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Lighting_Basic</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>0.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Warmachines_Advanced</defName>
+		<label>Advanced Warmachines</label>
+		<description>Allows for the building of advanced Empire warmachines. This advanced level will allow hellblasters and rocket batteries.</description>
+		<baseCost>2000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Warmachines_Basic</li>
+			<li>RH_TET_Empire_Firearm_AdvancedMore</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>0.90</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Firearm_AdvancedMore</defName>
+		<label>Advanced Ballistics &amp; Launchers</label>
+		<description>Allows for the building of advanced Empire firearms. This advanced level will allow long rifles with rifled barrels, grenade launchers, and repeater guns.</description>
+		<baseCost>1500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Gunsmithing_Advanced</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>1.55</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Apparel_Advanced</defName>
+		<label>Advanced Apparel</label>
+		<description>Unlocks the ability to make fine Empire apparel. Shirts, pants, hats, and so on.</description>
+		<baseCost>1000</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Apparel_Mid</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>5.60</researchViewY>
+	</ResearchProjectDef>
+  
+	<!-- Column 10 -->
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_StructureCurtainWallsAdv</defName>
+		<label>Defensive Towers</label>
+		<description>Allows for the building of large defensive towers that will automatically shoot arrows at nearby foes.</description>
+		<baseCost>500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_StructureCurtainWalls</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.15</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_MagicAdvanced</defName>
+		<label>Advanced Magic Items</label>
+		<description>Allows Empire wizards to craft advanced magic items.</description>
+		<baseCost>3500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_MagicIntermediate</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.95</researchViewY>
+	</ResearchProjectDef>
+  
+	<ResearchProjectDef ParentName="RH_TET_EmpireResearch">
+		<defName>RH_TET_Empire_Armor_Advanced</defName>
+		<label>Superior Armor</label>
+		<description>Unlocks the ability to make the best Empire armor. The most protective, and best looking armor. No officer would be caught dead in anything else.</description>
+		<baseCost>1500</baseCost>
+		<tags>
+			<li>RH_TET_Empire_ProjectTag</li>
+		</tags>
+		<prerequisites>
+			<li>RH_TET_Empire_Armor_Improved</li>
+			<li>RH_TET_Empire_Apparel_Advanced</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Column 11 -->
+  
+	<!-- Column 12 -->
+  
+</Defs>

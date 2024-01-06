@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef>
+		<defName>RH_TET_Empire_QueenBee</defName>
+		<label>queen bee</label>
+		<description>A queen bee for a bee hive. Place her in a bee hive to make the hive active, and to producing honey. This must be done in a timely manner, or the queen will perish. The queen will also die should the temperature become too hot or too cold.</description>
+		<graphicData>
+			<texPath>Things/Items/Misc/RH_TET_Empire_QueenBee</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.8</drawSize>
+		</graphicData>
+		<selectable>true</selectable>
+		<rotatable>false</rotatable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<stealable>false</stealable>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>25</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>3.5</DeteriorationRate>
+			<Beauty>-2</Beauty>
+			<Mass>0.2</Mass>
+		</statBases>
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-5</minSafeTemperature>
+				<maxSafeTemperature>45</maxSafeTemperature>
+				<progressPerDegreePerTick>0.0005</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<altitudeLayer>Item</altitudeLayer>
+		<pathCost>5</pathCost>
+		<category>Item</category>
+		<alwaysHaulable>true</alwaysHaulable>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>RH_TET_Empire_Honey</defName>
+		<label>honey</label>
+		<description>Honey is a sweet, viscous food substance made by honey bees. It's delicious to eat, and it can be used to make alcoholic mead.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Items/Misc/RH_TET_Empire_Honey</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<equippedAngleOffset>-135</equippedAngleOffset>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<pathCost>15</pathCost>
+		<alwaysHaulable>true</alwaysHaulable>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+			<Flammability>1.0</Flammability>
+			<Nutrition>0.10</Nutrition>
+			<Beauty>-2</Beauty>
+			<FoodPoisonChanceFixedHuman>0.001</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Mass>0.2</Mass>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<category>Item</category>
+		<stackLimit>75</stackLimit>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<ingestible>
+			<tasteThought>RH_TET_Empire_AteHoney</tasteThought>
+			<preferability>DesperateOnly</preferability>
+			<foodType>AnimalProduct</foodType>
+			<baseIngestTicks>100</baseIngestTicks>
+			<chairSearchRadius>10</chairSearchRadius>
+			<joy>0.20</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<nurseable>true</nurseable>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RH_TET_Empire_MeadMust</defName>
+		<label>mead must</label>
+		<description>Mead awaiting fermentation. Must ferment in a fermenter before becoming mead, and being consumable.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/Mead/RH_TET_Empire_MeadMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>.75</DeteriorationRate>
+			<MarketValue>3</MarketValue>
+			<Mass>0.8</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>6</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+ 
+</Defs>

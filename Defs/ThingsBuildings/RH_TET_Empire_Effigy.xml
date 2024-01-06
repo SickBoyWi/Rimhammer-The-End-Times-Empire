@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RH_TET_Empire_SigmarEffigy</defName>
+		<label>effigy of Sigmar</label>
+		<thingClass>TheEndTimes_Empire.Building_EffigyOfSigmar</thingClass>
+		<description>A huge statue, made in the likeness of the God Sigmar. Crafted by the men and the women of the Empire as a symbol of hope, and to triumph over evil.\n\n
+	When this massive statue is completed, it can be used in combination with Ghal Maraz to call down the power of Sigmar to smite all the foes of mankind for a very large area. The goal of every Empire settlement is to build such a statue, obtain an item of power that can help initiate the statue's power by drawing the attention of Sigmar through the gloom that has settled upon the realm of the gods, and have a person equipped with the item raise it before the statue and call for Sigmar's aid in this time of need.\n\nOnce Sigmar's attention has been gained, power will be channelled into the Effigy of Sigmar. It will build to a crescendo, and annialate the foes of mankind after it has fully charged.\n\nThat charging will take 15 days, during which time enemies near and far will assault the location of the Effigy of Sigmar, in an attempt to destroy it, and those that have erected it. If the statue survives for the 15 day charging period, its power will be released in a massive wave, and all enemies will be destroyed; granting victory for the women and men of the Empire!\n\nBuild your defenses well, for the assaults of your foes will be furious and frequent.		</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Buildings/Misc/RH_TET_Empire_SigmarEffigy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(8.0, 8.0)</drawSize>
+			<damageData>
+				<rect>(1,1,2,2)</rect>
+			</damageData>
+		</graphicData>
+		<canOverlapZones>false</canOverlapZones>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<costList>
+			<Jade>100</Jade>
+			<Gold>10</Gold>
+		</costList>
+		<costStuffCount>1000</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>0.85</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>100</Beauty>
+			<JoyGainFactor>2</JoyGainFactor>
+			<Mass>1000</Mass>
+		</statBases>
+		<minifiedDef/>
+		<thingCategories Inherit="false"/>
+		<size>(3,7)</size>
+		<passability>PassThroughOnly</passability>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-4)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>-8~8</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>15</watchBuildingStandRectWidth>
+			<ai_chillDestination>false</ai_chillDestination>
+			<haulToContainerDuration>500</haulToContainerDuration>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>RH_TET_Empire_Buildings</designationCategory>
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Faith</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>
