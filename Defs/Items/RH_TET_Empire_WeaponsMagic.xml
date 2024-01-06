@@ -26,10 +26,6 @@
 		<comps>
 			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
 				<verticalFlipNorth>false</verticalFlipNorth>
-				<!--
-		  <angleAdjustmentWest>45</angleAdjustmentWest>
-		  <angleAdjustmentEast>0</angleAdjustmentEast>
-		  -->
 				<northOffset>(0.2,0,0.2)</northOffset>
 				<eastOffset>(-.05,0,0.1)</eastOffset>
 				<westOffset>(0,0,0.1)</westOffset>

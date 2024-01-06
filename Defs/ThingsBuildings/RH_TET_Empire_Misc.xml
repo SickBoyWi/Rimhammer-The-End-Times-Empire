@@ -305,6 +305,7 @@
 		<designationHotKey>Misc5</designationHotKey>
 		<researchPrerequisites>
 			<li>RH_TET_Empire_FurnitureAdvanced</li>
+			<li>RH_TET_Empire_StructureCastles</li>
 		</researchPrerequisites>
 	</ThingDef>
 

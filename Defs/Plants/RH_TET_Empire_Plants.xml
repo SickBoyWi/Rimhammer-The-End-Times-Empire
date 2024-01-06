@@ -69,12 +69,6 @@
 			<texPath>Things/Plants/HallowTree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>CutoutPlant</shaderType>
-			<!--
-			<shadowData>
-				<volume>(0.15, 0.3, 0.15)</volume>
-				<offset>(0,0,-0.38)</offset>
-			</shadowData
-			-->
 		</graphicData>
 		<drawerType>MapMeshOnly</drawerType>
 		<statBases>

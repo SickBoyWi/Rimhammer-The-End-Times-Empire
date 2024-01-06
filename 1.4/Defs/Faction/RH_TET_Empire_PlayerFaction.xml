@@ -39,13 +39,6 @@
 		<settlementNameMaker>RH_TET_NamerEmpireBase</settlementNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<allowedCultures><li>RH_TET_Empire_Culture</li></allowedCultures>
-		<!--
-		<geneticVariance>1</geneticVariance>
-		<hairTags>
-			<li>RH_TET_Empire</li>
-			<li>Rural</li>
-		</hairTags>
-		-->
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Cloth</li>
@@ -79,13 +72,6 @@
 		<settlementNameMaker>RH_TET_NamerEmpireBase</settlementNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<allowedCultures><li>RH_TET_Empire_Culture</li></allowedCultures>
-		<!--
-		<geneticVariance>1</geneticVariance>
-		<hairTags>
-			<li>RH_TET_Empire</li>
-			<li>Rural</li>
-		</hairTags>
-		-->
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Cloth</li>

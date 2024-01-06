@@ -56,13 +56,6 @@
 			<trapDamageCategory>Sharp</trapDamageCategory>
 			<ai_chillDestination>false</ai_chillDestination>
 			<expandHomeArea>false</expandHomeArea>
-			<!--
-			<trapUnarmedGraphicData>
-				<texPath>Things/Building/Security/RH_TET_Stakes/RH_TET_Stakes</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<shaderType>Cutout</shaderType>
-			</trapUnarmedGraphicData>	  
-			-->
 		</building>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<category>Building</category>
@@ -652,6 +645,5 @@
 		</subSounds>
 	</SoundDef>
 	<!-- Horse End -->
-  
   
 </Defs>

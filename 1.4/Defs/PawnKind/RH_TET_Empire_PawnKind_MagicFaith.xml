@@ -102,25 +102,6 @@
 	-->
 	</PawnKindDef>
 
-	<!-- TODO DELETE THIS PAWNKIND ONCE ALL LORE PAWNKINDS ARE ADDED 
-  <PawnKindDef ParentName="RH_TET_EmpireWizardPawnKindOrderStandard">
-    <defName>RH_TET_Empire_WizardStandard</defName>
-    <label>Empire wizard</label>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>RH_TET_Empire_WizardStandard</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
-    <weaponTags>
-      <li>RH_TET_Empire_Wizard</li>
-    </weaponTags>
-    <apparelTags>
-     <li>RH_TET_Empire_Apparel_Wizard</li>
-    </apparelTags>
-  </PawnKindDef>
--->
 	<PawnKindDef ParentName="RH_TET_EmpireWizardPawnKindOrderStandard">
 		<defName>RH_TET_Empire_WizardStandard_Beasts</defName>
 		<label>Empire beast wizard</label>
@@ -360,26 +341,7 @@
     </inventoryOptions>
 	-->
 	</PawnKindDef>
- 
-	<!-- 
-  <PawnKindDef ParentName="RH_TET_EmpireWizardPawnKindOrderGreat">
-    <defName>RH_TET_Empire_WizardGreat</defName>
-    <label>Empire great wizard</label>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>RH_TET_Empire_WizardGreat</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
-    <weaponTags>
-      <li>RH_TET_Empire_Wizard</li>
-    </weaponTags>
-    <apparelTags>
-     <li>RH_TET_Empire_Apparel_Wizard</li>
-    </apparelTags>
-  </PawnKindDef>  
-  -->
+
 	<PawnKindDef ParentName="RH_TET_EmpireWizardPawnKindOrderGreat">
 		<defName>RH_TET_Empire_WizardGreat_Beasts</defName>
 		<label>Empire beast great wizard</label>
@@ -688,7 +650,6 @@
 	<PawnKindDef Name="RH_TET_EmpireFaithfulPawnKind" Abstract="True">
 		<race>Human</race>
 		<combatPower>65</combatPower>
-		<!--<baseRecruitDifficulty>0.99</baseRecruitDifficulty>-->
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -711,11 +672,6 @@
 			<li>RH_TET_Empire_Cape</li>
 		</apparelRequired>
 		<forcedHair>RH_TET_Empire_Hair_None</forcedHair>
-		<!--
-	<hairTags>
-		<li>RH_TET_EmpireNone</li>
-	</hairTags>
-	-->
 		<weaponTags>
 			<li>RH_TET_Empire_Faithful_Sigmar</li>
 		</weaponTags>

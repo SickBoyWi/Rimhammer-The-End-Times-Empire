@@ -151,9 +151,6 @@
 			<li>Animals</li>
 		</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
-	
-	
-	
 	<AlienRace.AlienBackstoryDef>
 		<defName>RH_TET_Empire_WizardDeath</defName>
 		<title>wind of Shyish user</title>

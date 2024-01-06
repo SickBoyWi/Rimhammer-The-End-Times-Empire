@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--TODO - MOVE CREMATORIUM TO PRODUCTION RESEARCH -->
-  
 	<ResearchTabDef>
 		<defName>RH_TET_Empire_Tab</defName>
 		<label>The Empire</label>

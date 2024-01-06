@@ -28,11 +28,6 @@
 			</defaultIngredientFilter>
 		</recipeMaker>
 		<smeltable>true</smeltable>
-		<!--
-    <thingCategories>
-      <li>Apparel</li>
-    </thingCategories>
-	-->
 		<tradeTags>
 			<li>Clothing</li>
 		</tradeTags>
@@ -85,10 +80,11 @@
 				<li>RH_TET_Empire_Mid</li>
 				<li>RH_TET_Empire_Soldier</li>
 			</tags>
-			<!-- TODO -->
+			<!-- TODO 
 			<defaultOutfitTags>
 				<li>RH_TET_Empire_Apparel_Basic</li>
 			</defaultOutfitTags>
+			-->
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites><li>RH_TET_Empire_Apparel_Basic</li></researchPrerequisites>

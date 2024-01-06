@@ -7,396 +7,338 @@
 		<thing>RH_TET_Empire_FancyGate</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_FancyGate_BlocksGranite_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Mortar_East</defName>
 		<thing>RH_TET_Empire_Mortar</thing>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Mortar_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_East</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_West</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_North</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_North</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_North</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_East</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_WoodLog_East</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_WoodLog_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_WoodLog_West</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_West</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_West</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BasicDoor_WoodLog_North</defName>
 		<thing>RH_TET_Empire_BasicDoor</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BasicDoor_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_WallLight_North</defName>
 		<thing>RH_TET_Empire_WallLight</thing>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_WallLight_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BasicDoor_WoodLog_West</defName>
 		<thing>RH_TET_Empire_BasicDoor</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BasicDoor_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_WoodLog_North</defName>
 		<thing>RH_TET_Empire_AdvancedDoor</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_WallLight_South</defName>
 		<thing>RH_TET_Empire_WallLight</thing>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_WallLight_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksGranite_North</defName>
 		<thing>RH_TET_Empire_StrongDoor</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksGranite_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table1x2c_WoodLog_West</defName>
 		<thing>RH_TET_Empire_Table1x2c</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table1x2c_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ResearchBench_WoodLog_South</defName>
 		<thing>RH_TET_Empire_ResearchBench</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ResearchBench_WoodLog_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksGranite_West</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksGranite_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_WoolBison_North</defName>
 		<thing>RH_TET_Empire_Rug5xSeven</thing>
 		<stuff>WoolBison</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_WoolBison_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_North</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_East</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_TableSmithy_BlocksGranite_East</defName>
 		<thing>RH_TET_TableSmithy</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_TableSmithy_BlocksGranite_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksGranite_North</defName>
 		<thing>RH_TET_Empire_Table2x4c</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksGranite_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksGranite_West</defName>
 		<thing>RH_TET_Empire_Hearth</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksGranite_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_West</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_WallLight_West</defName>
 		<thing>RH_TET_Empire_WallLight</thing>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_WallLight_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_WallLight_East</defName>
 		<thing>RH_TET_Empire_WallLight</thing>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_WallLight_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureLarge_BlocksGranite</defName>
 		<thing>RH_TET_Empire_SculptureLarge</thing>
 		<stuff>BlocksGranite</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureLarge_BlocksGranite</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_FermenterMead</defName>
 		<thing>RH_TET_Empire_FermenterMead</thing>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_FermenterMead</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_ChessTable_Steel</defName>
 		<thing>ChessTable</thing>
 		<stuff>Steel</stuff>
-		<!--<symbol>RH_TET_Empire_ChessTable_Steel</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_South</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksGranite_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableStonecutter_BlocksGranite_West</defName>
 		<thing>RH_TET_Empire_TableStonecutter</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableStonecutter_BlocksGranite_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BlastingBench_WoodLog_North</defName>
 		<thing>RH_TET_Empire_BlastingBench</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BlastingBench_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksGranite_South</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksGranite_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BasicDoor_WoodLog_South</defName>
 		<thing>RH_TET_Empire_BasicDoor</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BasicDoor_WoodLog_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_East</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_South</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_WoodLog_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_South</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_WoodLog_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_South</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_WoodLog_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Mortar_Shell</defName>
 		<thing>RH_TET_Empire_Mortar_Shell</thing>
   
 		<numberToSpawn>4</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Mortar_Shell</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Mastiff</defName>
   
 		<pawnKindDef>RH_TET_Empire_Mastiff</pawnKindDef>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Mastiff</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Shield_Low_Talabheim</defName>
 		<thing>RH_TET_Empire_Shield_Low_Talabheim</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Shield_Low_Talabheim</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Bread</defName>
 		<thing>RH_TET_Empire_Bread</thing>
   
 		<numberToSpawn>20</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Bread</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_MealSurvivalPack</defName>
 		<thing>MealSurvivalPack</thing>
   
 		<numberToSpawn>10</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_MealSurvivalPack</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_MeleeWeapon_UlricHammer</defName>
 		<thing>RH_TET_MeleeWeapon_UlricHammer</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_MeleeWeapon_UlricHammer</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Cheese</defName>
 		<thing>RH_TET_Empire_Cheese</thing>
   
 		<numberToSpawn>15</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Cheese</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Sword_Low</defName>
 		<thing>RH_TET_Empire_Sword_Low</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Sword_Low</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_PantsHigh</defName>
 		<thing>RH_TET_Empire_PantsHigh</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_PantsHigh</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Magic_BeltArdor</defName>
 		<thing>RH_TET_Magic_BeltArdor</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Magic_BeltArdor</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Rifle_High</defName>
 		<thing>RH_TET_Empire_Rifle_High</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Rifle_High</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_Milk</defName>
 		<thing>Milk</thing>
   
 		<numberToSpawn>75</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_Milk</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_FeatheredHat_Ostland</defName>
 		<thing>RH_TET_Empire_FeatheredHat_Ostland</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_FeatheredHat_Ostland</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Armor_Faith</defName>
 		<thing>RH_TET_Empire_Armor_Faith</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Armor_Faith</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Crossbow_Low</defName>
 		<thing>RH_TET_Empire_Crossbow_Low</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Crossbow_Low</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Flail_Low</defName>
 		<thing>RH_TET_Empire_Flail_Low</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Flail_Low</symbol>-->
 	</KCSG.SymbolDef>
 	<!-- End 1 -->
 
@@ -405,455 +347,388 @@
 		<defName>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksLimestone</defName>
 		<thing>RH_TET_Empire_BuildingWall</thing>
 		<stuff>BlocksLimestone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksLimestone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksLimestone_North</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksLimestone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksLimestone_North</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksLimestone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksLimestone_North</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksLimestone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CeilingLight_Low_Steel</defName>
 		<thing>RH_TET_Empire_CeilingLight_Low</thing>
 		<stuff>Steel</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CeilingLight_Low_Steel</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksLimestone_West</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksLimestone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Bird_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Bird</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Bird_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_North</defName>
 		<thing>RH_TET_Empire_SturdyDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Dog_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Dog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Dog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksLimestone_South</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksLimestone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Heavy_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Heavy</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Heavy_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MeditationPad_Leather_Thrumbo</defName>
 		<thing>RH_TET_Empire_MeditationPad</thing>
 		<stuff>Leather_Thrumbo</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MeditationPad_Leather_Thrumbo</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CastleEmbWall_BlocksLimestone</defName>
 		<thing>RH_TET_Empire_CastleEmbWall</thing>
 		<stuff>BlocksLimestone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CastleEmbWall_BlocksLimestone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksLimestone_East</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksLimestone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksLimestone_East</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksLimestone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Mortar_South</defName>
 		<thing>RH_TET_Empire_Mortar</thing>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Mortar_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_HorseshoesPin_BlocksLimestone</defName>
 		<thing>HorseshoesPin</thing>
 		<stuff>BlocksLimestone</stuff>
-		<!--<symbol>RH_TET_Empire_HorseshoesPin_BlocksLimestone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_RocketBattery_East</defName>
 		<thing>RH_TET_Empire_RocketBattery</thing>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_RocketBattery_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_FancyGate_Steel_North</defName>
 		<thing>RH_TET_Empire_FancyGate</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_FancyGate_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Cloth_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Cloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Cloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_GuineaPig_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_GuineaPig</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_GuineaPig_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksLimestone</defName>
 		<thing>RH_TET_Empire_CastleWall</thing>
 		<stuff>BlocksLimestone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksLimestone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Camel_West</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Leather_Camel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Camel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Lute_WoodLog_West</defName>
 		<thing>RH_TET_Empire_Lute</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Lute_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureGrand_Steel</defName>
 		<thing>RH_TET_Empire_SculptureGrand</thing>
 		<stuff>Steel</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureGrand_Steel</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_Table2x4c</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ColumnLitSmallA_BlocksLimestone</defName>
 		<thing>RH_TET_Empire_ColumnLitSmallA</thing>
 		<stuff>BlocksLimestone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ColumnLitSmallA_BlocksLimestone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug6xSix_WoolSheep_North</defName>
 		<thing>RH_TET_Empire_Rug6xSix</thing>
 		<stuff>WoolSheep</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug6xSix_WoolSheep_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableStonecutter_BlocksLimestone_West</defName>
 		<thing>RH_TET_Empire_TableStonecutter</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableStonecutter_BlocksLimestone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolMegasloth_South</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>WoolMegasloth</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolMegasloth_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MeatSmoker_BlocksLimestone_North</defName>
 		<thing>RH_TET_Empire_MeatSmoker</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MeatSmoker_BlocksLimestone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DrugLab_Steel_South</defName>
 		<thing>RH_TET_Empire_DrugLab</thing>
 		<stuff>Steel</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DrugLab_Steel_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug4xSix_Leather_Panthera_East</defName>
 		<thing>RH_TET_Empire_Rug4xSix</thing>
 		<stuff>Leather_Panthera</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug4xSix_Leather_Panthera_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_Table2x4c</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_East</defName>
 		<thing>RH_TET_Empire_HandTailoringBench</thing>
 		<stuff>Steel</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_West</defName>
 		<thing>RH_TET_Empire_SturdyDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CeilingLight_Mid</defName>
 		<thing>RH_TET_Empire_CeilingLight_Mid</thing>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CeilingLight_Mid</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_Table2x4c</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksLimestone_West</defName>
 		<thing>RH_TET_Empire_ResearchBench</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksLimestone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_TableSmithy_BlocksLimestone_North</defName>
 		<thing>RH_TET_TableSmithy</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_TableSmithy_BlocksLimestone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureGrand_BlocksSlate</defName>
 		<thing>RH_TET_Empire_SculptureGrand</thing>
 		<stuff>BlocksSlate</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureGrand_BlocksSlate</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolSheep_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>WoolSheep</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolSheep_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableSculpting_Steel_North</defName>
 		<thing>RH_TET_Empire_TableSculpting</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableSculpting_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_Jade_South</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>Jade</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_Jade_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Crematorium_BlocksLimestone_West</defName>
 		<thing>RH_TET_Empire_Crematorium</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Crematorium_BlocksLimestone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Heavy_East</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Leather_Heavy</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Heavy_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hellblaster_West</defName>
 		<thing>RH_TET_Empire_Hellblaster</thing>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hellblaster_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolSheep_South</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>WoolSheep</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolSheep_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Pig_South</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Pig</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Pig_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Telescope_South</defName>
 		<thing>RH_TET_Empire_Telescope</thing>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Telescope_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksLimestone_East</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksLimestone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksLimestone_South</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksLimestone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksLimestone_South</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksLimestone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_DevilstrandCloth_South</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>DevilstrandCloth</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_DevilstrandCloth_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksLimestone_East</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksLimestone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksLimestone_East</symbol>-->
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Horse</defName>
   
 		<pawnKindDef>RH_TET_Horse</pawnKindDef>
-		<!--<symbol>RH_TET_Empire_RH_TET_Horse</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_RocketBattery_Rocket</defName>
 		<thing>RH_TET_Empire_RocketBattery_Rocket</thing>
   
 		<numberToSpawn>4</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_RocketBattery_Rocket</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Hood</defName>
 		<thing>RH_TET_Empire_Hood</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Hood</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Magic_ArmorVitality</defName>
 		<thing>RH_TET_Magic_ArmorVitality</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Magic_ArmorVitality</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_EmpireShirt_Mid_Middenland</defName>
 		<thing>RH_TET_EmpireShirt_Mid_Middenland</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_EmpireShirt_Mid_Middenland</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Hellblaster_Round</defName>
 		<thing>RH_TET_Empire_Hellblaster_Round</thing>
   
 		<numberToSpawn>4</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Hellblaster_Round</symbol>-->
 	</KCSG.SymbolDef>
 
 	<!-- End 2 -->
@@ -867,394 +742,336 @@
 		<thing>Shelf</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_Shelf_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Cannon_Ball</defName>
 		<thing>RH_TET_Empire_Cannon_Ball</thing>
   
 		<numberToSpawn>4</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Cannon_Ball</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CastleEmbWall_BlocksSandstone</defName>
 		<thing>RH_TET_Empire_CastleEmbWall</thing>
 		<stuff>BlocksSandstone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CastleEmbWall_BlocksSandstone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksSandstone</defName>
 		<thing>RH_TET_Empire_CastleWall</thing>
 		<stuff>BlocksSandstone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksSandstone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_StrongDoor</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_East</defName>
 		<thing>RH_TET_Empire_SturdyDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Bluefur_West</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>Leather_Bluefur</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Bluefur_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_BlastingBench</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_West</defName>
 		<thing>RH_TET_Empire_HandTailoringBench</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Brewery_Steel_North</defName>
 		<thing>RH_TET_Empire_Brewery</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Brewery_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_DevilstrandCloth_West</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>DevilstrandCloth</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_DevilstrandCloth_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_Hearth</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableSculpting_Steel_West</defName>
 		<thing>RH_TET_Empire_TableSculpting</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableSculpting_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_Cloth_North</defName>
 		<thing>RH_TET_Empire_Rug5xSeven</thing>
 		<stuff>Cloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_Cloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_Table2x4c</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x2c_BlocksSandstone</defName>
 		<thing>RH_TET_Empire_Table2x2c</thing>
 		<stuff>BlocksSandstone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x2c_BlocksSandstone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureGrand_BlocksSandstone</defName>
 		<thing>RH_TET_Empire_SculptureGrand</thing>
 		<stuff>BlocksSandstone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureGrand_BlocksSandstone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_Table2x4c</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Shelf_BlocksSandstone_West</defName>
 		<thing>Shelf</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_Shelf_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Shelf_BlocksSandstone_East</defName>
 		<thing>Shelf</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_Shelf_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ColumnLitSmallA_BlocksSandstone</defName>
 		<thing>RH_TET_Empire_ColumnLitSmallA</thing>
 		<stuff>BlocksSandstone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ColumnLitSmallA_BlocksSandstone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_StrongDoor</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Heavy_North</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>Leather_Heavy</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Heavy_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_StrongDoor</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_StrongDoor_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_WoolAlpaca_North</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>WoolAlpaca</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_WoolAlpaca_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_Leather_Heavy_North</defName>
 		<thing>RH_TET_Empire_Rug5xSeven</thing>
 		<stuff>Leather_Heavy</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_Leather_Heavy_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_FloppyHat</defName>
 		<thing>RH_TET_Empire_FloppyHat</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_FloppyHat</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table3x3c_BlocksSandstone</defName>
 		<thing>RH_TET_Empire_Table3x3c</thing>
 		<stuff>BlocksSandstone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table3x3c_BlocksSandstone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_RawWheat</defName>
 		<thing>RH_TET_Empire_RawWheat</thing>
   
 		<numberToSpawn>75</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_RawWheat</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Shelf_Gold_East</defName>
 		<thing>Shelf</thing>
 		<stuff>Gold</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_Shelf_Gold_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Rod_FlamingDeath</defName>
 		<thing>RH_TET_Rod_FlamingDeath</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Rod_FlamingDeath</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Shelf_Gold_West</defName>
 		<thing>Shelf</thing>
 		<stuff>Gold</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_Shelf_Gold_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_EmpireShirt_Lordly</defName>
 		<thing>RH_TET_EmpireShirt_Lordly</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_EmpireShirt_Lordly</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_ResearchBench</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_EmpireShirt_High_Middenland</defName>
 		<thing>RH_TET_EmpireShirt_High_Middenland</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_EmpireShirt_High_Middenland</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MagicBench_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_MagicBench</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MagicBench_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_MineableSulfur</defName>
 		<thing>RH_TET_MineableSulfur</thing>
-		<!--<symbol>RH_TET_Empire_RH_TET_MineableSulfur</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_RocketBattery_North</defName>
 		<thing>RH_TET_Empire_RocketBattery</thing>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_RocketBattery_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hellblaster_North</defName>
 		<thing>RH_TET_Empire_Hellblaster</thing>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hellblaster_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_MineableSaltpeter</defName>
 		<thing>RH_TET_MineableSaltpeter</thing>
-		<!--<symbol>RH_TET_Empire_RH_TET_MineableSaltpeter</symbol>-->
 	</KCSG.SymbolDef>
 	<!--
 <KCSG.SymbolDef>
@@ -1267,12 +1084,10 @@
 		<defName>RH_TET_Empire_Urn_BlocksLimestone</defName>
 		<thing>Urn</thing>
 		<stuff>BlocksLimestone</stuff>
-		<!--<symbol>RH_TET_Empire_Urn_BlocksLimestone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_IlluminateLight</defName>
 		<thing>RH_TET_IlluminateLight</thing>
-		<!--<symbol>RH_TET_Empire_RH_TET_IlluminateLight</symbol>-->
 	</KCSG.SymbolDef>
 
 	<!-- 3 -->
@@ -1280,25 +1095,21 @@
 		<defName>RH_TET_Empire_RH_TET_Empire_Cannon_South</defName>
 		<thing>RH_TET_Empire_Cannon</thing>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Cannon_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hellblaster_South</defName>
 		<thing>RH_TET_Empire_Hellblaster</thing>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hellblaster_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Cannon_West</defName>
 		<thing>RH_TET_Empire_Cannon</thing>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Cannon_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_RocketBattery_West</defName>
 		<thing>RH_TET_Empire_RocketBattery</thing>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_RocketBattery_West</symbol>-->
 	</KCSG.SymbolDef>
 
 	<!-- 4 -->
@@ -1306,442 +1117,378 @@
 		<defName>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksSlate</defName>
 		<thing>RH_TET_Empire_CastleWall</thing>
 		<stuff>BlocksSlate</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksSlate</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Shelf_BlocksSlate_West</defName>
 		<thing>Shelf</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_Shelf_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksSlate</defName>
 		<thing>RH_TET_Empire_BuildingWall</thing>
 		<stuff>BlocksSlate</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksSlate</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_East</defName>
 		<thing>RH_TET_Empire_BeeHive</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_DevilstrandCloth_East</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>DevilstrandCloth</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_DevilstrandCloth_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_OutsideLight_North</defName>
 		<thing>RH_TET_Empire_OutsideLight</thing>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_OutsideLight_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_LoomBench_WoodLog_South</defName>
 		<thing>RH_TET_Empire_LoomBench</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_LoomBench_WoodLog_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_DevilstrandCloth_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>DevilstrandCloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_DevilstrandCloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_BlastingBench</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Brazier_Steel</defName>
 		<thing>RH_TET_Empire_Brazier</thing>
 		<stuff>Steel</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Brazier_Steel</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug3xFive_Leather_Heavy_North</defName>
 		<thing>RH_TET_Empire_Rug3xFive</thing>
 		<stuff>Leather_Heavy</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug3xFive_Leather_Heavy_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_ResearchBench</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_West</defName>
 		<thing>RH_TET_Empire_BeeHive</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_GuineaPig_East</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_GuineaPig</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_GuineaPig_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Patch_East</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Patch</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Patch_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Plain_West</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Plain</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Plain_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_South</defName>
 		<thing>RH_TET_Empire_SturdyDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SturdyDoor_Steel_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MagicBench_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_MagicBench</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MagicBench_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_TableSmithy_BlocksSlate_North</defName>
 		<thing>RH_TET_TableSmithy</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_TableSmithy_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_StrongDoor_Steel_North</defName>
 		<thing>RH_TET_Empire_StrongDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_StrongDoor_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Patch_North</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Patch</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Patch_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_FancyGate_Steel_East</defName>
 		<thing>RH_TET_Empire_FancyGate</thing>
 		<stuff>Steel</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_FancyGate_Steel_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Crematorium_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_Crematorium</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Crematorium_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug6xSix_DevilstrandCloth_North</defName>
 		<thing>RH_TET_Empire_Rug6xSix</thing>
 		<stuff>DevilstrandCloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug6xSix_DevilstrandCloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_ChessTable_BlocksMarble</defName>
 		<thing>ChessTable</thing>
 		<stuff>BlocksMarble</stuff>
-		<!--<symbol>RH_TET_Empire_ChessTable_BlocksMarble</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SigmarEffigy_BlocksSlate</defName>
 		<thing>RH_TET_Empire_SigmarEffigy</thing>
 		<stuff>BlocksSlate</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SigmarEffigy_BlocksSlate</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x2c_BlocksSlate</defName>
 		<thing>RH_TET_Empire_Table2x2c</thing>
 		<stuff>BlocksSlate</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x2c_BlocksSlate</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksSlate_East</defName>
 		<thing>RH_TET_Empire_Hearth</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksSlate_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_WoodLog_East</defName>
 		<thing>RH_TET_Empire_AdvancedDoor</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_WoodLog_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_FancyGate_Steel_West</defName>
 		<thing>RH_TET_Empire_FancyGate</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_FancyGate_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_North</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug3xFive_Leather_Bluefur_North</defName>
 		<thing>RH_TET_Empire_Rug3xFive</thing>
 		<stuff>Leather_Bluefur</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug3xFive_Leather_Bluefur_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolAlpaca_South</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>WoolAlpaca</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolAlpaca_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_RoyalBed_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_RoyalBed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_RoyalBed_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_DevilstrandCloth_North</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>DevilstrandCloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_DevilstrandCloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableButcher_Steel_East</defName>
 		<thing>RH_TET_Empire_TableButcher</thing>
 		<stuff>Steel</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableButcher_Steel_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableButcher_Steel_West</defName>
 		<thing>RH_TET_Empire_TableButcher</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableButcher_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolAlpaca_West</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>WoolAlpaca</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_WoolAlpaca_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSlate_South</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSlate_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_Table1x2c</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_North</defName>
 		<thing>RH_TET_Empire_BeeHive</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Bird_South</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Bird</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Bird_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Cloth_South</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Cloth</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Cloth_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Bird_East</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Leather_Bird</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Leather_Bird_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Cloth_West</defName>
 		<thing>RH_TET_Empire_Rug1xOne</thing>
 		<stuff>Cloth</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xOne_Cloth_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_West</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksSlate</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksSlate_West</symbol>-->
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
@@ -1749,21 +1496,18 @@
 		<thing>RH_TET_Empire_Pistol_High</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Pistol_High</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_FeatheredHat_Ostermark</defName>
 		<thing>RH_TET_Empire_FeatheredHat_Ostermark</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_FeatheredHat_Ostermark</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_WizardStaff</defName>
 		<thing>RH_TET_Empire_WizardStaff</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_WizardStaff</symbol>-->
 	</KCSG.SymbolDef>
 
 	<!-- 5 -->
@@ -1771,406 +1515,347 @@
 		<defName>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksMarble</defName>
 		<thing>RH_TET_Empire_BuildingWall</thing>
 		<stuff>BlocksMarble</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksMarble</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksMarble_South</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksMarble_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksMarble_East</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksMarble_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksMarble_West</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksMarble_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_Table1x2c</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Dog_North</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Leather_Dog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Dog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksMarble_West</defName>
 		<thing>RH_TET_Empire_Table1x2c</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksMarble_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Cloth_North</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Cloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Cloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Bluefur_East</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Leather_Bluefur</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Bluefur_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksMarble_South</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksMarble_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_South</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Bird_West</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>Leather_Bird</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Bird_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksMarble_South</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksMarble_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CastleEmbWall_BlocksMarble</defName>
 		<thing>RH_TET_Empire_CastleEmbWall</thing>
 		<stuff>BlocksMarble</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CastleEmbWall_BlocksMarble</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_SteamGeyser</defName>
 		<thing>SteamGeyser</thing>
-		<!--<symbol>RH_TET_Empire_SteamGeyser</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksMarble</defName>
 		<thing>RH_TET_Empire_CastleWall</thing>
 		<stuff>BlocksMarble</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CastleWall_BlocksMarble</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_Steel_North</defName>
 		<thing>RH_TET_Empire_AdvancedDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MassiveGate_Steel_North</defName>
 		<thing>RH_TET_Empire_MassiveGate</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MassiveGate_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_Steel_West</defName>
 		<thing>RH_TET_Empire_AdvancedDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_Steel_East</defName>
 		<thing>RH_TET_Empire_AdvancedDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_AdvancedDoor_Steel_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableSculpting_Steel_South</defName>
 		<thing>RH_TET_Empire_TableSculpting</thing>
 		<stuff>Steel</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableSculpting_Steel_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_South</defName>
 		<thing>RH_TET_Empire_HandTailoringBench</thing>
 		<stuff>Steel</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_WoolMuffalo_South</defName>
 		<thing>RH_TET_Empire_Rug5xSeven</thing>
 		<stuff>WoolMuffalo</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_WoolMuffalo_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_East</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_Table2x4c</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table2x4c_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_DevilstrandCloth_North</defName>
 		<thing>RH_TET_Empire_Rug5xSeven</thing>
 		<stuff>DevilstrandCloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug5xSeven_DevilstrandCloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Bluefur_West</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Leather_Bluefur</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Bluefur_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Bed_BlocksMarble_West</defName>
 		<thing>RH_TET_Empire_Bed</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Bed_BlocksMarble_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_West</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksMarble_West</defName>
 		<thing>RH_TET_Empire_ResearchBench</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksMarble_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_West</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_CeilingLight_High_Steel</defName>
 		<thing>RH_TET_Empire_CeilingLight_High</thing>
 		<stuff>Steel</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_CeilingLight_High_Steel</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksMarble_East</defName>
 		<thing>RH_TET_Empire_BlastingBench</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksMarble_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Bird_North</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Leather_Bird</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Bird_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_East</defName>
 		<thing>RH_TET_Empire_EndTable</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_EndTable_BlocksMarble_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksMarble_East</defName>
 		<thing>RH_TET_Empire_Table1x2c</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Table1x2c_BlocksMarble_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SigmarEffigy_BlocksMarble</defName>
 		<thing>RH_TET_Empire_SigmarEffigy</thing>
 		<stuff>BlocksMarble</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SigmarEffigy_BlocksMarble</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksMarble_East</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksMarble_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DrugLab_Steel_West</defName>
 		<thing>RH_TET_Empire_DrugLab</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DrugLab_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Patch_North</defName>
 		<thing>RH_TET_Empire_Rug2xThree</thing>
 		<stuff>Leather_Patch</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xThree_Leather_Patch_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_South</defName>
 		<thing>RH_TET_Empire_DiningChair</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DiningChair_BlocksMarble_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_TableSmithy_BlocksMarble_North</defName>
 		<thing>RH_TET_TableSmithy</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_TableSmithy_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Mortar_North</defName>
 		<thing>RH_TET_Empire_Mortar</thing>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Mortar_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_Hearth</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksMarble_North</defName>
 		<thing>RH_TET_Empire_Armoire</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Armoire_BlocksMarble_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug3xFive_Cloth_West</defName>
 		<thing>RH_TET_Empire_Rug3xFive</thing>
 		<stuff>Cloth</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug3xFive_Cloth_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MagicBench_Steel_South</defName>
 		<thing>RH_TET_Empire_MagicBench</thing>
 		<stuff>Steel</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MagicBench_Steel_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Bird_East</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>Leather_Bird</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Bird_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksMarble_East</defName>
 		<thing>RH_TET_Empire_Hearth</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksMarble_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksMarble_South</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksMarble_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_RoyalBed_BlocksMarble_South</defName>
 		<thing>RH_TET_Empire_RoyalBed</thing>
 		<stuff>BlocksMarble</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_RoyalBed_BlocksMarble_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_South</defName>
 		<thing>RH_TET_Empire_BeeHive</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BeeHive_WoodLog_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Thrumbo_West</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>Leather_Thrumbo</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Thrumbo_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Pig_East</defName>
 		<thing>RH_TET_Empire_Rug1xTwo</thing>
 		<stuff>Leather_Pig</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug1xTwo_Leather_Pig_East</symbol>-->
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
@@ -2178,21 +1863,18 @@
 		<thing>RH_TET_Empire_Halberd_High</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Halberd_High</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Armor_Low</defName>
 		<thing>RH_TET_Empire_Armor_Low</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Armor_Low</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Wand_Resurrection</defName>
 		<thing>RH_TET_Wand_Resurrection</thing>
   
 		<numberToSpawn>10</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Wand_Resurrection</symbol>-->
 	</KCSG.SymbolDef>
 
 	<!-- 6 -->
@@ -2200,259 +1882,221 @@
 		<defName>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksSandstone</defName>
 		<thing>RH_TET_Empire_BuildingWall</thing>
 		<stuff>BlocksSandstone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BuildingWall_BlocksSandstone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MeatSmoker_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_MeatSmoker</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MeatSmoker_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureLarge_BlocksMarble</defName>
 		<thing>RH_TET_Empire_SculptureLarge</thing>
 		<stuff>BlocksMarble</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureLarge_BlocksMarble</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureLarge_BlocksLimestone</defName>
 		<thing>RH_TET_Empire_SculptureLarge</thing>
 		<stuff>BlocksLimestone</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureLarge_BlocksLimestone</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MeatSmoker_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_MeatSmoker</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MeatSmoker_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Panthera_East</defName>
 		<thing>RH_TET_Empire_Rug2xTwo</thing>
 		<stuff>Leather_Panthera</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Panthera_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SigmarEffigy_Jade</defName>
 		<thing>RH_TET_Empire_SigmarEffigy</thing>
 		<stuff>Jade</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SigmarEffigy_Jade</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Brewery_WoodLog_North</defName>
 		<thing>RH_TET_Empire_Brewery</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Brewery_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DrugLab_WoodLog_North</defName>
 		<thing>RH_TET_Empire_DrugLab</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DrugLab_WoodLog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Brazier_Uranium</defName>
 		<thing>RH_TET_Empire_Brazier</thing>
 		<stuff>Uranium</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Brazier_Uranium</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_BlastingBench</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_BlastingBench_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_TableStonecutter_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_TableStonecutter</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_TableStonecutter_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_TableSmithy_BlocksSandstone_East</defName>
 		<thing>RH_TET_TableSmithy</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_TableSmithy_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_Stool</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Stool_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_North</defName>
 		<thing>RH_TET_Empire_HandTailoringBench</thing>
 		<stuff>Steel</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_HandTailoringBench_Steel_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Dog_North</defName>
 		<thing>RH_TET_Empire_Rug2xTwo</thing>
 		<stuff>Leather_Dog</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Dog_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_ResearchBench</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_ResearchBench_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_WoolMuffalo_West</defName>
 		<thing>RH_TET_Empire_Rug2xTwo</thing>
 		<stuff>WoolMuffalo</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_WoolMuffalo_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureLarge_Gold</defName>
 		<thing>RH_TET_Empire_SculptureLarge</thing>
 		<stuff>Gold</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureLarge_Gold</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_Hearth</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Hearth_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureGrand_Plasteel</defName>
 		<thing>RH_TET_Empire_SculptureGrand</thing>
 		<stuff>Plasteel</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureGrand_Plasteel</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug6xSix_Cloth_North</defName>
 		<thing>RH_TET_Empire_Rug6xSix</thing>
 		<stuff>Cloth</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug6xSix_Cloth_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSandstone_West</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSandstone_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_StrongDoor_Steel_West</defName>
 		<thing>RH_TET_Empire_StrongDoor</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_StrongDoor_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MassiveGate_Steel_East</defName>
 		<thing>RH_TET_Empire_MassiveGate</thing>
 		<stuff>Steel</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MassiveGate_Steel_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_MassiveGate_Steel_West</defName>
 		<thing>RH_TET_Empire_MassiveGate</thing>
 		<stuff>Steel</stuff>
 		<rotation>West</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_MassiveGate_Steel_West</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_SculptureLarge_Jade</defName>
 		<thing>RH_TET_Empire_SculptureLarge</thing>
 		<stuff>Jade</stuff>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_SculptureLarge_Jade</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_Item_RH_TET_Empire_Spear_High</defName>
 		<thing>RH_TET_Empire_Spear_High</thing>
   
 		<numberToSpawn>1</numberToSpawn>
-		<!--<symbol>RH_TET_Empire_Item_RH_TET_Empire_Spear_High</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_Shelf</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Shelf_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_North</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_East</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>East</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_East</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Pig_North</defName>
 		<thing>RH_TET_Empire_Rug2xTwo</thing>
 		<stuff>Leather_Pig</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Pig_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Thrumbo_North</defName>
 		<thing>RH_TET_Empire_Rug2xTwo</thing>
 		<stuff>Leather_Thrumbo</stuff>
 		<rotation>North</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_Rug2xTwo_Leather_Thrumbo_North</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_DoubleBed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_DoubleBed_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 	<KCSG.SymbolDef>
 		<defName>RH_TET_Empire_RH_TET_Empire_RoyalBed_BlocksSandstone_South</defName>
 		<thing>RH_TET_Empire_RoyalBed</thing>
 		<stuff>BlocksSandstone</stuff>
 		<rotation>South</rotation>
-		<!--<symbol>RH_TET_Empire_RH_TET_Empire_RoyalBed_BlocksSandstone_South</symbol>-->
 	</KCSG.SymbolDef>
 
 

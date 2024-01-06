@@ -413,26 +413,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-			<!--
-      <li>
-        <label>left foot</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>LeftLeg</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right foot</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>RightLeg</linkedBodyPartsGroup>
-      </li>
-	  -->
 			<li>
 				<label>teeth</label>
 				<capacities>

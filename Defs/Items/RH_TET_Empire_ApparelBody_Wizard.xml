@@ -13,7 +13,6 @@
 		<graphicData>
 			<texPath>Things/Items/WizardRobe/WizardRobeLow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -110,7 +109,6 @@
 		<graphicData>
 			<texPath>Things/Items/WizardApparel/Bright/BrightWizard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>

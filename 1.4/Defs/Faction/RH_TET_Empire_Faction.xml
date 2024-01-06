@@ -30,12 +30,6 @@
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
-		<!--
-    <startingGoodwill>
-      <min>30</min>
-      <max>70</max>
-    </startingGoodwill>
-	-->
 		<settlementNameMaker>RH_TET_NamerEmpireBase</settlementNameMaker>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>
@@ -46,17 +40,6 @@
 				<commonality>1</commonality>
 			</li>
 		</backstoryFilters>
-		<!--
-	<geneticVariance>0.6</geneticVariance>
-	<hairTags>
-      <li>RH_TET_Empire</li>
-      <li>Rural</li>
-	</hairTags>
-    <naturalColonyGoodwill>
-      <min>0</min>
-      <max>0</max>
-    </naturalColonyGoodwill>
-	-->
 		<caravanTraderKinds>
 			<li>RH_TET_Empire_Caravan_BulkGoods</li>
 			<li>RH_TET_Empire_Caravan_CombatSupplier</li>
@@ -89,8 +72,8 @@
 					<RH_TET_Empire_Mastiff>10</RH_TET_Empire_Mastiff>
 					<RH_TET_Empire_Greatsword>5</RH_TET_Empire_Greatsword>
 					<RH_TET_Empire_Pistolier>5</RH_TET_Empire_Pistolier>
-					<!--<RH_TET_Empire_WizardStandard>5</RH_TET_Empire_WizardStandard>-->
-					<!--<RH_TET_Empire_WizardGreat>2</RH_TET_Empire_WizardGreat>-->
+					<RH_TET_Empire_Huntsman>5</RH_TET_Empire_Huntsman>
+					
 					<RH_TET_Empire_WizardStandard_Beasts>5</RH_TET_Empire_WizardStandard_Beasts>
 					<RH_TET_Empire_WizardStandard_Bright>5</RH_TET_Empire_WizardStandard_Bright>
 					<RH_TET_Empire_WizardStandard_Celestial>5</RH_TET_Empire_WizardStandard_Celestial>
@@ -100,9 +83,6 @@
 					<RH_TET_Empire_WizardStandard_White>5</RH_TET_Empire_WizardStandard_White>
 					<RH_TET_Empire_WizardStandard_Gold>5</RH_TET_Empire_WizardStandard_Gold>
 			
-			
-			
-					<RH_TET_Empire_Huntsman>5</RH_TET_Empire_Huntsman>
 
 					<RH_TET_Empire_WizardGreat_Beasts>2</RH_TET_Empire_WizardGreat_Beasts>
 					<RH_TET_Empire_WizardGreat_Bright>2</RH_TET_Empire_WizardGreat_Bright>
@@ -112,7 +92,6 @@
 					<RH_TET_Empire_WizardGreat_Jade>2</RH_TET_Empire_WizardGreat_Jade>
 					<RH_TET_Empire_WizardGreat_White>2</RH_TET_Empire_WizardGreat_White>
 					<RH_TET_Empire_WizardGreat_Gold>2</RH_TET_Empire_WizardGreat_Gold>
-			
 			
 					<RH_TET_Empire_FaithfulShallya>2</RH_TET_Empire_FaithfulShallya>
 					<RH_TET_Empire_FaithfulSigmar>1</RH_TET_Empire_FaithfulSigmar>
@@ -145,8 +124,8 @@
 					<RH_TET_Empire_Huntsman>5</RH_TET_Empire_Huntsman>
 					<RH_TET_Empire_Captain_Melee>5</RH_TET_Empire_Captain_Melee>
 					<RH_TET_Empire_Captain_Ranged>5</RH_TET_Empire_Captain_Ranged>
-					<!--<RH_TET_Empire_WizardStandard>5</RH_TET_Empire_WizardStandard>-->
-					<!--<RH_TET_Empire_WizardGreat>2</RH_TET_Empire_WizardGreat>-->
+					<RH_TET_Empire_Grenadier>5</RH_TET_Empire_Grenadier>
+					
 					<RH_TET_Empire_WizardStandard_Beasts>5</RH_TET_Empire_WizardStandard_Beasts>
 					<RH_TET_Empire_WizardStandard_Bright>5</RH_TET_Empire_WizardStandard_Bright>
 					<RH_TET_Empire_WizardStandard_Celestial>5</RH_TET_Empire_WizardStandard_Celestial>
@@ -156,10 +135,6 @@
 					<RH_TET_Empire_WizardStandard_White>5</RH_TET_Empire_WizardStandard_White>
 					<RH_TET_Empire_WizardStandard_Gold>5</RH_TET_Empire_WizardStandard_Gold>
 			
-			
-			
-					<RH_TET_Empire_Grenadier>5</RH_TET_Empire_Grenadier>
-
 					<RH_TET_Empire_WizardGreat_Beasts>2</RH_TET_Empire_WizardGreat_Beasts>
 					<RH_TET_Empire_WizardGreat_Bright>2</RH_TET_Empire_WizardGreat_Bright>
 					<RH_TET_Empire_WizardGreat_Celestial>2</RH_TET_Empire_WizardGreat_Celestial>
@@ -168,7 +143,6 @@
 					<RH_TET_Empire_WizardGreat_Jade>2</RH_TET_Empire_WizardGreat_Jade>
 					<RH_TET_Empire_WizardGreat_White>2</RH_TET_Empire_WizardGreat_White>
 					<RH_TET_Empire_WizardGreat_Gold>2</RH_TET_Empire_WizardGreat_Gold>
-			
 			
 					<RH_TET_Empire_Witchhunter>2</RH_TET_Empire_Witchhunter>
 					<RH_TET_Empire_FaithfulSigmar>1</RH_TET_Empire_FaithfulSigmar>
@@ -200,8 +174,7 @@
 					<RH_TET_Empire_Captain_Melee>5</RH_TET_Empire_Captain_Melee>
 					<RH_TET_Empire_Captain_Ranged>5</RH_TET_Empire_Captain_Ranged>
 					<RH_TET_Empire_Huntsman>5</RH_TET_Empire_Huntsman>
-					<!--<RH_TET_Empire_WizardStandard>5</RH_TET_Empire_WizardStandard>-->
-					<!--<RH_TET_Empire_WizardGreat>2</RH_TET_Empire_WizardGreat>-->
+					
 					<RH_TET_Empire_WizardStandard_Beasts>5</RH_TET_Empire_WizardStandard_Beasts>
 					<RH_TET_Empire_WizardStandard_Bright>5</RH_TET_Empire_WizardStandard_Bright>
 					<RH_TET_Empire_WizardStandard_Celestial>5</RH_TET_Empire_WizardStandard_Celestial>
@@ -219,7 +192,6 @@
 					<RH_TET_Empire_WizardGreat_Jade>2</RH_TET_Empire_WizardGreat_Jade>
 					<RH_TET_Empire_WizardGreat_White>2</RH_TET_Empire_WizardGreat_White>
 					<RH_TET_Empire_WizardGreat_Gold>2</RH_TET_Empire_WizardGreat_Gold>
-			
 			
 					<RH_TET_Empire_Witchhunter>1</RH_TET_Empire_Witchhunter>
 					<RH_TET_Empire_Grenadier>1</RH_TET_Empire_Grenadier>
@@ -246,8 +218,8 @@
 					<RH_TET_Empire_Mastiff>10</RH_TET_Empire_Mastiff>
 					<RH_TET_Empire_FreeCompanyCaptain_Melee>5</RH_TET_Empire_FreeCompanyCaptain_Melee>
 					<RH_TET_Empire_FreeCompanyCaptain_Ranged>5</RH_TET_Empire_FreeCompanyCaptain_Ranged>
-					<!--<RH_TET_Empire_WizardStandard>5</RH_TET_Empire_WizardStandard>-->
-					<!--<RH_TET_Empire_WizardGreat>2</RH_TET_Empire_WizardGreat>-->
+					<RH_TET_Empire_Huntsman>5</RH_TET_Empire_Huntsman>
+					
 					<RH_TET_Empire_WizardStandard_Beasts>5</RH_TET_Empire_WizardStandard_Beasts>
 					<RH_TET_Empire_WizardStandard_Bright>5</RH_TET_Empire_WizardStandard_Bright>
 					<RH_TET_Empire_WizardStandard_Celestial>5</RH_TET_Empire_WizardStandard_Celestial>
@@ -257,8 +229,6 @@
 					<RH_TET_Empire_WizardStandard_White>5</RH_TET_Empire_WizardStandard_White>
 					<RH_TET_Empire_WizardStandard_Gold>5</RH_TET_Empire_WizardStandard_Gold>
 			
-			
-					<RH_TET_Empire_Huntsman>5</RH_TET_Empire_Huntsman>
 					<RH_TET_Empire_WizardGreat_Beasts>2</RH_TET_Empire_WizardGreat_Beasts>
 					<RH_TET_Empire_WizardGreat_Bright>2</RH_TET_Empire_WizardGreat_Bright>
 					<RH_TET_Empire_WizardGreat_Celestial>2</RH_TET_Empire_WizardGreat_Celestial>
@@ -267,8 +237,6 @@
 					<RH_TET_Empire_WizardGreat_Jade>2</RH_TET_Empire_WizardGreat_Jade>
 					<RH_TET_Empire_WizardGreat_White>2</RH_TET_Empire_WizardGreat_White>
 					<RH_TET_Empire_WizardGreat_Gold>2</RH_TET_Empire_WizardGreat_Gold>
-			
-			
 			
 					<RH_TET_Empire_Witchhunter>2</RH_TET_Empire_Witchhunter>
 					<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>

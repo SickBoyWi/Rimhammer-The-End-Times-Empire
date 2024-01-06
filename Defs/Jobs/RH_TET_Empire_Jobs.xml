@@ -85,17 +85,5 @@
 		<joyMaxParticipants>30</joyMaxParticipants>
 		<joyKind>RH_TET_Empire_Worship</joyKind>
 	</JobDef>
-
-	<!--
-	<JobDef>
-		<defName>RH_TET_Empire_EffigyReflectOnPowering</defName>
-		<driverClass>TheEndTimes_Empire.JobDriver_ReflectOnResult</driverClass>
-		<reportString>reflecting on ceremony.</reportString>
-		<joyDuration>400</joyDuration>
-		<joyGainRate>1</joyGainRate>
-		<joyMaxParticipants>30</joyMaxParticipants>
-		<joyKind>RH_TET_Empire_Worship</joyKind>
-	</JobDef>
-	-->
 	
 </Defs>

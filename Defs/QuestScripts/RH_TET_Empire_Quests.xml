@@ -142,7 +142,6 @@
 		<linkWithSite>RH_TET_FaithfulPrisonerWillingToJoin</linkWithSite>
 		<order>460</order>
 		<genStep Class="TheEndTimes_Empire.GenStep_FaithfulPrisonerWillingToJoin">
-			<!--<genStep Class="GenStep_PrisonerWillingToJoin">-->
 			<count>1</count>
 			<nearMapCenter>true</nearMapCenter>
 		</genStep>

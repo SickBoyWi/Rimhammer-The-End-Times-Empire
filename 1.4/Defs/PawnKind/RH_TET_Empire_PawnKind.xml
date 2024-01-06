@@ -44,11 +44,6 @@
 		<invNutrition>2.55</invNutrition>
 		<invFoodDef>RH_TET_Empire_Bread</invFoodDef>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-		<!--
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-	-->
 		<inventoryOptions>
 			<skipChance>0.70</skipChance>
 			<subOptionsChooseOne>

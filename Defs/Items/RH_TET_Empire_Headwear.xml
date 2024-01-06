@@ -87,7 +87,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!--
+		<!-- TODO - wizard apparel could perhaps benefit for this, for tracking what they're supposed to wear.
 	<comps>
       <li Class="TheEndTimes_Magic.CompApparel_MagicUser" />
     </comps>
@@ -510,121 +510,7 @@
 			<researchPrerequisites><li>RH_TET_Empire_Apparel_Basic</li></researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
-  
-	<!-- CUT 
-	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Talabheim">
-		<defName>RH_TET_Empire_FeatheredHat_Talabheim</defName>
-		<label>Talabheim feathered hat</label>
-		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feather matches the red and white color scheme of the Empire state of Talabheim.</description>
-		<graphicData>
-			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Talabheim/RH_TET_Humans_Floppy_feathered_hat</texPath>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Talabheim/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites><li>RH_TET_Empire_ColorsTalabheim</li></researchPrerequisites>
-		</recipeMaker>
-	</ThingDef>
-  
-	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Middenland">
-		<defName>RH_TET_Empire_FeatheredHat_Middenland</defName>
-		<label>Middenland feathered hat</label>
-		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feather matches the blue and white color scheme of the Empire state of Middenland.</description>
-		<graphicData>
-			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Middenland/RH_TET_Humans_Floppy_feathered_hat</texPath>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Middenland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites><li>RH_TET_Empire_ColorsMiddenland</li></researchPrerequisites>
-		</recipeMaker>
-	</ThingDef>
-  
-	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Averland">
-		<defName>RH_TET_Empire_FeatheredHat_Averland</defName>
-		<label>Averland feathered hat</label>
-		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the black and white color scheme of the Empire state of Averland.</description>
-		<graphicData>
-			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Averland/RH_TET_Humans_Floppy_feathered_hat</texPath>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Averland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites><li>RH_TET_Empire_ColorsAverland</li></researchPrerequisites>
-		</recipeMaker>
-	</ThingDef>
-  
-	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Ostermark">
-		<defName>RH_TET_Empire_FeatheredHat_Ostermark</defName>
-		<label>Ostermark feathered hat</label>
-		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the red and yellow color scheme of the Empire state of Ostermark.</description>
-		<graphicData>
-			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostermark/RH_TET_Humans_Floppy_feathered_hat</texPath>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostermark/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites><li>RH_TET_Empire_ColorsOstermark</li></researchPrerequisites>
-		</recipeMaker>
-	</ThingDef>
-  
-	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Ostland">
-		<defName>RH_TET_Empire_FeatheredHat_Ostland</defName>
-		<label>Ostland feathered hat</label>
-		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the black and white color scheme of the Empire state of Ostland.</description>
-		<graphicData>
-			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostland/RH_TET_Humans_Floppy_feathered_hat</texPath>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Ostland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites><li>RH_TET_Empire_ColorsOstland</li></researchPrerequisites>
-		</recipeMaker>
-	</ThingDef>
-  
-	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Hochland">
-		<defName>RH_TET_Empire_FeatheredHat_Hochland</defName>
-		<label>Hochland feathered hat</label>
-		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the red and green color scheme of the Empire state of Hochland.</description>
-		<graphicData>
-			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Hochland/RH_TET_Humans_Floppy_feathered_hat</texPath>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Hochland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites><li>RH_TET_Empire_ColorsHochland</li></researchPrerequisites>
-		</recipeMaker>
-	</ThingDef>
-  
-	<ThingDef ParentName="RH_TET_Empire_FeatheredHat_Base" Name="RH_TET_Empire_FeatheredHat_Stirland">
-		<defName>RH_TET_Empire_FeatheredHat_Stirland</defName>
-		<label>Stirland feathered hat</label>
-		<description>Stylish feathered hat that keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. The feathers match the yellow and green color scheme of the Empire state of Stirland.</description>
-		<graphicData>
-			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Stirland/RH_TET_Humans_Floppy_feathered_hat</texPath>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_Feathered/Stirland/RH_TET_Humans_Floppy_feathered_hat</wornGraphicPath>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites><li>RH_TET_Empire_ColorsStirland</li></researchPrerequisites>
-		</recipeMaker>
-	</ThingDef>
--->
-  
+
 	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_WitchhunterHat">
 		<defName>RH_TET_Empire_WitchhunterHat</defName>
 		<label>Empire witchhunter hat</label>
@@ -1118,7 +1004,6 @@
 		<graphicData>
 			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Simple/RH_TET_Empire_Helmet_Simple</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
@@ -1171,7 +1056,6 @@
 		<graphicData>
 			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Mid/RH_TET_Empire_Helmet_Mid</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
@@ -1227,7 +1111,6 @@
 		<graphicData>
 			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Fancy/RH_TET_Empire_Morion_Simple</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
@@ -1383,7 +1266,6 @@
 		<graphicData>
 			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_Wolf/RH_TET_Empire_WolfHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!--<shaderType>CutoutComplex</shaderType>-->
 		</graphicData>
 		<costStuffCount>70</costStuffCount>
 		<stuffCategories>

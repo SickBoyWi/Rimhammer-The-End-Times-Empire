@@ -43,7 +43,6 @@
 		</statBases>
 		<size>(3,2)</size>
 		<thingCategories>
-			<!--<li>BuildingsProduction</li>-->
 			<li>RH_TET_Empire_BuildingsFurniture</li>
 		</thingCategories>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -53,7 +52,6 @@
 		<tickerType>Normal</tickerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<!--<passability>Impassable</passability>-->
 		<pathCost>75</pathCost>
 		<surfaceType>Item</surfaceType>
 		<placeWorkers>

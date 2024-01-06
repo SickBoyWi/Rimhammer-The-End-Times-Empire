@@ -12,6 +12,7 @@
 			<li>RH_TET_Empire_Special</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
+	
 	<!-- childhood -->
 	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_ChildBackstory">
 		<defName>RH_TET_Empire_Farmer_Child_Backstory</defName>
@@ -342,6 +343,7 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
+	
 	<!-- adulthood -->
 	<AlienRace.AlienBackstoryDef ParentName="RH_TET_Empire_Backstory">
 		<defName>RH_TET_Empire_Farmer_Backstory</defName>

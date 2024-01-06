@@ -271,7 +271,6 @@
 			<WorkToMake>8500</WorkToMake>
 			<Mass>0.85</Mass>
 		</statBases>
-		<!--<equippedAngleOffset>-60</equippedAngleOffset>-->
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>

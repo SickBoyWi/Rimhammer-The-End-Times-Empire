@@ -215,16 +215,6 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!--
-   <colorGenerator Class="ColorGenerator_Options">
-     <options>
-       <li>
-         <weight>10</weight>
-         <only>(1.0,1.0,1.0,1)</only>
-       </li>
-     </options>
-   </colorGenerator>
-   -->
 		<thingCategories>
 			<li>RH_TET_Empire_Apparel</li>
 		</thingCategories>

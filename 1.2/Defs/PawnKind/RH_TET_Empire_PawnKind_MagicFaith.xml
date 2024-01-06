@@ -103,7 +103,6 @@
     <label>Empire great wizard</label>
     <factionLeader>true</factionLeader>
     <combatPower>120</combatPower>
-	<!-- TODO This needs to change to default Empire faction. -->
     <defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
     <backstoryFiltersOverride>
       <li>
