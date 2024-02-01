@@ -1067,8 +1067,9 @@
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Sigmar/RH_TET_Empire_Armor_Sigmar</texPath>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Sigmar/RH_TET_Empire_Armor_Faith</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
@@ -1102,13 +1103,14 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Sigmar/RH_TET_Empire_Armor_Sigmar</wornGraphicPath>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Sigmar/RH_TET_Empire_Armor_Faith</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>RH_TET_Empire_Armor_Faith</li>
 			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
 			<li>RH_TET_Empire_Armor</li>
