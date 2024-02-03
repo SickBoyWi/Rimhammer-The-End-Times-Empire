@@ -777,6 +777,65 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
+		<defName>RH_TET_Empire_Armor_Leather</defName>
+		<label>Empire huntsman gambeson</label>
+		<description>A leather gambeson worn by huntsman of the Empire. Good for moving around, while yet providing some protection to the wearer.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Basic</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Huntsman/HuntsmenGambeson</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>110</MaxHitPoints>
+			<Mass>2.5</Mass>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.60</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>1.0</Flammability>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Huntsman/HuntsmenGambeson</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_Low</li>
+				<li>RH_TET_Empire_Armor_Huntsman</li>
+			</tags>
+			<!--
+		<defaultOutfitTags>
+		  <li>RH_TET_DwarfWarrior</li>
+		</defaultOutfitTags>
+		-->
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
 		<defName>RH_TET_Empire_Armor_Low</defName>
 		<label>Empire basic armor</label>
 		<description>Simple Empire armor. Provides good protection from sharp attacks, and some from blunt attacks.</description>
@@ -791,6 +850,7 @@
 		<graphicData>
 			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Simple/RH_TET_Empire_Armor_Simple</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
@@ -820,6 +880,72 @@
 				<li>Arms</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Simple/RH_TET_Empire_Armor_Simple</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_Low</li>
+			</tags>
+			<!--
+		<defaultOutfitTags>
+		  <li>RH_TET_DwarfWarrior</li>
+		</defaultOutfitTags>
+		-->
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
+		<defName>RH_TET_Empire_Armor_LowGilded</defName>
+		<label>Empire basic gilded armor</label>
+		<description>Simple Empire armor that has been gilded with a golden design. Provides good protection from sharp attacks, and some from blunt attacks. Improves social standing, so the grunt will listen to orders.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Basic</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_SimpleGilded/RH_TET_Empire_Armor_Simple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Gold>5</Gold>
+		</costList>
+		<statBases>
+			<WorkToMake>13000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>4.0</Mass>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<EquipDelay>3.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-.05</MoveSpeed>
+			<SocialImpact>.15</SocialImpact>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_SimpleGilded/RH_TET_Empire_Armor_Simple</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -949,6 +1075,7 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_High/RH_TET_Empire_Armor_High</wornGraphicPath>
 			<layers>
@@ -1102,6 +1229,7 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Sigmar/RH_TET_Empire_Armor_Faith</wornGraphicPath>
 			<layers>

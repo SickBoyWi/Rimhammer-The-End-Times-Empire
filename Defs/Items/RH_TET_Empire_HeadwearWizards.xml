@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase" Name="RH_TET_Empire_WizardHat_Low">
+		<defName>RH_TET_Empire_WizardHat_Low</defName>
+		<label>Empire wizards hat pointed</label>
+		<description>A hat for wizards to wear. Hip with the latest and greatest of Empire wizardry style.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Basic</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Hats/RH_TET_Empire_Hat_WizardLow/RH_TET_Empire_Wizard_HatLow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Hats/RH_TET_Empire_Hat_WizardLow/RH_TET_Empire_Wizard_HatLow</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard</li>
+				<li>RH_TET_Empire_WizardGreat</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.1,0.1,0.1,1)</only>
+				</li>
+				<li><!-- Red -->
+					<weight>10</weight>
+					<only>(.70,0.11,0.11,1)</only>
+				</li>
+				<li><!-- Green -->
+					<weight>10</weight>
+					<only>(0.22,.70,0.22,1)</only>
+				</li>
+				<li><!-- Blue -->
+					<weight>10</weight>
+					<only>(0.1,0.1,.73,1)</only>
+				</li>
+				<li><!-- Gray -->
+					<weight>10</weight>
+					<only>(.43,.43,.43,1)</only>
+				</li>
+				<li><!-- Yellow -->
+					<weight>10</weight>
+					<only>(.68,.68,0.04,1)</only>
+				</li>
+				<li><!-- Brown -->
+					<weight>10</weight>
+					<only>(0.39,0.22,0.05,1)</only>
+				</li>
+				<li><!-- Orange -->
+					<weight>10</weight>
+					<only>(.78,0.46,0.17,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<!-- TODO - wizard apparel could perhaps benefit for this, for tracking what they're supposed to wear.
+	<comps>
+      <li Class="TheEndTimes_Magic.CompApparel_MagicUser" />
+    </comps>
+	-->
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_WizardHat_Low">
+		<defName>RH_TET_Empire_WizardHat_Beasts</defName>
+		<label>Empire Beast wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Beasts wizards.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Beasts/BeastsWizard_Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TameAnimalChance>0.05</TameAnimalChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/WizardApparel/Beasts/BeastsWizard_Hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Beasts</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Beasts</li>
+				<li>RH_TET_Empire_WizardGreat_Beasts</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!--
+	<comps>
+      <li Class="TheEndTimes_Magic.CompApparel_MagicUser" />
+    </comps>
+	-->
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Heavens</defName>
+		<label>Empire Heavens wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Heavens wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Celestial/CelestialCap</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Celestial/CelestialCap</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Celestial</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Celestial</li>
+				<li>RH_TET_Empire_WizardGreat_Celestial</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Steel>10</Steel>
+			<Cloth>30</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Death</defName>
+		<label>Empire Death wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Death wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Spirit/DeathCap</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Spirit/DeathCap</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Spirit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Spirit</li>
+				<li>RH_TET_Empire_WizardGreat_Spirit</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Cloth>45</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.05</MedicalOperationSpeed>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_WizardHat_Low">
+		<defName>RH_TET_Empire_WizardHat_Shadow</defName>
+		<label>Empire Shadow wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Shadow wizards.</description>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Apparel_Mid</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Grey/GreyWizard_Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/WizardApparel/Grey/GreyWizard_Hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Shadow</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Shadow</li>
+				<li>RH_TET_Empire_WizardGreat_Shadow</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!--
+	<comps>
+      <li Class="TheEndTimes_Magic.CompApparel_MagicUser" />
+    </comps>
+	-->
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Life</defName>
+		<label>Empire Life wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Life wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Jade/LifeHood</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Jade/LifeHood</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Jade</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Jade</li>
+				<li>RH_TET_Empire_WizardGreat_Jade</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Cloth>45</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalTendSpeed>0.05</MedicalTendSpeed>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Light</defName>
+		<label>Empire Light wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Light wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/White/LightCap</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/White/LightCap</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_White</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_White</li>
+				<li>RH_TET_Empire_WizardGreat_White</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Cloth>45</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalSurgerySuccessChance>0.05</MedicalSurgerySuccessChance>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+  
+	<ThingDef ParentName="RH_TET_Empire_HatMakeableBase">
+		<defName>RH_TET_Empire_WizardHat_Gold</defName>
+		<label>Empire Metal wizard hat</label>
+		<description>A hat for wizards to wear, in the style of Lore of Metal wizards.</description>
+		<graphicData>
+			<texPath>Things/Items/WizardApparel/Gold/GoldenMask</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Items/WizardApparel/Gold/GoldenMask</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Wizard_Gold</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>RH_TET_Empire_WizardStandard_Gold</li>
+				<li>RH_TET_Empire_WizardGreat_Gold</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Mid</li></researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Gold>5</Gold>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.14</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SmeltingSpeed>0.05</SmeltingSpeed>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1.0,1.0,1.0,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

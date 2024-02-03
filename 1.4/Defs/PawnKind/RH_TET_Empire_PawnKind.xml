@@ -225,15 +225,13 @@
 		<label>huntsman</label>
 		<combatPower>55</combatPower>
 		<isFighter>true</isFighter>
-		<gearHealthRange>0.8~2</gearHealthRange>
+		<gearHealthRange>0.95~1</gearHealthRange>
 		<apparelTags>
+			<li>RH_TET_Empire_Armor_Huntsman</li>
 			<li>IndustrialBasic</li>
-			<li>RH_TET_Empire_Apparel_Headwear_Basic</li>
-			<li>RH_TET_Empire_Apparel_Headwear_Mid</li>
-			<li>RH_TET_Empire_Apparel_Headwear_fine</li>
 		</apparelTags>
 		<apparelMoney>300~600</apparelMoney>
-		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
 		<weaponTags>
 			<li>RH_TET_Empire_Huntsman</li>
 		</weaponTags>
@@ -248,7 +246,14 @@
 		<initialWillRange>1~2</initialWillRange>
 		<apparelColor>(68,101,0)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(68,101,0)</favoriteColor>
+		<favoriteColor>(68,101,0)</favoriteColor>		
+		<apparelRequired>
+			<li>Apparel_BasicShirt</li>
+			<li>Apparel_Pants</li>
+			<li>RH_TET_Empire_Armor_Leather</li>
+			<li>RH_TET_Empire_HuntsmansHat</li>
+			<li>RH_TET_Empire_Shoes</li>
+		</apparelRequired>
 	</PawnKindDef>
   
 	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
