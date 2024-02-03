@@ -55,7 +55,7 @@
 	<ThingDef>
 		<defName>RH_TET_Empire_Cheese</defName>
 		<label>cheese</label>
-		<description>Yellow cheese. It lasts a long amount of time without refrigeration.</description>
+		<description>Yellow cheese. It lasts a long amount of time without refrigeration.\n\nUnmistakable to its citizens, Imperial cheese is known to have a beautiful red color.</description>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
 		<useHitPoints>true</useHitPoints>
