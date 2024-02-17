@@ -144,5 +144,17 @@
 			<li>RH_TET_Empire</li>
 		</styleTags>
 	</BeardDef>
+   
+	<BeardDef>
+		<defName>RH_TET_Empire_FireBeard</defName>
+		<label>firey beard</label>
+		<texPath>Things/Pawn/Beard/BrightWizard_FieryBeard</texPath>
+		<iconPath>Things/Pawn/Beard/BrightWizard_FieryBeard</iconPath>
+		<category>RH_TET_Empire</category>
+		<styleTags>
+			<li>RH_TET_Empire</li>
+		</styleTags>
+	</BeardDef>
+
 
 </Defs>

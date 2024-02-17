@@ -1276,6 +1276,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+			<ToxicResistance>.20</ToxicResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

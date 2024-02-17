@@ -1209,7 +1209,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RH_TET_Empire_GreatAxe_Ulric</defName>
 		<label>Empire great axe</label>
-		<description>A fine great axe, crafted by the men of the Empire. Amazing for the heads or limbs from enemies, regardless of their armor.\n\nThese great hammers are made in the name of Ulric, and are intended for the warrior priests of Ulric to wield.</description>
+		<description>A fine great axe, crafted by the men of the Empire. Amazing for the heads or limbs from enemies, regardless of their armor.\n\nThese great axes are made in the name of Ulric, and are intended for the warrior priests of Ulric to wield.</description>
 		<graphicData>
 			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Greataxe_Ulric</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

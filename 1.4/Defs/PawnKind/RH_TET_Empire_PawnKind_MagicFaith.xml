@@ -152,6 +152,8 @@
 			<li>RH_TET_Empire_Shoes</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<forcedHair>RH_TET_Empire_Hair_FireWizard2</forcedHair>
+		<forcedHairColor>(229, 160, 103)</forcedHairColor>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="RH_TET_EmpireWizardPawnKindOrderStandard">
@@ -310,7 +312,7 @@
   
 	<PawnKindDef Name="RH_TET_EmpireWizardPawnKindOrderGreat" ParentName="RH_TET_EmpireWizardPawnKind" Abstract="True">
 		<combatPower>120</combatPower>
-		<factionLeader>false</factionLeader>
+		<factionLeader>true</factionLeader>
 		<defaultFactionType>RH_TET_EmpireOfMan</defaultFactionType>
 		<chemicalAddictionChance>0.01</chemicalAddictionChance>
 		<apparelMoney>
@@ -392,6 +394,17 @@
 			<li>RH_TET_Empire_Shoes</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<!--DOESNT WORK
+		<hairTags Inherit="False">
+		  <li>
+			<tag>RH_TET_EmpireFire</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		  </li>
+		</hairTags>	
+		-->		
+		<forcedHair>RH_TET_Empire_Hair_FireWizard1</forcedHair>
+		<forcedHairColor>(229, 160, 103)</forcedHairColor>
 	</PawnKindDef>
   
 	<PawnKindDef ParentName="RH_TET_EmpireWizardPawnKindOrderGreat">

@@ -462,6 +462,7 @@
 	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
 		<defName>RH_TET_Empire_Captain_Melee</defName>
 		<label>captain</label>
+		<factionLeader>true</factionLeader>
 		<combatPower>55</combatPower>
 		<isFighter>true</isFighter>
 		<gearHealthRange>1~2</gearHealthRange>
@@ -490,6 +491,7 @@
 	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
 		<defName>RH_TET_Empire_Captain_Ranged</defName>
 		<label>captain</label>
+		<factionLeader>true</factionLeader>
 		<combatPower>60</combatPower>
 		<isFighter>true</isFighter>
 		<gearHealthRange>1~2</gearHealthRange>

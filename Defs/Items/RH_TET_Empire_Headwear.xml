@@ -83,6 +83,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+			<ToxicResistance>.15</ToxicResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -194,7 +195,7 @@
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicResistance>-0.20</ToxicResistance>
+			<ToxicResistance>0.10</ToxicResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
