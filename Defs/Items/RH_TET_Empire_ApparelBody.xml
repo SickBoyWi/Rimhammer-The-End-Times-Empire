@@ -1031,7 +1031,7 @@
 	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
 		<defName>RH_TET_Empire_Armor_High</defName>
 		<label>Empire superior armor</label>
-		<description>Empire armor worn by wealthy knights, elector counts, etc. Provides great protection all around.</description>
+		<description>Empire armor worn by the wealthy; elector counts, nobles, etc. Provides great protection all around.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
@@ -1044,7 +1044,7 @@
 			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_High/RH_TET_Empire_Armor_High</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<costStuffCount>115</costStuffCount>
+		<costStuffCount>130</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -1078,6 +1078,68 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_High/RH_TET_Empire_Armor_High</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_High</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
+		<defName>RH_TET_Empire_Armor_Knight</defName>
+		<label>Empire knight armor</label>
+		<description>Empire armor worn by the illustrious Empire knights, regardless of the knightly order to which they belong.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Armor/RH_TET_Empire_Armor_Knight/RH_TET_Empire_Armor_Knight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>125</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Gold>3</Gold>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>23000</WorkToMake>
+			<MaxHitPoints>265</MaxHitPoints>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.0</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-.4</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>.25</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Knight/RH_TET_Empire_Armor_Knight</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>

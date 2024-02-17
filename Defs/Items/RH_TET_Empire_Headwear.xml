@@ -748,6 +748,70 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
+		<defName>RH_TET_Empire_Helmet_Knight</defName>
+		<label>Empire knight helmet</label>
+		<description>A highly protective, and nice looking Empire helmet worn by the illustrious Empire Knights of their various orders.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Knight/RH_TET_Emp_KnightHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Gold>2</Gold>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>11500</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.38</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+		</statBases>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Helmets/RH_TET_Empire_Helmet_Knight/RH_TET_Emp_KnightHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RH_TET_Empire_Armor_High</li>
+				<li>RH_TET_Empire_Armor_Knight</li>
+			</tags>
+			<!-- TODO JEH Do this once pawn types are added.
+      <defaultOutfitTags>
+        <li>RH_TET_DwarfIronBreaker</li>
+      </defaultOutfitTags>
+	  -->
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>RH_TET_Empire_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
 		<defName>RH_TET_Empire_Helmet_Pistoleer</defName>
 		<label>Empire pistoleer helmet</label>
 		<description>A very protective, and nice looking Empire helmet, that is slightly less weighty than usual. Worn by mounted Empire pistoleers.</description>
