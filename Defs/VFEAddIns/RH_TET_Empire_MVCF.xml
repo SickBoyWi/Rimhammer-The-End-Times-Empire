@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+			<!--
+	<MVCF.ModDef>
+		<defName>RH_TET_Empire_MVCFAddOn</defName>
+		<label>Rimhammer - Empire</label>
+		<description>Adding MVCF functionality into Rimhammer Empire</description>
+		<ActivateFeatures>
+
+			<li>RangedAnimals</li>
+			<li>HediffVerbs</li>
+			
+			<li>ExtraEquipmentVerbs</li>
+			<li>IntegratedToggle</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+			-->
+ 
+</Defs>

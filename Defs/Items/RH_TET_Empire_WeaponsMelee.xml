@@ -461,7 +461,14 @@
 			</li>
 		</modExtensions>
 		<equippedAngleOffset>45</equippedAngleOffset>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Medieval</techLevel>    
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<ConsiderMelee>true</ConsiderMelee>
+				<verbProps />
+			</li>
+		</comps>
 	</ThingDef>
   
 	<ThingDef ParentName="RH_TET_SpearHalberdBase">
@@ -1361,7 +1368,14 @@
 			</li>
 		</modExtensions>
 		<equippedAngleOffset>45</equippedAngleOffset>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Medieval</techLevel>   
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<ConsiderMelee>true</ConsiderMelee>
+				<verbProps />
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="RH_TET_StandardBase">
