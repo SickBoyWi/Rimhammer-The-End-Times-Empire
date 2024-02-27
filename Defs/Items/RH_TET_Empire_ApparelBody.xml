@@ -154,6 +154,7 @@
 			<tags>
 				<li>RH_TET_Empire_Fine</li>
 				<li>RH_TET_Empire_Officer</li>
+				<li>RH_TET_Empire_Apparel_Knight</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>RH_TET_Empire_High</li>
@@ -752,6 +753,7 @@
 			</layers>
 			<tags>
 				<li>RH_TET_Empire_Fine</li>
+				<li>RH_TET_Empire_Apparel_Knight</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>RH_TET_Empire_High</li>
@@ -1144,6 +1146,7 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
+				<li>RH_TET_Empire_Armor_Knight</li>
 				<li>RH_TET_Empire_Armor_High</li>
 			</tags>
 		</apparel>

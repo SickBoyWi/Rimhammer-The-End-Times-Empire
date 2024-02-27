@@ -385,6 +385,30 @@
 	</PawnKindDef>
   
 	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
+		<defName>RH_TET_Empire_Knight</defName>
+		<label>knight</label>
+		<combatPower>55</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.95~2</gearHealthRange>
+		<apparelTags>
+			<li>RH_TET_Empire_Apparel_Knight</li>
+			<li>RH_TET_Empire_Armor_Knight</li>
+		</apparelTags>
+		<apparelMoney>750~1500</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<weaponTags>
+			<li>RH_TET_Empire_Melee_Knight</li>
+		</weaponTags>
+		<weaponMoney>300~900</weaponMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialResistanceRange>20~25</initialResistanceRange>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="RH_TET_EmpirePawnKind">
 		<defName>RH_TET_Empire_Crossbowman</defName>
 		<label>crossbowman</label>
 		<combatPower>70</combatPower>

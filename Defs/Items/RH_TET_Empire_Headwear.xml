@@ -796,8 +796,8 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>RH_TET_Empire_Armor_High</li>
 				<li>RH_TET_Empire_Armor_Knight</li>
+				<li>RH_TET_Empire_Armor_High</li>
 			</tags>
 			<!-- TODO JEH Do this once pawn types are added.
       <defaultOutfitTags>

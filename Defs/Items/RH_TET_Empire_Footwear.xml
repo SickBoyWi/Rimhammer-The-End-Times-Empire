@@ -181,6 +181,13 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
+		<apparel>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Fine</li>
+				<li>RH_TET_Empire_Apparel_Officer</li>
+				<li>RH_TET_Empire_Apparel_Knight</li>
+			</tags>
+		</apparel>
 	</ThingDef>
   
 	<ThingDef ParentName="RH_TET_Empire_FootwearArmorBase">
@@ -216,6 +223,9 @@
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Fine</li>
+			</tags>
 		</apparel>
 	</ThingDef>
   
@@ -252,6 +262,9 @@
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
+			<tags>
+				<li>RH_TET_Empire_Apparel_Officer</li>
+			</tags>
 		</apparel>
 	</ThingDef>
   
