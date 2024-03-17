@@ -1197,6 +1197,9 @@
 			<layers><li>Shell</li></layers>
 			<wornGraphicPath>Things/Items/Misc/Cape/RH_TET_Empire_Cape</wornGraphicPath>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Basic</li></researchPrerequisites>
+		</recipeMaker>
 	</ThingDef>
  
 	<ThingDef ParentName="RH_TET_Empire_ApparelMakeableBase">
@@ -1245,6 +1248,9 @@
 			<wornGraphicPath>Things/Items/Outrider_Jacket/RH_TET_Empire_OutriderJacket</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisites><li>RH_TET_Empire_Apparel_Advanced</li></researchPrerequisites>
+		</recipeMaker>
 	</ThingDef>
 	
 	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
