@@ -955,10 +955,11 @@
 				<li>RH_TET_Empire_Armor_Low</li>
 			</tags>
 			<!--
-		<defaultOutfitTags>
-		  <li>RH_TET_DwarfWarrior</li>
-		</defaultOutfitTags>
-		-->
+			<defaultOutfitTags>
+			<li>RH_TET_DwarfWarrior</li>
+			</defaultOutfitTags>
+			-->
+			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
 			<li>RH_TET_Empire_Armor</li>

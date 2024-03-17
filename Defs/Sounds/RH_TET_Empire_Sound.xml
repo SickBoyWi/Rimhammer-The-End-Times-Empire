@@ -214,5 +214,22 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+
+  <SoundDef>
+    <defName>RH_TET_Empire_Murderstroke</defName>  
+    <context>MapOnly</context>   
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/RH_TET_Empire_Murderstroke</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.9788043~1.063587</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
   
 </Defs>
