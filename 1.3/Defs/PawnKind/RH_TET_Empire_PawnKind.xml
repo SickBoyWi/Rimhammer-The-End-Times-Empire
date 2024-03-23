@@ -537,7 +537,7 @@
       <subOptionsChooseOne>
         <li>
           <choiceChance>6</choiceChance>
-          <thingDef>MedicineIndustrial</thingDef>
+          <thingDef>RH_TET_Dwarfs_MedicineMedieval</thingDef>
           <countRange>5</countRange>
         </li>
       </subOptionsChooseOne>
