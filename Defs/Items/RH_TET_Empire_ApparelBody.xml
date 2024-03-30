@@ -879,7 +879,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
-				<li>Arms</li>
+				<li>Shoulders</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_Simple/RH_TET_Empire_Armor_Simple</wornGraphicPath>
 			<layers>
@@ -945,7 +945,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
-				<li>Arms</li>
+				<li>Shoulders</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Armor/RH_TET_Empire_Armor_SimpleGilded/RH_TET_Empire_Armor_Simple</wornGraphicPath>
 			<layers>
