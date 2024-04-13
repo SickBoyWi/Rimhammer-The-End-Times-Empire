@@ -1034,7 +1034,7 @@
 	<ThingDef ParentName="RH_TET_Empire_ArmorSmithableBase">
 		<defName>RH_TET_Empire_Armor_High</defName>
 		<label>Empire superior armor</label>
-		<description>Empire armor worn by the wealthy; elector counts, nobles, etc. Provides great protection all around.</description>
+		<description>Empire armor worn by the wealthy; elector counts, nobles, etc. Provides good protection all around.\n\nThis armor sacrifices a small degree of protection vs the Empire Good Armor, in exchange for its elaborateness. Wearing this does improve social standing.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
@@ -1059,17 +1059,18 @@
 			<WorkToMake>22500</WorkToMake>
 			<Mass>12</Mass>
 			<MaxHitPoints>235</MaxHitPoints>
-			<StuffEffectMultiplierArmor>0.80</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>.95</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.28</StuffEffectMultiplierInsulation_Heat>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.40</ArmorRating_Heat>
-			<EquipDelay>6</EquipDelay>
+			<StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>.82</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.22</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-.6</MoveSpeed>
+			<MoveSpeed>-.4</MoveSpeed>
+			<SocialImpact>.10</SocialImpact>
 		</equippedStatOffsets>
 		<generateCommonality>.78</generateCommonality>
 		<apparel>

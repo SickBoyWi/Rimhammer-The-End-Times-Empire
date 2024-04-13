@@ -694,7 +694,7 @@
 	<ThingDef ParentName="RH_TET_Empire_ArmorHelmetMakeableBase">
 		<defName>RH_TET_Empire_Helmet_High</defName>
 		<label>Empire morion helmet</label>
-		<description>A highly protective, and nice looking Empire helmet.</description>
+		<description>A highly protective, and nice looking Empire helmet.\n\nThis helm sacrifices a small degree of protection vs the Empire Improved Helmet, in exchange for its elaborateness. Wearing this does improve social standing.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
@@ -717,12 +717,15 @@
 		<statBases>
 			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>155</MaxHitPoints>
-			<Mass>3</Mass>
-			<StuffEffectMultiplierArmor>0.78</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.26</StuffEffectMultiplierInsulation_Heat>
+			<Mass>2.8</Mass>
+			<StuffEffectMultiplierArmor>0.70</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>.05</SocialImpact>
+		</equippedStatOffsets>
 		<generateCommonality>1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
@@ -753,7 +756,7 @@
 		<description>A highly protective, and nice looking Empire helmet worn by the illustrious Empire Knights of their various orders.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>RH_TET_Empire_Armor_Improved</researchPrerequisite>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
