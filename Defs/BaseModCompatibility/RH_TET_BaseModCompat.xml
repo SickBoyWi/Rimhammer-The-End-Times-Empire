@@ -131,7 +131,6 @@
 	</ThingDef>
 	
 	<!-- Buildings -->
-
 	<ThingDef ParentName="RH_TET_BenchBase">
 		<defName>RH_TET_TableSmithy</defName>
 		<label>anvil and forge</label>

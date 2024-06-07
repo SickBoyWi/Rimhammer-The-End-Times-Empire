@@ -17,7 +17,7 @@ namespace TheEndTimes_Empire
         {
             CompProperties_BeeHive propertiesBeeHive = def.comps.Where<CompProperties>((Func<CompProperties, bool>)(c => c is CompProperties_BeeHive)).FirstOrDefault<CompProperties>() as CompProperties_BeeHive;
             if (propertiesBeeHive == null)
-                Log.Warning("Placeworker_ShowBeeHiveRange -- No comp, cannot show radius.", false);
+                Log.Warning("Placeworker_ShowBeeHiveRange -- No comp, cannot show radius.");
             else
                 GenDraw.DrawFieldEdges(new List<IntVec3>(EmpireUtil.CalculateAllCellsInsideRadius(center, Find.CurrentMap, Mathf.RoundToInt(propertiesBeeHive.rangeThings))), ghostCol);
         }

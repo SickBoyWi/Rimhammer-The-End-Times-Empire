@@ -56,7 +56,8 @@ namespace TheEndTimes_Empire
             //chantingTime.AddPreTickAction((Action)(() => this.WatchTickAction()));
             chantingTime.initAction = delegate
             {
-                this.pawn.equipment.Primary.Draw();
+                // JEH 1.5
+                this.pawn.equipment.Primary.DrawNowAt(pawn.Position.ToVector3(), true);
 
                 if (godSymbol != null)
                     MoteMaker.MakeInteractionBubble(this.pawn, null, ThingDefOf.Mote_Speech, godSymbol);
@@ -67,7 +68,8 @@ namespace TheEndTimes_Empire
             };
             yield return chantingTime;
 
-            this.AddFinishAction(() =>
+            // JEH 1.5
+            this.AddFinishAction((Action<JobCondition>) (jobCondition =>
             {
                 // Give thought.
                 if (!Effigy.CanceledInd)
@@ -83,7 +85,7 @@ namespace TheEndTimes_Empire
                 }
 
                 Effigy.ChangeState(Building_EffigyOfSigmar.State.powering);
-            });
+            }));
         }
     }
 }

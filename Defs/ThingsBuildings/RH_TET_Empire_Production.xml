@@ -128,9 +128,6 @@
 		</building>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li>
-				<compClass>CompReportWorkSpeed</compClass>
-			</li>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>

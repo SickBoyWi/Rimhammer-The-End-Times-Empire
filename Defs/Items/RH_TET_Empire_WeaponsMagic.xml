@@ -24,7 +24,7 @@
 			<li>RH_TET_Empire_WeaponsMelee</li>
 		</thingCategories>
 		<comps>
-			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+			<li Class="SickCompOversizedWeapon.CompProperties_OversizedWeapon">
 				<verticalFlipNorth>false</verticalFlipNorth>
 				<northOffset>(0.2,0,0.2)</northOffset>
 				<eastOffset>(-.05,0,0.1)</eastOffset>

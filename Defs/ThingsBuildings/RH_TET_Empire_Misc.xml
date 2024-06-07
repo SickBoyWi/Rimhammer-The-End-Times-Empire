@@ -147,7 +147,7 @@
 		<label>meat smoker</label>
 		<description>A massive grill for smoking meat. Can handle large quantities at once.</description>
 		<thingClass>TheEndTimes_Empire.Building_MeatSmoker</thingClass>
-		<size>(2.9,1.9)</size>
+		<size>(3,2)</size>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Buildings/Production/RH_TET_Empire_MeatSmoker</texPath>

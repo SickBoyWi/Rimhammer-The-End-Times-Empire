@@ -4,6 +4,7 @@
 		<defName>RH_TET_Empire_SigmarHammerMap</defName>
 		<size>(250, 250)</size>
 		<defogPosition>(125,0,0)</defogPosition>
+<!--
 		<MapData>
 			<li>
 				<key>
@@ -106145,5 +106146,6 @@
 		        </Positions>
 		    </li>
 		</RoofData>
+  -->
   </TheEndTimes_Empire.MapGenDef>
 </Defs>

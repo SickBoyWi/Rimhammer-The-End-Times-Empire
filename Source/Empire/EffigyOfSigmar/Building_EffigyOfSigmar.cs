@@ -272,25 +272,25 @@ namespace TheEndTimes_Empire
 
         private static BodyPartRecord ExecuteCutPart(Pawn pawn)
         {
-            BodyPartRecord bodyPartRecord1 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == BodyPartDefOf.Neck));
+            BodyPartRecord bodyPartRecord1 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == DefDatabase<BodyPartDef>.GetNamed("Neck")));
             if (bodyPartRecord1 != null)
                 return bodyPartRecord1;
-            BodyPartRecord bodyPartRecord2 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == BodyPartDefOf.Head));
+            BodyPartRecord bodyPartRecord2 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == DefDatabase<BodyPartDef>.GetNamed("Head")));
             if (bodyPartRecord2 != null)
                 return bodyPartRecord2;
-            BodyPartRecord bodyPartRecord3 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == BodyPartDefOf.InsectHead));
+            BodyPartRecord bodyPartRecord3 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == DefDatabase<BodyPartDef>.GetNamed("InsectHead")));
             if (bodyPartRecord3 != null)
                 return bodyPartRecord3;
-            BodyPartRecord bodyPartRecord4 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == BodyPartDefOf.Body));
+            BodyPartRecord bodyPartRecord4 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == DefDatabase<BodyPartDef>.GetNamed("Body")));
             if (bodyPartRecord4 != null)
                 return bodyPartRecord4;
-            BodyPartRecord bodyPartRecord5 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == BodyPartDefOf.SnakeBody));
+            BodyPartRecord bodyPartRecord5 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == DefDatabase<BodyPartDef>.GetNamed("SnakeBody")));
             if (bodyPartRecord5 != null)
                 return bodyPartRecord5;
-            BodyPartRecord bodyPartRecord6 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == BodyPartDefOf.Torso));
+            BodyPartRecord bodyPartRecord6 = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).FirstOrDefault<BodyPartRecord>((Func<BodyPartRecord, bool>)(x => x.def == DefDatabase<BodyPartDef>.GetNamed("Torso")));
             if (bodyPartRecord6 != null)
                 return bodyPartRecord6;
-            Log.Error("No good killing cut part found for " + (object)pawn, false);
+            Log.Error("No good killing cut part found for " + (object)pawn);
             return pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, (BodyPartTagDef)null, (BodyPartRecord)null).RandomElementByWeight<BodyPartRecord>((Func<BodyPartRecord, float>)(x => x.coverageAbsWithChildren));
         }
 
@@ -330,10 +330,10 @@ namespace TheEndTimes_Empire
                         action = TryToBeginPowering,
                         defaultLabel = "RH_TET_Empire_CommandPower".Translate(),
                         defaultDesc = "RH_TET_Empire_CommandPowerDesc".Translate(),
-                        disabled = false,
                         hotKey = KeyBindingDefOf.Misc3,
                         icon = ContentFinder<Texture2D>.Get("UI/Commands/RH_TET_Empire_Power")
                     };
+                    command_Action.Disabled = false;
                     yield return command_Action;
                 }
                 else
@@ -347,10 +347,10 @@ namespace TheEndTimes_Empire
                         action = null,
                         defaultLabel = "RH_TET_Empire_CommandPower".Translate(),
                         defaultDesc = descr,
-                        disabled = true,
                         hotKey = KeyBindingDefOf.Misc3,
                         icon = ContentFinder<Texture2D>.Get("UI/Commands/RH_TET_Empire_PowerDisabled")
                     };
+                    command_Action.Disabled = false;
                     yield return command_Action;
                 }
             }
@@ -374,10 +374,10 @@ namespace TheEndTimes_Empire
                     action = WinTheGame,
                     defaultLabel = "RH_TET_Empire_CommandSmite".Translate(),
                     defaultDesc = "RH_TET_Empire_CommandSmiteDesc".Translate(),
-                    disabled = false,
                     hotKey = KeyBindingDefOf.Misc3,
                     icon = ContentFinder<Texture2D>.Get("UI/Commands/RH_TET_Empire_Smite")
                 };
+                command_Action.Disabled = false;
                 yield return command_Action;
             }
             else
@@ -387,10 +387,10 @@ namespace TheEndTimes_Empire
                     action = null,
                     defaultLabel = "RH_TET_Empire_CommandSmite".Translate(),
                     defaultDesc = "RH_TET_Empire_CommandSmiteDescUnavailable".Translate(),
-                    disabled = true,
                     hotKey = KeyBindingDefOf.Misc3,
                     icon = ContentFinder<Texture2D>.Get("UI/Commands/RH_TET_Empire_SmiteDisabled")
                 };
+                command_Action.Disabled = false;
                 yield return command_Action;
             }
 
@@ -439,7 +439,10 @@ namespace TheEndTimes_Empire
         private void CancelPowering()
         {
             Pawn pawn = null;
-            var listeners = Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
+            // JEH 1.4
+            //var listeners = Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
+            // JEH 1.5
+            var listeners = Map.mapPawns.AllPawnsSpawned.Where<Pawn>((Func<Pawn, bool>)(x => x.RaceProps.intelligence == Intelligence.Humanlike)).ToList<Pawn>();
             CanceledInd = true;
             if (!listeners.NullOrEmpty())
             {

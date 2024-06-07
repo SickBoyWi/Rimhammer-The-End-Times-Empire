@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="RH_TET_EmpireSpecialPawnKind" Abstract="True">
+		<race>Human</race>
+		<combatPower>35</combatPower>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<invNutrition>5.0</invNutrition>
+		<invFoodDef>RH_TET_Empire_Bread</invFoodDef>
+	</PawnKindDef>
+  
+	<!-- TODO - ADD ALL EMPIRE PAWN KINDS TO THE SOURCE CODE UTIL METHOD CHECK. -->
+	<PawnKindDef ParentName="RH_TET_EmpireSpecialPawnKind">
+		<defName>RH_TET_Empire_Witchhunter</defName>
+		<label>witchhunter</label>
+		<labelMale>witchhunter</labelMale>
+		<labelFemale>witchhunter</labelFemale>
+		<labelPlural>witchhunters</labelPlural>
+		<combatPower>100</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<isFighter>true</isFighter>
+		<chemicalAddictionChance>0.001</chemicalAddictionChance>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>6</choiceChance>
+					<thingDef>RH_TET_Dwarfs_MedicineMedieval</thingDef>
+					<countRange>5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponMoney>500~500</weaponMoney>
+		<weaponTags>
+			<li>RH_TET_Empire_Pistol_High</li>
+			<li>RH_TET_Empire_Sabre_High</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_CollarShirt</li>
+			<li>Apparel_Pants</li>
+			<li>RH_TET_Empire_Apparel_Duster</li>
+			<li>RH_TET_Empire_WitchhunterHat</li>
+		</apparelRequired>
+		<apparelColor>(58,58,58)</apparelColor>
+		<initialResistanceRange>100~100</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RH_TET_Empire_WitchHunter</li>
+					<li>RH_TET_Empire_Special</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+  
+</Defs>

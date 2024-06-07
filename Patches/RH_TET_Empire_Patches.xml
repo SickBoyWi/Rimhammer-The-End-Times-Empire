@@ -176,7 +176,6 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Rimhammer - The End Times</li>
-			<li>Rimhammer - The End Times - WITH GUNS!!</li>
 		</mods>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
@@ -423,6 +422,18 @@
 						<RH_TET_Empire_WizardStandard_Jade>1.5</RH_TET_Empire_WizardStandard_Jade>
 						<RH_TET_Empire_WizardStandard_White>1.5</RH_TET_Empire_WizardStandard_White>
 						<RH_TET_Empire_WizardStandard_Gold>1.5</RH_TET_Empire_WizardStandard_Gold>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "RH_TET_Empire_WizardChaos"]/defaultFactionType</xpath>
+					<value>
+						<defaultFactionType>RH_TET_Outcasts</defaultFactionType>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "RH_TET_Empire_WizardGreatChaos"]/defaultFactionType</xpath>
+					<value>
+						<defaultFactionType>RH_TET_Outcasts</defaultFactionType>
 					</value>
 				</li>
 			</operations>

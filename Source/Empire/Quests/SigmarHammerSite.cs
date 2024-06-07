@@ -105,7 +105,8 @@ namespace TheEndTimes_Empire
             {
                 return;
             }
-            Current.Game.DeinitAndRemoveMap(this.Map);
+            // JEH 1.5
+            Current.Game.DeinitAndRemoveMap(this.Map, false);
             this.Destroy();
         }
 
@@ -113,7 +114,7 @@ namespace TheEndTimes_Empire
         {
             if (this.destroyed)
             {
-                Log.Error("Tried to destroy already-destroyed world object " + (object)this, false);
+                Log.Error("Tried to destroy already-destroyed world object " + (object)this);
             }
             else
             {
@@ -268,7 +269,7 @@ namespace TheEndTimes_Empire
                 return;
 
             Find.LetterStack.ReceiveLetter((Letter)LetterMaker.MakeLetter("RH_TET_Empire_FailedToClaimHammerLabel".Translate(), "RH_TET_Empire_FailedToClaimHammerDesc".Translate(), LetterDefOf.NegativeEvent), (string)null);
-            Current.Game.DeinitAndRemoveMap(this.Map);
+            Current.Game.DeinitAndRemoveMap(this.Map, true);
         }
 
         public override void PostMapGenerate()

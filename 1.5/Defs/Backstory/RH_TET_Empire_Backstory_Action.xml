@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Witch Hunter -->
+	<!-- Adulthood -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WitchHunter_Low</defName>
+		<title>witch hunter templar</title>
+		<titleShort>witch hunter</titleShort>
+		<description>[PAWN_nameDef] is a low lever Witch Hunter. Witch hunters are grim, cold individuals who have dedicated their lives to the eradication of corruption wherever it may be. Most witch hunters are the Imperial state-sanctioned Templars of the Cult of Sigmar. However, there are a wide variety of others, from the Masters Vigilant of the Colleges to local mercenaries hired out to the service of a nobleman. What they all have in common however is their dedication and zeal against all things tainted and unpure.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WitchHunter</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_WitchHunterTrait>1</RH_TET_WitchHunterTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef>
+		<defName>RH_TET_Empire_WitchHunter_High</defName>
+		<title>witch hunter captain</title>
+		<titleShort>witch hunter</titleShort>
+		<description>[PAWN_nameDef] is an experienced lever Witch Hunter. Witch hunters are grim, cold individuals who have dedicated their lives to the eradication of corruption wherever it may be. Most witch hunters are the Imperial state-sanctioned Templars of the Cult of Sigmar. However, there are a wide variety of others, from the Masters Vigilant of the Colleges to local mercenaries hired out to the service of a nobleman. What they all have in common however is their dedication and zeal against all things tainted and unpure.</description>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>RH_TET_Empire_WitchHunter</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<RH_TET_WitchHunterTrait>3</RH_TET_WitchHunterTrait>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>

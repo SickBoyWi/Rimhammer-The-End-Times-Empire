@@ -152,7 +152,7 @@ namespace TheEndTimes_Empire
                 cmd1.hotKey = KeyBindingDefOf.Misc2;
                 cmd1.activateSound = SoundDef.Named("Click");
                 cmd1.action = (Action)(() => this.fullness = 0.99f);
-                cmd1.disabled = false;
+                cmd1.Disabled = false;
                 cmd1.disabledReason = "";
                 cmd1.groupKey = baseGroupKey + 1;
                 yield return (Gizmo)cmd1;
@@ -163,7 +163,7 @@ namespace TheEndTimes_Empire
                 cmd2.hotKey = KeyBindingDefOf.Misc3;
                 cmd2.activateSound = SoundDef.Named("Click");
                 cmd2.action = (Action)(() => this.SearchForFlowers(this.parent.Map, true));
-                cmd2.disabled = false;
+                cmd2.Disabled = false;
                 cmd2.disabledReason = "";
                 cmd2.groupKey = baseGroupKey + 2;
                 yield return (Gizmo)cmd2;
@@ -174,7 +174,7 @@ namespace TheEndTimes_Empire
                 cmd3.hotKey = KeyBindingDefOf.Misc4;
                 cmd3.activateSound = SoundDef.Named("Click");
                 cmd3.action = (Action)(() => this.ShowAllValidFlowers(this.parent.Map));
-                cmd3.disabled = false;
+                cmd3.Disabled = false;
                 cmd3.disabledReason = "";
                 cmd3.groupKey = baseGroupKey + 3;
                 yield return (Gizmo)cmd3;

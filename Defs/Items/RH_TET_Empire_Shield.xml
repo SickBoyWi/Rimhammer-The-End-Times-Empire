@@ -151,7 +151,7 @@
 			<li>RH_TET_Empire_Shields_Talabheim</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -199,7 +199,7 @@
 			<li>RH_TET_Empire_Shields_Talabheim</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -247,7 +247,7 @@
 			<li>RH_TET_Empire_Shields_Talabheim</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -295,7 +295,7 @@
 			<li>RH_TET_Empire_Shields_Middenland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -343,7 +343,7 @@
 			<li>RH_TET_Empire_Shields_Middenland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -391,7 +391,7 @@
 			<li>RH_TET_Empire_Shields_Middenland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -439,7 +439,7 @@
 			<li>RH_TET_Empire_Shields_Averland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -487,7 +487,7 @@
 			<li>RH_TET_Empire_Shields_Averland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -535,7 +535,7 @@
 			<li>RH_TET_Empire_Shields_Averland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -583,7 +583,7 @@
 			<li>RH_TET_Empire_Shields_Ostermark</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -631,7 +631,7 @@
 			<li>RH_TET_Empire_Shields_Ostermark</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -679,7 +679,7 @@
 			<li>RH_TET_Empire_Shields_Ostermark</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -727,7 +727,7 @@
 			<li>RH_TET_Empire_Shields_Ostland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -775,7 +775,7 @@
 			<li>RH_TET_Empire_Shields_Ostland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -823,7 +823,7 @@
 			<li>RH_TET_Empire_Shields_Ostland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -871,7 +871,7 @@
 			<li>RH_TET_Empire_Shields_Hochland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -919,7 +919,7 @@
 			<li>RH_TET_Empire_Shields_Hochland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -967,7 +967,7 @@
 			<li>RH_TET_Empire_Shields_Hochland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1015,7 +1015,7 @@
 			<li>RH_TET_Empire_Shields_Stirland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1063,7 +1063,7 @@
 			<li>RH_TET_Empire_Shields_Stirland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1111,7 +1111,7 @@
 			<li>RH_TET_Empire_Shields_Stirland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1159,7 +1159,7 @@
 			<li>RH_TET_Empire_Shields_Reikland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1207,7 +1207,7 @@
 			<li>RH_TET_Empire_Shields_Reikland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1255,7 +1255,7 @@
 			<li>RH_TET_Empire_Shields_Reikland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1303,7 +1303,7 @@
 			<li>RH_TET_Empire_Shields_Nordland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1351,7 +1351,7 @@
 			<li>RH_TET_Empire_Shields_Nordland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1399,7 +1399,7 @@
 			<li>RH_TET_Empire_Shields_Nordland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1447,7 +1447,7 @@
 			<li>RH_TET_Empire_Shields_Wissenland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1495,7 +1495,7 @@
 			<li>RH_TET_Empire_Shields_Wissenland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -1543,7 +1543,7 @@
 			<li>RH_TET_Empire_Shields_Wissenland</li>
 		</thingCategories>
 		<comps>
-			<li Class="PawnShields.CompProperties_Shield">
+			<li Class="SickPawnShields.CompProperties_Shield">
 				<!-- Rendering systems -->
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>

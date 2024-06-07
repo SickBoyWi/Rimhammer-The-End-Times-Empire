@@ -145,7 +145,7 @@ namespace TheEndTimes_Empire
             });
             yield return reflectingTime;
 
-            this.AddFinishAction(() =>
+            this.AddFinishAction(jobCondition =>
             {
                 // Give thought.
                 if (!Effigy.CanceledInd)
