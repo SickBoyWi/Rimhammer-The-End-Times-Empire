@@ -61,6 +61,7 @@
 			<blueprintGraphicData>
 				<texPath>Things/Buildings/Linked/Blueprints/CastleWall_AtlasBlueprint_Bricks</texPath>
 			</blueprintGraphicData>
+			<supportsWallAttachments>true</supportsWallAttachments>
 		</building>
 		<damageMultipliers>
 			<li>
@@ -138,6 +139,7 @@
 			<blueprintGraphicData>
 				<texPath>Things/Buildings/Linked/EmpireWalls/BP</texPath>
 			</blueprintGraphicData>
+			<supportsWallAttachments>true</supportsWallAttachments>
 		</building>
 		<damageMultipliers>
 			<li>
@@ -168,6 +170,7 @@
 		<building>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
 		</building>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
