@@ -44,9 +44,6 @@ A detailed list of things this extension adds are as follows:
 	-Unique Statuary
 	-I'm sure there's more I've overlooked...
 
-Current known issues:
-	-If you have a shield equipped, and you try to force equip a different one, there's an error that will destroy the shield you're attempting to equip. You have to manually unequip the first shield, then you can equip the new shield. I believe this is an error with JecsTools, I have an issue open regarding it on his GitHub.
-
 Special Thanks To:
 	-Discord member @Dino's Bar and Grill for his amazing textures!
 	-Discord member @Kasmex Forever for contributing the plant artwork.

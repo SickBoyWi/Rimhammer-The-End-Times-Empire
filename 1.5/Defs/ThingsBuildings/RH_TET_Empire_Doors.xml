@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="HeronMetalDoorBase">
+		<defName>RH_TET_Empire_BasicDoor</defName>
+		<label>basic Empire door</label>
+		<description>A thick wooden door. Used by the people of the Empire that cannot afford a better door. It'll keep threats at bay for a short time, perhaps long enough for help to arrive.</description>
+		<statBases>
+			<Mass>75</Mass>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_DoorBasic_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Doors/RH_TET_Empire_DoorBasic_Blueprint</texPath>
+				<drawSize>1</drawSize>
+				<graphicClass>Graphic_Single</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_DoorsBasic</li>
+		</researchPrerequisites>
+		<uiIconPath>UI/Menu/RH_TET_Empire_DoorBasic_MenuIcon</uiIconPath>
+		<designationHotKey>Misc1</designationHotKey>
+		<blockLight>true</blockLight>
+		<designationCategory>Structure</designationCategory>
+		<comps>
+			<li Class="DoorsExpanded.CompProperties_DoorExpanded">
+				<remoteDoor>false</remoteDoor>
+				<doorType>Standard</doorType>
+				<rotatesSouth>false</rotatesSouth>
+			</li>
+		</comps>
+	</ThingDef>
+  
+	<ThingDef ParentName="HeronMetalDoorBase">
+		<defName>RH_TET_Empire_SturdyDoor</defName>
+		<label>sturdy Empire door</label>
+		<description>A wooden door banded with metal reinforcement. Great for interior or exterior doors for their strengh, privacy, and durability.</description>
+		<statBases>
+			<Mass>105</Mass>
+			<MaxHitPoints>270</MaxHitPoints>
+			<WorkToBuild>1100</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_DoorSturdy_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Doors/RH_TET_Empire_DoorSturdy_Blueprint</texPath>
+				<drawSize>1</drawSize>
+				<graphicClass>Graphic_Single</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_DoorsBasic</li>
+		</researchPrerequisites>
+		<uiIconPath>UI/Menu/RH_TET_Empire_DoorSturdy_MenuIcon</uiIconPath>
+		<designationHotKey>Misc1</designationHotKey>
+		<blockLight>true</blockLight>
+		<designationCategory>Structure</designationCategory>
+		<comps>
+			<li Class="DoorsExpanded.CompProperties_DoorExpanded">
+				<remoteDoor>false</remoteDoor>
+				<doorType>Standard</doorType>
+				<rotatesSouth>false</rotatesSouth>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="HeronMetalDoorBase">
+		<defName>RH_TET_Empire_AdvancedDoor</defName>
+		<label>strong Empire door</label>
+		<description>A very strong door built by the people of the Empire. Great for exterior doors. Intended to keep all manner of evil out. No lord's room or castle would be considered safe without such a door. Can be built of most any solid material, and painted in appropriate colors.</description>
+		<statBases>
+			<Mass>180</Mass>
+			<Beauty>3</Beauty>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_AdvancedDoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Doors/RH_TET_Empire_AdvancedDoor_Blueprint</texPath>
+				<drawSize>1</drawSize>
+				<graphicClass>Graphic_Single</graphicClass>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_DoorsAdvanced</li>
+		</researchPrerequisites>
+		<uiIconPath>UI/Menu/RH_TET_Empire_AdvancedDoor_MenuIcon</uiIconPath>
+		<designationHotKey>Misc1</designationHotKey>
+		<blockLight>true</blockLight>
+		<designationCategory>Structure</designationCategory>
+		<comps>
+			<li Class="DoorsExpanded.CompProperties_DoorExpanded">
+				<remoteDoor>false</remoteDoor>
+				<doorType>Standard</doorType>
+				<rotatesSouth>false</rotatesSouth>
+			</li>
+		</comps>
+	</ThingDef>
+  
+	<DoorsExpanded.DoorExpandedDef ParentName="AbstractHeronDoorBase">
+		<defName>RH_TET_Empire_BiggerDoor</defName>
+		<label>Empire door (2x1)</label>
+		<description>An Empire door made of wood and metal.\n\nLarger Empire doors are stronger, and have a variety of uses. They're used for the halls of heroes and lords, sally ports for castles, and wherever else a large strong door seems appropriate.</description>
+		<size>(2,1)</size>
+		<statBases>
+			<Mass>250</Mass>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>1</Flammability>
+		</statBases>
+		<uiIconPath>UI/Menu/RH_TET_Empire_BiggerDoor_Menuicon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_BiggerDoor_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<doorType>DoubleSwing</doorType>
+		<rotatesSouth>false</rotatesSouth>
+		<fixedPerspective>true</fixedPerspective>
+		<blockLight>true</blockLight>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>75</WoodLog>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_DoorsBasic</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>SickTools.PlaceWorker_Outline</li>
+		</placeWorkers>
+		<rotatable>true</rotatable>
+		<designationHotKey>Misc1</designationHotKey>
+		<designationCategory>Structure</designationCategory>
+	</DoorsExpanded.DoorExpandedDef>
+
+	<DoorsExpanded.DoorExpandedDef ParentName="AbstractHeronDoorBase">
+		<defName>RH_TET_Empire_StrongDoor</defName>
+		<label>strong Empire door (2x1)</label>
+		<description>A strong Empire door.\n\nThe highest quality Empire door for its size, this door can take some punishment; giving the men and women of the Empire time to prepare to repel whatever is attempting to break through.</description>
+		<size>(2,1)</size>
+		<statBases>
+			<Mass>325</Mass>
+			<Beauty>5</Beauty>
+			<MaxHitPoints>460</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+		</statBases>
+		<uiIconPath>UI/Menu/RH_TET_Empire_StrongDoor_Menuicon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_StrongDoor_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<doorType>DoubleSwing</doorType>
+		<rotatesSouth>false</rotatesSouth>
+		<fixedPerspective>true</fixedPerspective>
+		<blockLight>true</blockLight>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_DoorsAdvanced</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>SickTools.PlaceWorker_Outline</li>
+		</placeWorkers>
+		<rotatable>true</rotatable>
+		<designationHotKey>Misc1</designationHotKey>
+		<designationCategory>Structure</designationCategory>
+	</DoorsExpanded.DoorExpandedDef>
+
+	<DoorsExpanded.DoorExpandedDef ParentName="AbstractHeronDoorBase">
+		<defName>RH_TET_Empire_BasicGate</defName>
+		<label>Empire gate (3x1)</label>
+		<description>The gate to an Empire settlement. Sturdy; made of wood and metal.\n\nSafety from the horrors of the world requires not just sturdy walls, but a strong gate. The people of the Empire frequently are forced to hole up during sieges from found greenskins or the advances of choas armies.</description>
+		<size>(3,1)</size>
+		<statBases>
+			<Mass>610</Mass>
+			<Beauty>5</Beauty>
+			<MaxHitPoints>650</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Flammability>1</Flammability>
+		</statBases>
+		<uiIconPath>UI/Menu/RH_TET_Empire_SturdyGate_MenuIcon</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_SturdyGate_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<doorType>DoubleSwing</doorType>
+		<rotatesSouth>false</rotatesSouth>
+		<fixedPerspective>true</fixedPerspective>
+		<blockLight>true</blockLight>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>225</costStuffCount>
+		<costList>
+			<WoodLog>225</WoodLog>
+		</costList>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_GatesBasic</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>SickTools.PlaceWorker_Outline</li>
+		</placeWorkers>
+		<rotatable>true</rotatable>
+		<designationHotKey>Misc1</designationHotKey>
+		<doorOpenSpeedRate>1.5</doorOpenSpeedRate>
+		<designationCategory>Structure</designationCategory>
+	</DoorsExpanded.DoorExpandedDef>
+  
+	<DoorsExpanded.DoorExpandedDef ParentName="AbstractHeronDoorBase">
+		<defName>RH_TET_Empire_FancyGate</defName>
+		<label>strong Empire gate (3x1)</label>
+		<description>The gate to an Empire castle or settlement. Reasonably ornate, and very strong.\n\nStone and metal keep the folk of the Empire much safer than wood, and this gate is a mighty example of Empire defense. Both chaos or greenskins will be hardpressed to smash through a gate such as this quickly.</description>
+		<size>(3,1)</size>
+		<statBases>
+			<Mass>950</Mass>
+			<Beauty>10</Beauty>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>4400</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<uiIconPath>UI/Menu/RH_TET_Empire_GreatGate_MenuIcon</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_GreatGate_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<doorType>DoubleSwing</doorType>
+		<rotatesSouth>false</rotatesSouth>
+		<fixedPerspective>true</fixedPerspective>
+		<blockLight>true</blockLight>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>620</costStuffCount>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_GatesAdvanced</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>SickTools.PlaceWorker_Outline</li>
+		</placeWorkers>
+		<rotatable>true</rotatable>
+		<designationHotKey>Misc1</designationHotKey>
+		<doorOpenSpeedRate>1.5</doorOpenSpeedRate>
+		<designationCategory>Structure</designationCategory>
+	</DoorsExpanded.DoorExpandedDef>
+  
+	<DoorsExpanded.DoorExpandedDef ParentName="AbstractHeronDoorBase">
+		<defName>RH_TET_Empire_MassiveGate</defName>
+		<label>massive Empire gate (5x1)</label>
+		<description>The impressively large gate to an Empire Lord's castle. Ornate and very strong.\n\nThe entrance to any Empire city or castle deserves a gate to reflect the glory of the people within. These gates shine in that regard.</description>
+		<size>(5,1)</size>
+		<statBases>
+			<Mass>1400</Mass>
+			<Beauty>18</Beauty>
+			<MaxHitPoints>1400</MaxHitPoints>
+			<WorkToBuild>6500</WorkToBuild>
+			<Flammability>.5</Flammability>
+		</statBases>
+		<uiIconPath>UI/Menu/RH_TET_Empire_MassiveGate_MenuIcon</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<graphicData>
+			<texPath>Things/Buildings/Doors/RH_TET_Empire_MassiveGate_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,8)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<doorType>DoubleSwing</doorType>
+		<rotatesSouth>false</rotatesSouth>
+		<fixedPerspective>true</fixedPerspective>
+		<blockLight>true</blockLight>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>850</costStuffCount>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_GatesMassive</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>SickTools.PlaceWorker_Outline</li>
+		</placeWorkers>
+		<rotatable>true</rotatable>
+		<designationHotKey>Misc1</designationHotKey>
+		<doorOpenSpeedRate>2.0</doorOpenSpeedRate>
+		<designationCategory>Structure</designationCategory>
+	</DoorsExpanded.DoorExpandedDef>
+  
+</Defs>

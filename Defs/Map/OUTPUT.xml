@@ -4,7 +4,6 @@
 		<defName>RH_TET_Empire_SigmarHammerMap</defName>
 		<size>(250, 250)</size>
 		<defogPosition>(125,0,0)</defogPosition>
-<!--
 		<MapData>
 			<li>
 				<key>
@@ -61746,7 +61745,7 @@
 		    </li>
 		    <li>
 		        <key>
-		            <Terrain>RH_TET_Dwarfs_BasicFloorSlate</Terrain>
+		            <Terrain>TileSlate</Terrain>
 		        </key>
 		        <value>
 		            <li>(238, 0, 34)</li>
@@ -61817,7 +61816,7 @@
 		    </li>
 		    <li>
 		        <key>
-		            <Terrain>RH_TET_Dwarfs_MidFloorGranite</Terrain>
+		            <Terrain>TileGranite</Terrain>
 		        </key>
 		        <value>
 		            <li>(52, 0, 42)</li>
@@ -62435,7 +62434,7 @@
 		    </li>
 		    <li>
 		        <key>
-		            <Terrain>RH_TET_Dwarfs_BasicFloorSandstone</Terrain>
+		            <Terrain>TileSandstone</Terrain>
 		        </key>
 		        <value>
 		            <li>(180, 0, 132)</li>
@@ -62616,7 +62615,7 @@
 		    </li>
 		    <li>
 		        <key>
-		            <Terrain>RH_TET_Dwarfs_MidFloorMarble</Terrain>
+		            <Terrain>TileMarble</Terrain>
 		        </key>
 		        <value>
 		            <li>(43, 0, 154)</li>
@@ -62704,7 +62703,7 @@
 		    </li>
 		    <li>
 		        <key>
-		            <Terrain>RH_TET_Dwarfs_MidFloorLimestone</Terrain>
+		            <Terrain>TileLimestone</Terrain>
 		        </key>
 		        <value>
 		            <li>(157, 0, 173)</li>
@@ -62743,7 +62742,7 @@
 		    </li>
 		    <li>
 		        <key>
-		            <Terrain>RH_TET_Dwarfs_MidFloorSlate</Terrain>
+		            <Terrain>TileSlate</Terrain>
 		        </key>
 		        <value>
 		            <li>(172, 0, 179)</li>
@@ -62778,7 +62777,7 @@
 		    </li>
 		    <li>
 		        <key>
-		            <Terrain>RH_TET_Dwarfs_FineFloorGranite</Terrain>
+		            <Terrain>TileGranite</Terrain>
 		        </key>
 		        <value>
 		            <li>(60, 0, 239)</li>
@@ -100363,7 +100362,7 @@
 		    <li>
 		        <key>
 		            <Thing>RH_TET_Beastmen_DiningChair</Thing>
-		            <Stuff>RH_TET_Dwarf_Leather</Stuff>
+		            <Stuff>Leather_Human</Stuff>
 		            <Rotate>2</Rotate>
 		        </key>
 		        <value>
@@ -100375,7 +100374,7 @@
 		    <li>
 		        <key>
 		            <Thing>RH_TET_Beastmen_DiningChair</Thing>
-		            <Stuff>RH_TET_Dwarf_Leather</Stuff>
+		            <Stuff>Leather_Human</Stuff>
 		            <Rotate>2</Rotate>
 		        </key>
 		        <value>
@@ -100385,7 +100384,7 @@
 		    <li>
 		        <key>
 		            <Thing>RH_TET_Beastmen_DiningChair</Thing>
-		            <Stuff>RH_TET_Dwarf_Leather</Stuff>
+		            <Stuff>Leather_Human</Stuff>
 		            <Rotate>2</Rotate>
 		        </key>
 		        <value>
@@ -100395,7 +100394,7 @@
 		    <li>
 		        <key>
 		            <Thing>RH_TET_Beastmen_DiningChair</Thing>
-		            <Stuff>RH_TET_Dwarf_Leather</Stuff>
+		            <Stuff>Leather_Human</Stuff>
 		            <Rotate>1</Rotate>
 		        </key>
 		        <value>
@@ -100405,7 +100404,7 @@
 		    <li>
 		        <key>
 		            <Thing>RH_TET_Beastmen_DiningChair</Thing>
-		            <Stuff>RH_TET_Dwarf_Leather</Stuff>
+		            <Stuff>Leather_Human</Stuff>
 		            <Rotate>1</Rotate>
 		        </key>
 		        <value>
@@ -100415,7 +100414,7 @@
 		    <li>
 		        <key>
 		            <Thing>RH_TET_Beastmen_DiningChair</Thing>
-		            <Stuff>RH_TET_Dwarf_Leather</Stuff>
+		            <Stuff>Leather_Human</Stuff>
 		            <Rotate>1</Rotate>
 		        </key>
 		        <value>
@@ -106146,6 +106145,5 @@
 		        </Positions>
 		    </li>
 		</RoofData>
-  -->
   </TheEndTimes_Empire.MapGenDef>
 </Defs>

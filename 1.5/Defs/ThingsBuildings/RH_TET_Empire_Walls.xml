@@ -558,7 +558,7 @@
 			<soundDoorCloseManual>HeronBlastDoorClose</soundDoorCloseManual>
 		</building>
 		<placeWorkers>
-			<li>JecsTools.PlaceWorker_Outline</li>
+			<li>SickTools.PlaceWorker_Outline</li>
 		</placeWorkers>
 		<statBases>
 			<Mass>1250</Mass>
