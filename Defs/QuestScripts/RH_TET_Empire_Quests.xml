@@ -147,4 +147,284 @@
 		</genStep>
 	</GenStepDef>
 
+	<QuestScriptDef>
+		<defName>RH_TET_Empire_ThreatReward_Raid_RunefangReward</defName>
+		<rootSelectionWeight>0.5</rootSelectionWeight>
+		<rootMinPoints>500</rootMinPoints>
+		<expireDaysRange>8~12</expireDaysRange>
+		<minRefireDays>6000000</minRefireDays>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->[enemyFaction_pawnsPlural] of Corruption</li>
+				<li>questName->[violence] against Corruption</li>
+				<li>questName->[violence] for Purity</li>
+				<li>questName->[violence] for Righteousness</li>
+				<li>questName->Purifying [violence]</li>
+				<li>questName->Righteous [violence]</li>
+
+				<li>violence->Violence</li>
+				<li>violence->Battle</li>
+				<li>violence->Combat</li>
+				<li>violence->War</li>
+				<li>violence->Fighting</li>
+				<li>violence->Conflict</li>
+				<li>violence->Hostility</li>
+				<li>violence->Warfare</li>
+
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+
+				<!-- Reward is item pods -->
+				<li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], wants you to prove your worth for a worthy prize. Vile forces are afoot near [map_definite] by (*Threat)[numGroupsOf] [enemyFaction_pawnsPlural](/Threat) from [enemyFaction_name]. [asker_nameDef] wants you to signal the [enemyFaction_pawnsPlural] to draw them to your home, so that you can crush them. Prove your worth, as an enemy of evil, and be well rewarded.[endingCommon]</li>
+
+				<li>groupsOf(raidCount==1,priority=1)->[enemyFaction_pawnsPlural]</li>
+				<li>groupsOf->[numGroupsOf] [enemyFaction_pawnsPlural]</li>
+        
+				<li>endingCommon->\n\n[pawnKindsParagraph]\n\nIf you accept, the [enemyFaction_pawnsPlural] will arrive in [firstRaidDelayTicks_duration].</li>
+
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_SubScript">
+					<def>RH_TET_Empire_Util_RandomizePointsChallengeRating</def>
+				</li>
+				<li Class="QuestNode_SubScript">
+					<def>RH_TET_Empire_Util_GetDefaultRewardValueFromPoints_High</def>
+				</li>
+				<li Class="QuestNode_GetMap"/>
+
+				<!-- Get asker -->
+				<li Class="QuestNode_RandomNode">
+					<nodes>
+						<li Class="TheEndTimes_Empire.QuestNode_GetPawnEmpireLeader">
+							<storeAs>asker</storeAs>
+							<selectionWeight>0.5</selectionWeight>
+							<mustBeFactionLeader>true</mustBeFactionLeader>
+							<allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
+							<hostileWeight>0.15</hostileWeight>
+						</li>
+					</nodes>
+				</li>
+
+				<!-- Raid(s) -->
+				<li Class="QuestNode_GetRandomInRangeInt">
+					<storeAs>raidCount</storeAs>
+					<range>3~3</range>
+				</li>
+				<li Class="QuestNode_Set">
+					<name>firstRaidDelayTicks</name>
+					<value>$(roundToTicksRough(randInt(60000, 300000)))</value>
+				</li>
+				<li Class="TheEndTimes_Empire.QuestNode_GetFactionBeastmenOrDefault">
+				<!--<li Class="QuestNode_GetFaction">-->
+					<allowEnemy>true</allowEnemy>
+					<mustBePermanentEnemy>false</mustBePermanentEnemy>
+					<storeAs>enemyFaction</storeAs>
+				</li>
+				<li Class="QuestNode_Subscript">
+					<def>Util_RaidDelayRepeatable</def>
+					<parms>
+						<points>$($points)</points>
+					</parms>
+				</li>
+        
+				<!-- End -->
+				<li Class="QuestNode_AllSignals">
+					<inSignals>
+						<li>AllRaidsSent</li>
+						<li>raid$($raidCountMinusOne)/lord.AllEnemiesDefeated</li>
+					</inSignals>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_Delay">
+								<delayTicks>300</delayTicks>
+								<node Class="QuestNode_Sequence">
+									<nodes>
+										<li Class="QuestNode_HasRoyalTitleInCurrentFaction">
+											<pawn>$asker</pawn>
+											<node Class="TheEndTimes_Empire.QuestNode_GiveRewardRunefang">
+												<parms>
+													<!--<allowGoodwill>true</allowGoodwill>-->
+													<thingRewardItemsOnly>true</thingRewardItemsOnly>
+												</parms>
+											</node>
+											<elseNode Class="TheEndTimes_Empire.QuestNode_GiveRewardRunefang">
+												<parms>
+													<thingRewardItemsOnly>true</thingRewardItemsOnly>
+												</parms>
+											</elseNode>
+										</li>
+										<li Class="QuestNode_End"/>
+									</nodes>
+								</node>
+							</li>
+						</nodes>
+					</node>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+ 
+	<QuestScriptDef>
+		<defName>RH_TET_Empire_Util_GetDefaultRewardValueFromPoints_High</defName>
+		<root Class="QuestNode_EvaluateSimpleCurve">
+			<value>$points</value>
+			<storeAs>rewardValue</storeAs>
+			<curve>
+			<points>
+				<li>12000, 15000</li>
+<!--				<li>2200, 2600</li>
+				<li>2800, 3500</li>-->
+			</points>
+			</curve>
+		</root>
+	</QuestScriptDef>
+
+  <QuestScriptDef>
+    <defName>RH_TET_Empire_Util_RandomizePointsChallengeRating</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <!-- Record the original points for external use -->
+        <li Class="QuestNode_Set">
+          <name>pointsOriginal</name>
+          <value>$points</value>
+        </li>
+
+        <!-- Set various parms default if not set already -->
+        <li Class="QuestNode_IsSet">
+          <name>pointsFactorTwoStar</name>
+          <elseNode Class="QuestNode_Set">
+            <name>pointsFactorTwoStar</name>
+            <value>2</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>pointsFactorThreeStar</name>
+          <elseNode Class="QuestNode_Set">
+            <name>pointsFactorThreeStar</name>
+            <value>3</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>selectionWeightOneStar</name>
+          <elseNode Class="QuestNode_Set">
+            <name>selectionWeightOneStar</name>
+            <value>0.60</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>selectionWeightTwoStar</name>
+          <elseNode Class="QuestNode_Set">
+            <name>selectionWeightTwoStar</name>
+            <value>0.25</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>selectionWeightThreeStar</name>
+          <elseNode Class="QuestNode_Set">
+            <name>selectionWeightThreeStar</name>
+            <value>0.15</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>minPointsTwoStar</name>
+          <elseNode Class="QuestNode_Set">
+            <name>minPointsTwoStar</name>
+            <value>0</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>minPointsThreeStar</name>
+          <elseNode Class="QuestNode_Set">
+            <name>minPointsThreeStar</name>
+            <value>0</value>
+          </elseNode>
+        </li>
+
+        <!-- Set to not select challenge ratings outside our points limits -->
+        <li Class="QuestNode_Less">
+          <value1>$points</value1>
+          <value2>$minPointsThreeStar</value2>
+          <node Class="QuestNode_Set">
+            <name>selectionWeightThreeStar</name>
+            <value>0</value>
+          </node>
+        </li>
+        <li Class="QuestNode_Less">
+          <value1>$points</value1>
+          <value2>$minPointsTwoStar</value2>
+          <node Class="QuestNode_Set">
+            <name>selectionWeightTwoStar</name>
+            <value>0</value>
+          </node>
+        </li>
+
+        <!-- Choose a rating and set points factor -->
+        <li Class="QuestNode_RandomNode">
+          <nodes>
+            <li Class="QuestNode_Sequence">  <!-- rating 1 -->
+              <selectionWeight>$selectionWeightOneStar</selectionWeight>
+              <nodes>
+                <li Class="QuestNode_Set">  <!-- Set challengeRating slate var so we can read it later -->
+                  <name>challengeRating</name>
+                  <value>1</value>
+                </li>
+                <li Class="QuestNode_Set">
+                  <name>pointsFactor</name>
+                  <value>1</value>
+                </li>
+              </nodes>
+            </li>
+            <li Class="QuestNode_Sequence">  <!-- rating 2 -->
+              <selectionWeight>$selectionWeightTwoStar</selectionWeight>
+              <nodes>
+                <li Class="QuestNode_Set">  <!-- Set challengeRating slate var so we can read it later -->
+                  <name>challengeRating</name>
+                  <value>2</value>
+                </li>
+                <li Class="QuestNode_Set">
+                  <name>pointsFactor</name>
+                  <value>$pointsFactorTwoStar</value>
+                </li>
+              </nodes>
+            </li>
+            <li Class="QuestNode_Sequence">  <!-- rating 3 -->
+              <selectionWeight>$selectionWeightThreeStar</selectionWeight>
+              <nodes>
+                <li Class="QuestNode_Set">  <!-- Set challengeRating slate var so we can read it later -->
+                    <name>challengeRating</name>
+                    <value>3</value>
+                  </li>
+                <li Class="QuestNode_Set">
+                  <name>pointsFactor</name>
+                  <value>$pointsFactorThreeStar</value>
+                </li>
+              </nodes>
+            </li>
+          </nodes>
+        </li>
+        <li Class="QuestNode_ViolentQuestsAllowed">
+          <elseNode Class="QuestNode_IsSet">
+            <name>peacefulChallengeRating</name>
+            <node Class="QuestNode_Set">
+              <name>challengeRating</name>
+              <value>$peacefulChallengeRating</value>
+            </node>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_Multiply">
+          <value1>$points</value1>
+          <value2>$pointsFactor</value2>
+          <storeAs>points</storeAs>
+        </li>
+        <li Class="QuestNode_SetChallengeRating">
+          <challengeRating>$challengeRating</challengeRating>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
 </Defs>

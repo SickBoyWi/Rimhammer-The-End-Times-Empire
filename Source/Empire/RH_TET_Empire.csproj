@@ -119,6 +119,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quests\CaravanArrivalAction_EnterMap.cs" />
     <Compile Include="Quests\CaravanArrivalAction_SigmarHammerSite.cs" />
+    <Compile Include="Quests\QuestNode_GiveRewardRunefang.cs" />
+    <Compile Include="Quests\QuestNode_GetPawnEmpireLeader.cs" />
+    <Compile Include="Quests\QuestNode_GetFactionBeastmenOrDefault.cs" />
     <Compile Include="Quests\SigmarHammerSiteCompMain.cs" />
     <Compile Include="Quests\SigmarHammerSiteComp.cs" />
     <Compile Include="Quests\SigmarHammerSite.cs" />

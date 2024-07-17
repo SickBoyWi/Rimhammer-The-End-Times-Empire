@@ -18,6 +18,7 @@ namespace TheEndTimes_Empire
 
         // Faction
         public static FactionDef RH_TET_Beastmen_GorFaction;
+        public static FactionDef RH_TET_EmpireOfMan;
 
         // Pawn kinds.
         public static PawnKindDef RH_TET_Empire_FaithfulSigmar;
@@ -78,6 +79,7 @@ namespace TheEndTimes_Empire
 
         // Things
         public static ThingDef RH_TET_MeleeWeapon_SigmarHammer;
+        public static ThingDef RH_TET_Empire_MagicWeapon_Runefang;
 
         // Sounds
         public static SoundDef RH_TET_Empire_Victory;
