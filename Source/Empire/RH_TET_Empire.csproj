@@ -134,6 +134,10 @@
     <Compile Include="RH_TET_EmpireDefOf.cs" />
     <Compile Include="Thoughts\ThoughtWorker_ListeningToLute.cs" />
     <Compile Include="Warmachines\HarmonyPatches_Warmachine.cs" />
+    <Compile Include="WeaponAbilities\Comps\CompProperties_AbilityBasic.cs" />
+    <Compile Include="WeaponAbilities\Comps\CompProperties_AbilityMurderstroke.cs" />
+    <Compile Include="WeaponAbilities\Effects\BaseCompAbilityEffect.cs" />
+    <Compile Include="WeaponAbilities\Effects\CompAbilityEffect_Murderstroke.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

@@ -80,4 +80,10 @@
 	<RH_TET_Empire_SmitingFoes>Ready to smite all foes!</RH_TET_Empire_SmitingFoes>
 	<RH_TET_Empire_NotInUse>Resting</RH_TET_Empire_NotInUse>
 	
+	<!-- Weapon ability stuff. 
+	<RH_TET_Empire_RequireWeapon>Pawn requires a melee weapon</RH_TET_Empire_RequireWeapon>
+	<RH_TET_Empire_HasWeapon>Pawn has a melee weapon</RH_TET_Empire_HasWeapon>
+	<RH_TET_Empire_Murderstroke>Murderstroke</RH_TET_Empire_Murderstroke>
+	-->
+	
 </LanguageData>

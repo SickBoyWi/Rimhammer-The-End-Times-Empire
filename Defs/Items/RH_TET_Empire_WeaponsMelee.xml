@@ -335,7 +335,18 @@
 				<soundCast>RH_TET_Empire_Murderstroke</soundCast>
 			</li>
 		</verbs>
-		-->
+		<comps>
+			<li Class = "TheEndTimes_Empire.CompProperties_AbilityMurderstroke">
+				<damageDef>Stab</damageDef>
+				<damage>40</damage>
+				<armourPen>.9</armourPen>
+				<torsoDef>Ribcage</torsoDef>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+		-->		
 	</ThingDef>
 
 <!--
