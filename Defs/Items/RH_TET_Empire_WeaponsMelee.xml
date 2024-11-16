@@ -322,7 +322,16 @@
 		<thingCategories Inherit="False">
 			<li>RH_TET_Empire_WeaponsMelee</li>
 		</thingCategories>	
-<!--		
+		<!-- attempt 2
+		<thingClass>AbilitiesWeapon.WeaponWithAbilities</thingClass>
+		<li Class="AbilitiesWeapon.AbilityExtension_AbilitiesForWeapon">
+			<GivenAbilities>
+			  <li>CAT_SomersaultStrike</li>
+			  <li>CAT_DashSlash</li>
+			</GivenAbilities>
+		</li>	
+-->		
+<!-- attempt 1		
 		<verbs>
 			<li>
 				<label>Murderstroke</label>
@@ -348,8 +357,36 @@
 		</comps>
 		-->		
 	</ThingDef>
+<!-- attempt 2
+    <VFECore.Abilities.AbilityDef Name="RH_TET_TESTAbilityBase" Abstract="true">
+		COMMENT OUT THESE 3 lines.
+        <warmupSound>VPE_PsycastCastingEffect</warmupSound>
+        <warmupMote>VPE_Mote_CastPsycast</warmupMote>
+		<gizmoClass>VanillaPsycastsExpanded.Command_Ability_Psycast</gizmoClass>
 
-<!--
+		<cooldownTime>120</cooldownTime>
+		<rangeRingColor>(1, 1, 1)</rangeRingColor>
+		<radiusRingColor>(0.3, 0.8, 1)</radiusRingColor>
+    </VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef ParentName="RH_TET_TESTAbilityBase">
+		<defName>RH_TET_SpeedBoost</defName>
+		<label>speedboost</label>
+		<description>Psychically augments the muscle fibers, ligaments and joints in the caster’s legs, tripling their movement speed for roughly two minutes depending on their psychic sensitivity.</description>
+		<iconPath>UI/Commands/RH_TET_Murderstroke</iconPath>
+		<targetMode>Self</targetMode>
+		<castTime>15</castTime>
+		<durationTime>7200</durationTime>
+		<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+		<castSound>RH_TET_Empire_Marching</castSound>
+		<modExtensions>
+		  <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+			<hediff>RH_TET_PlagueRedPoxI</hediff>
+		  </li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+-->
+<!--attempt 1	
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>RH_TET_EmpireSwordLow_Proj</defName>
 		<label>Murderstroke</label>
@@ -1015,7 +1052,7 @@
 		<label>Empire halberd</label>
 		<description>A large head on a long wooden pole. Used by Empire infantry for its effectiveness against mounted enemies, and it's strength.</description>
 		<graphicData>
-			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Halberd_fancy</texPath>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Halberd_elaborate</texPath>
 			<drawSize>1.8</drawSize>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
@@ -1111,7 +1148,7 @@
 		<label>Empire improved halberd</label>
 		<description>A large and finely crafted head on a long wooden pole. Used by Empire infantry for its effectiveness against mounted enemies, and it's strength.</description>
 		<graphicData>
-			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Halberd_elaborate</texPath>
+			<texPath>Things/Items/Weapons/Melee/RH_TET_Empire_Halberd_fancy</texPath>
 			<drawSize>1.8</drawSize>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
