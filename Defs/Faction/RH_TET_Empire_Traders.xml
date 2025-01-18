@@ -162,6 +162,9 @@
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
 	  
 			<li Class="StockGenerator_MultiDef">
 				<thingDefs>
@@ -290,6 +293,9 @@
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
 	  
 		</stockGenerators>
 	</TraderKindDef>
@@ -439,6 +445,9 @@
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
       
 		</stockGenerators>
 	</TraderKindDef>
