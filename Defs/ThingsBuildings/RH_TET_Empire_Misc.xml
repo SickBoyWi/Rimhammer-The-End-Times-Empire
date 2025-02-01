@@ -145,7 +145,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RH_TET_Empire_MeatSmoker</defName>
 		<label>meat smoker</label>
-		<description>A massive grill for smoking meat. Can handle large quantities at once.</description>
+		<description>A massive grill for smoking meat. Can handle large quantities at once.\n\nMust be filled with Brined Meat, which can be made camp fire or cooking work table.</description>
 		<thingClass>TheEndTimes_Empire.Building_MeatSmoker</thingClass>
 		<size>(3,2)</size>
 		<drawerType>MapMeshAndRealTime</drawerType>
