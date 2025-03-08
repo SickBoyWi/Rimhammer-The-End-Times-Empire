@@ -2,6 +2,56 @@
 <Defs>
 
 	<RecipeDef>
+		<defName>RH_TET_Empire_Magic_RefineMagic</defName>
+		<label>refine magic essence</label>
+		<description>Turn raw magic essence into refined magic essence so that it's usable for crafting, at a wizard's crafting bench.</description>
+		<jobString>Refining magic essence.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<unfinishedThingDef>RH_TET_Unfinished_MagicItem</unfinishedThingDef>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Daemons_MagicEssence_Raw</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RH_TET_Daemons_MagicEssence_Raw</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>RH_TET_Empire_MagicBench</li>
+		</recipeUsers>
+		<products>
+			<RH_TET_Daemons_MagicEssence_Refined>10</RH_TET_Daemons_MagicEssence_Refined>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Magic</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
 		<defName>RH_TET_Empire_Magic_HealingPotion</defName>
 		<label>craft healing potion</label>
 		<description>Craft a potion of healing at a wizard's crafting bench.</description>
