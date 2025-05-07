@@ -5,7 +5,7 @@
     <defName>RH_TET_Empire_Hearth</defName>
     <label>Empire hearth</label>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
-    <description>An ornate brick and stone hearth. They&apos;re used for heating and light, as well as for cooking at and general enjoyment.\n\nThe hearth is a staple of all Empire castles. With a steady supply of wood or coal, a hearth will prove useful through the most chaotic times. They&apos;re used as places to gather, and due to the love and artistry put into their construction they are frequently very beautiful. All respecable Empire lords will have them in the main areas of their castle.</description>    
+    <description>An ornate brick and stone hearth. They&apos;re used for heating and light, as well as for cooking at and general enjoyment.\n\nThe hearth is a staple of all Empire castles. With a steady supply of wood or coal, a hearth will prove useful through the most chaotic times. They&apos;re used as places to gather, and due to the love and artistry put into their construction they are frequently very beautiful. All respectable Empire lords will have them in the main areas of their castle.</description>    
     <graphicData>
       <texPath>Things/Buildings/Production/RH_TET_Empire_Hearth</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
