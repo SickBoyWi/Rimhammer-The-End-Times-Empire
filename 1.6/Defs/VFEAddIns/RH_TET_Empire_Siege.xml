@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<VEF.Planet.SiegeParameterSetDef>
+		<defName>RH_TET_Empire_Siege</defName>
+		<coverDef>Sandbags</coverDef>
+		<artilleryBuildingTags>
+			<li>Artillery_EmpireBaseDestroyer</li>
+		</artilleryBuildingTags>
+		<artilleryCountRange>1~2</artilleryCountRange>
+		<mealDef>RH_TET_Empire_Cheese</mealDef>
+	</VEF.Planet.SiegeParameterSetDef>
+  
+</Defs>

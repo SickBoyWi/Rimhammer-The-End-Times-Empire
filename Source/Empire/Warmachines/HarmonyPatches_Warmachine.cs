@@ -60,7 +60,7 @@ namespace TheEndTimes_Empire
                 Map map = __instance.Map;
                 float statValue = 2f;
                 DamageDef smoke = DamageDefOf.Smoke;
-                GenExplosion.DoExplosion(position, map, statValue, smoke, null, -1, -1f, null, null, null, null, null, 1f, 1, new GasType?(GasType.BlindSmoke), false, null, 0f, 1, 0f, false);
+                GenExplosion.DoExplosion(position, map, statValue, smoke, null, -1, -1f, null, null, null, null, null, 1f, 1, new GasType?(GasType.BlindSmoke), new float?(), new int(), false, null, 0f, 1, 0f, false);
             }
         }
     }

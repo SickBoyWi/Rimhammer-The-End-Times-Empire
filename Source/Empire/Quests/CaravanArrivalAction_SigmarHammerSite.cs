@@ -40,7 +40,7 @@ namespace TheEndTimes_Empire
         }
 
         public override Map GetOrGenerateMap(
-          int tile,
+          PlanetTile tile,
           IntVec3 mapSize,
           WorldObjectDef suggestedMapParentDef)
         {

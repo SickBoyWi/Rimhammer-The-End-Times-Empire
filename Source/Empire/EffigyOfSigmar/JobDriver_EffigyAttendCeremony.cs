@@ -109,7 +109,7 @@ namespace TheEndTimes_Empire
             effigyToil.defaultDuration = EmpireUtil.RITUAL_DURATION;
             effigyToil.AddPreTickAction(() =>
             {
-                this.pawn.GainComfortFromCellIfPossible();
+                this.pawn.GainComfortFromCellIfPossible(1);
                 this.pawn.rotationTracker.FaceCell(TargetB.Cell);
                 if (report == "") report = "RH_TET_Empire_AttendingEffigyCere".Translate();
                 if (InstigatorPawn != null)

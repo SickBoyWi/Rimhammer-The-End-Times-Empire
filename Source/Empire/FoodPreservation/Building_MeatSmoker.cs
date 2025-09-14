@@ -132,7 +132,7 @@ namespace TheEndTimes_Empire
             }
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (Find.TickManager.TicksGame % 250 == 0)

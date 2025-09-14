@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/JoyGiverDef[defName = "UseTelescope"]/thingDefs</xpath>
+		<value>
+			<li>RH_TET_Empire_Telescope</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/BiomeDef[defName = "RH_TET_Beastmen_OldGrowthForest"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "RH_TET_Empire_HollowTree"]/plant/wildBiomes</xpath>
+				<value>
+					<RH_TET_Beastmen_OldGrowthForest>0.020</RH_TET_Beastmen_OldGrowthForest>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "RH_TET_TrollRace"]/race/wildBiomes</xpath>
+				<value>
+					<RH_TET_Beastmen_OldGrowthForest>0.04</RH_TET_Beastmen_OldGrowthForest>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "RH_TET_StoneTrollRace"]/race/wildBiomes</xpath>
+				<value>
+					<RH_TET_Beastmen_OldGrowthForest>0.02</RH_TET_Beastmen_OldGrowthForest>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "RH_TET_RiverTrollRace"]/race/wildBiomes</xpath>
+				<value>
+					<RH_TET_Beastmen_OldGrowthForest>0.08</RH_TET_Beastmen_OldGrowthForest>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "RH_TET_Empire_GreatStagRace"]/race/wildBiomes</xpath>
+				<value>
+					<RH_TET_Beastmen_OldGrowthForest>0.10</RH_TET_Beastmen_OldGrowthForest>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Recipe updates for new production tables. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[@Name="MakeStoneBlocksBase"]/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_TableStonecutter</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name="SculptureBase"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_TableSculpting</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name="ApparelMakeableBase"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_HandTailoringBench</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Make_Patchleather"]/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_HandTailoringBench</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Apparel_TribalA"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_HandTailoringBench</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Apparel_TribalHeaddress"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_HandTailoringBench</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "GoJuice"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Penoxycyline"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Flake"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Yayo"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "WakeUp"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "MedicineIndustrial"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "PsychiteTea"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RH_TET_Empire_Hearth</li>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	
+	<!-- Work givers for new production tables. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName = "DoBillsCremate"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RH_TET_Empire_Crematorium</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName = "DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RH_TET_Empire_TableButcher</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName = "DoBillsStonecut"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RH_TET_Empire_TableStonecutter</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName = "DoBillsSculpt"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RH_TET_Empire_TableSculpting</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName = "DoBillsProduceDrugs"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RH_TET_Empire_DrugLab</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName = "DoBillsBrew"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RH_TET_Empire_Brewery</li>
+		</value>
+	</Operation>
+	
+	<!-- IF NO BASE MOD -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimhammer - The End Times</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<order>Append</order>
+					<xpath>/Defs/ThingDef[defName = "Human"]/recipes</xpath>
+					<value>
+						<li>RH_TET_AdministerHealingPotion</li>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_Bread"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Stove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_BreadBulk"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Stove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_Cheese"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Stove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_CheeseBulk"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Stove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_CookBrinedMeat"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Stove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_CookBrinedMeatBulk"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Stove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_CookPickling"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Empire_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_CookCure"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Empire_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_CookPicklingBulk"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Empire_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_CookCureBulk"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Empire_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//FactionDef[defName = "RH_TET_Outcasts"]/pawnGroupMakers/li[1]/options</xpath>
+					<value>
+						<RH_TET_Empire_FreeCompany_Ranged>5</RH_TET_Empire_FreeCompany_Ranged>
+						<RH_TET_Empire_FreeCompany_Melee>5</RH_TET_Empire_FreeCompany_Melee>
+						<RH_TET_Empire_Cook>2</RH_TET_Empire_Cook>
+						<RH_TET_Empire_FreeCompanyCaptain_Ranged>2</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+						<RH_TET_Empire_FreeCompanyCaptain_Melee>2</RH_TET_Empire_FreeCompanyCaptain_Melee>
+						<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>
+						<RH_TET_Empire_WizardChaos>2</RH_TET_Empire_WizardChaos>
+						<RH_TET_Empire_WizardGreatChaos>1</RH_TET_Empire_WizardGreatChaos>
+						<RH_TET_Empire_WizardGreat_Beasts>1</RH_TET_Empire_WizardGreat_Beasts>
+						<RH_TET_Empire_WizardGreat_Bright>1</RH_TET_Empire_WizardGreat_Bright>
+						<RH_TET_Empire_WizardGreat_Celestial>1</RH_TET_Empire_WizardGreat_Celestial>
+						<RH_TET_Empire_WizardGreat_Spirit>1</RH_TET_Empire_WizardGreat_Spirit>
+						<RH_TET_Empire_WizardGreat_Grey>1</RH_TET_Empire_WizardGreat_Grey>
+						<RH_TET_Empire_WizardGreat_Jade>1</RH_TET_Empire_WizardGreat_Jade>
+						<RH_TET_Empire_WizardGreat_White>1</RH_TET_Empire_WizardGreat_White>
+						<RH_TET_Empire_WizardGreat_Gold>1</RH_TET_Empire_WizardGreat_Gold>
+						<RH_TET_Empire_WizardStandard_Beasts>1.5</RH_TET_Empire_WizardStandard_Beasts>
+						<RH_TET_Empire_WizardStandard_Bright>1.5</RH_TET_Empire_WizardStandard_Bright>
+						<RH_TET_Empire_WizardStandard_Celestial>1.5</RH_TET_Empire_WizardStandard_Celestial>
+						<RH_TET_Empire_WizardStandard_Spirit>1.5</RH_TET_Empire_WizardStandard_Spirit>
+						<RH_TET_Empire_WizardStandard_Grey>1.5</RH_TET_Empire_WizardStandard_Grey>
+						<RH_TET_Empire_WizardStandard_Jade>1.5</RH_TET_Empire_WizardStandard_Jade>
+						<RH_TET_Empire_WizardStandard_White>1.5</RH_TET_Empire_WizardStandard_White>
+						<RH_TET_Empire_WizardStandard_Gold>1.5</RH_TET_Empire_WizardStandard_Gold>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//FactionDef[defName = "RH_TET_Outcasts"]/pawnGroupMakers/li[2]/options</xpath>
+					<value>
+						<RH_TET_Empire_FreeCompany_Ranged>5</RH_TET_Empire_FreeCompany_Ranged>
+						<RH_TET_Empire_FreeCompany_Melee>5</RH_TET_Empire_FreeCompany_Melee>
+						<RH_TET_Empire_Cook>2</RH_TET_Empire_Cook>
+						<RH_TET_Empire_FreeCompanyCaptain_Ranged>2</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+						<RH_TET_Empire_FreeCompanyCaptain_Melee>2</RH_TET_Empire_FreeCompanyCaptain_Melee>
+						<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>
+						<RH_TET_Empire_WizardChaos>2</RH_TET_Empire_WizardChaos>
+						<RH_TET_Empire_WizardGreatChaos>1</RH_TET_Empire_WizardGreatChaos>
+						<RH_TET_Empire_WizardGreat_Beasts>1</RH_TET_Empire_WizardGreat_Beasts>
+						<RH_TET_Empire_WizardGreat_Bright>1</RH_TET_Empire_WizardGreat_Bright>
+						<RH_TET_Empire_WizardGreat_Celestial>1</RH_TET_Empire_WizardGreat_Celestial>
+						<RH_TET_Empire_WizardGreat_Spirit>1</RH_TET_Empire_WizardGreat_Spirit>
+						<RH_TET_Empire_WizardGreat_Grey>1</RH_TET_Empire_WizardGreat_Grey>
+						<RH_TET_Empire_WizardGreat_Jade>1</RH_TET_Empire_WizardGreat_Jade>
+						<RH_TET_Empire_WizardGreat_White>1</RH_TET_Empire_WizardGreat_White>
+						<RH_TET_Empire_WizardGreat_Gold>1</RH_TET_Empire_WizardGreat_Gold>
+						<RH_TET_Empire_WizardStandard_Beasts>1.5</RH_TET_Empire_WizardStandard_Beasts>
+						<RH_TET_Empire_WizardStandard_Bright>1.5</RH_TET_Empire_WizardStandard_Bright>
+						<RH_TET_Empire_WizardStandard_Celestial>1.5</RH_TET_Empire_WizardStandard_Celestial>
+						<RH_TET_Empire_WizardStandard_Spirit>1.5</RH_TET_Empire_WizardStandard_Spirit>
+						<RH_TET_Empire_WizardStandard_Grey>1.5</RH_TET_Empire_WizardStandard_Grey>
+						<RH_TET_Empire_WizardStandard_Jade>1.5</RH_TET_Empire_WizardStandard_Jade>
+						<RH_TET_Empire_WizardStandard_White>1.5</RH_TET_Empire_WizardStandard_White>
+						<RH_TET_Empire_WizardStandard_Gold>1.5</RH_TET_Empire_WizardStandard_Gold>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//FactionDef[defName = "RH_TET_Outcasts"]/pawnGroupMakers/li[3]/options</xpath>
+					<value>
+						<RH_TET_Empire_FreeCompany_Ranged>5</RH_TET_Empire_FreeCompany_Ranged>
+						<RH_TET_Empire_FreeCompany_Melee>5</RH_TET_Empire_FreeCompany_Melee>
+						<RH_TET_Empire_Cook>2</RH_TET_Empire_Cook>
+						<RH_TET_Empire_FreeCompanyCaptain_Ranged>2</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+						<RH_TET_Empire_FreeCompanyCaptain_Melee>2</RH_TET_Empire_FreeCompanyCaptain_Melee>
+						<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>
+						<RH_TET_Empire_WizardChaos>2</RH_TET_Empire_WizardChaos>
+						<RH_TET_Empire_WizardGreatChaos>1</RH_TET_Empire_WizardGreatChaos>
+						<RH_TET_Empire_WizardGreat_Beasts>1</RH_TET_Empire_WizardGreat_Beasts>
+						<RH_TET_Empire_WizardGreat_Bright>1</RH_TET_Empire_WizardGreat_Bright>
+						<RH_TET_Empire_WizardGreat_Celestial>1</RH_TET_Empire_WizardGreat_Celestial>
+						<RH_TET_Empire_WizardGreat_Spirit>1</RH_TET_Empire_WizardGreat_Spirit>
+						<RH_TET_Empire_WizardGreat_Grey>1</RH_TET_Empire_WizardGreat_Grey>
+						<RH_TET_Empire_WizardGreat_Jade>1</RH_TET_Empire_WizardGreat_Jade>
+						<RH_TET_Empire_WizardGreat_White>1</RH_TET_Empire_WizardGreat_White>
+						<RH_TET_Empire_WizardGreat_Gold>1</RH_TET_Empire_WizardGreat_Gold>
+						<RH_TET_Empire_WizardStandard_Beasts>1.5</RH_TET_Empire_WizardStandard_Beasts>
+						<RH_TET_Empire_WizardStandard_Bright>1.5</RH_TET_Empire_WizardStandard_Bright>
+						<RH_TET_Empire_WizardStandard_Celestial>1.5</RH_TET_Empire_WizardStandard_Celestial>
+						<RH_TET_Empire_WizardStandard_Spirit>1.5</RH_TET_Empire_WizardStandard_Spirit>
+						<RH_TET_Empire_WizardStandard_Grey>1.5</RH_TET_Empire_WizardStandard_Grey>
+						<RH_TET_Empire_WizardStandard_Jade>1.5</RH_TET_Empire_WizardStandard_Jade>
+						<RH_TET_Empire_WizardStandard_White>1.5</RH_TET_Empire_WizardStandard_White>
+						<RH_TET_Empire_WizardStandard_Gold>1.5</RH_TET_Empire_WizardStandard_Gold>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//FactionDef[defName = "RH_TET_Outcasts"]/pawnGroupMakers/li[4]/options</xpath>
+					<value>
+						<RH_TET_Empire_FreeCompany_Ranged>5</RH_TET_Empire_FreeCompany_Ranged>
+						<RH_TET_Empire_FreeCompany_Melee>5</RH_TET_Empire_FreeCompany_Melee>
+						<RH_TET_Empire_Cook>2</RH_TET_Empire_Cook>
+						<RH_TET_Empire_FreeCompanyCaptain_Ranged>2</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+						<RH_TET_Empire_FreeCompanyCaptain_Melee>2</RH_TET_Empire_FreeCompanyCaptain_Melee>
+						<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>
+						<RH_TET_Empire_WizardChaos>2</RH_TET_Empire_WizardChaos>
+						<RH_TET_Empire_WizardGreatChaos>1</RH_TET_Empire_WizardGreatChaos>
+						<RH_TET_Empire_WizardGreat_Beasts>1</RH_TET_Empire_WizardGreat_Beasts>
+						<RH_TET_Empire_WizardGreat_Bright>1</RH_TET_Empire_WizardGreat_Bright>
+						<RH_TET_Empire_WizardGreat_Celestial>1</RH_TET_Empire_WizardGreat_Celestial>
+						<RH_TET_Empire_WizardGreat_Spirit>1</RH_TET_Empire_WizardGreat_Spirit>
+						<RH_TET_Empire_WizardGreat_Grey>1</RH_TET_Empire_WizardGreat_Grey>
+						<RH_TET_Empire_WizardGreat_Jade>1</RH_TET_Empire_WizardGreat_Jade>
+						<RH_TET_Empire_WizardGreat_White>1</RH_TET_Empire_WizardGreat_White>
+						<RH_TET_Empire_WizardGreat_Gold>1</RH_TET_Empire_WizardGreat_Gold>
+						<RH_TET_Empire_WizardStandard_Beasts>1.5</RH_TET_Empire_WizardStandard_Beasts>
+						<RH_TET_Empire_WizardStandard_Bright>1.5</RH_TET_Empire_WizardStandard_Bright>
+						<RH_TET_Empire_WizardStandard_Celestial>1.5</RH_TET_Empire_WizardStandard_Celestial>
+						<RH_TET_Empire_WizardStandard_Spirit>1.5</RH_TET_Empire_WizardStandard_Spirit>
+						<RH_TET_Empire_WizardStandard_Grey>1.5</RH_TET_Empire_WizardStandard_Grey>
+						<RH_TET_Empire_WizardStandard_Jade>1.5</RH_TET_Empire_WizardStandard_Jade>
+						<RH_TET_Empire_WizardStandard_White>1.5</RH_TET_Empire_WizardStandard_White>
+						<RH_TET_Empire_WizardStandard_Gold>1.5</RH_TET_Empire_WizardStandard_Gold>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//FactionDef[defName = "RH_TET_Outcasts"]/pawnGroupMakers/li[5]/options</xpath>
+					<value>
+						<RH_TET_Empire_FreeCompany_Ranged>5</RH_TET_Empire_FreeCompany_Ranged>
+						<RH_TET_Empire_FreeCompany_Melee>5</RH_TET_Empire_FreeCompany_Melee>
+						<RH_TET_Empire_Cook>2</RH_TET_Empire_Cook>
+						<RH_TET_Empire_FreeCompanyCaptain_Ranged>2</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+						<RH_TET_Empire_FreeCompanyCaptain_Melee>2</RH_TET_Empire_FreeCompanyCaptain_Melee>
+						<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>
+						<RH_TET_Empire_WizardChaos>2</RH_TET_Empire_WizardChaos>
+						<RH_TET_Empire_WizardGreatChaos>1</RH_TET_Empire_WizardGreatChaos>
+						<RH_TET_Empire_WizardGreat_Beasts>1</RH_TET_Empire_WizardGreat_Beasts>
+						<RH_TET_Empire_WizardGreat_Bright>1</RH_TET_Empire_WizardGreat_Bright>
+						<RH_TET_Empire_WizardGreat_Celestial>1</RH_TET_Empire_WizardGreat_Celestial>
+						<RH_TET_Empire_WizardGreat_Spirit>1</RH_TET_Empire_WizardGreat_Spirit>
+						<RH_TET_Empire_WizardGreat_Grey>1</RH_TET_Empire_WizardGreat_Grey>
+						<RH_TET_Empire_WizardGreat_Jade>1</RH_TET_Empire_WizardGreat_Jade>
+						<RH_TET_Empire_WizardGreat_White>1</RH_TET_Empire_WizardGreat_White>
+						<RH_TET_Empire_WizardGreat_Gold>1</RH_TET_Empire_WizardGreat_Gold>
+						<RH_TET_Empire_WizardStandard_Beasts>1.5</RH_TET_Empire_WizardStandard_Beasts>
+						<RH_TET_Empire_WizardStandard_Bright>1.5</RH_TET_Empire_WizardStandard_Bright>
+						<RH_TET_Empire_WizardStandard_Celestial>1.5</RH_TET_Empire_WizardStandard_Celestial>
+						<RH_TET_Empire_WizardStandard_Spirit>1.5</RH_TET_Empire_WizardStandard_Spirit>
+						<RH_TET_Empire_WizardStandard_Grey>1.5</RH_TET_Empire_WizardStandard_Grey>
+						<RH_TET_Empire_WizardStandard_Jade>1.5</RH_TET_Empire_WizardStandard_Jade>
+						<RH_TET_Empire_WizardStandard_White>1.5</RH_TET_Empire_WizardStandard_White>
+						<RH_TET_Empire_WizardStandard_Gold>1.5</RH_TET_Empire_WizardStandard_Gold>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//FactionDef[defName = "RH_TET_Outcasts"]/pawnGroupMakers/li[6]/guards</xpath>
+					<value>
+						<RH_TET_Empire_FreeCompany_Ranged>5</RH_TET_Empire_FreeCompany_Ranged>
+						<RH_TET_Empire_FreeCompany_Melee>5</RH_TET_Empire_FreeCompany_Melee>
+						<RH_TET_Empire_Cook>2</RH_TET_Empire_Cook>
+						<RH_TET_Empire_FreeCompanyCaptain_Ranged>2</RH_TET_Empire_FreeCompanyCaptain_Ranged>
+						<RH_TET_Empire_FreeCompanyCaptain_Melee>2</RH_TET_Empire_FreeCompanyCaptain_Melee>
+						<RH_TET_Empire_Grenadier>2</RH_TET_Empire_Grenadier>
+						<RH_TET_Empire_WizardChaos>2</RH_TET_Empire_WizardChaos>
+						<RH_TET_Empire_WizardGreatChaos>1</RH_TET_Empire_WizardGreatChaos>
+						<RH_TET_Empire_WizardGreat_Beasts>1</RH_TET_Empire_WizardGreat_Beasts>
+						<RH_TET_Empire_WizardGreat_Bright>1</RH_TET_Empire_WizardGreat_Bright>
+						<RH_TET_Empire_WizardGreat_Celestial>1</RH_TET_Empire_WizardGreat_Celestial>
+						<RH_TET_Empire_WizardGreat_Spirit>1</RH_TET_Empire_WizardGreat_Spirit>
+						<RH_TET_Empire_WizardGreat_Grey>1</RH_TET_Empire_WizardGreat_Grey>
+						<RH_TET_Empire_WizardGreat_Jade>1</RH_TET_Empire_WizardGreat_Jade>
+						<RH_TET_Empire_WizardGreat_White>1</RH_TET_Empire_WizardGreat_White>
+						<RH_TET_Empire_WizardGreat_Gold>1</RH_TET_Empire_WizardGreat_Gold>
+						<RH_TET_Empire_WizardStandard_Beasts>1.5</RH_TET_Empire_WizardStandard_Beasts>
+						<RH_TET_Empire_WizardStandard_Bright>1.5</RH_TET_Empire_WizardStandard_Bright>
+						<RH_TET_Empire_WizardStandard_Celestial>1.5</RH_TET_Empire_WizardStandard_Celestial>
+						<RH_TET_Empire_WizardStandard_Spirit>1.5</RH_TET_Empire_WizardStandard_Spirit>
+						<RH_TET_Empire_WizardStandard_Grey>1.5</RH_TET_Empire_WizardStandard_Grey>
+						<RH_TET_Empire_WizardStandard_Jade>1.5</RH_TET_Empire_WizardStandard_Jade>
+						<RH_TET_Empire_WizardStandard_White>1.5</RH_TET_Empire_WizardStandard_White>
+						<RH_TET_Empire_WizardStandard_Gold>1.5</RH_TET_Empire_WizardStandard_Gold>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "RH_TET_Empire_WizardChaos"]/defaultFactionDef</xpath>
+					<value>
+						<defaultFactionDef>RH_TET_Outcasts</defaultFactionDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "RH_TET_Empire_WizardGreatChaos"]/defaultFactionDef</xpath>
+					<value>
+						<defaultFactionDef>RH_TET_Outcasts</defaultFactionDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Extended Storage (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "RH_TET_Empire_Shelf"]/thingClass</xpath>
+					<value>
+						<thingClass>ExtendedStorage.Building_ExtendedStorage</thingClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "RH_TET_Empire_Shelf"]/inspectorTabs</xpath>
+					<value>
+						<inspectorTabs>
+							<li>ExtendedStorage.ITab_ExtendedStorage</li>
+						</inspectorTabs>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RH_TET_Empire_Shelf"]/statBases</xpath>
+					<value>
+						<ES_StorageFactor>8</ES_StorageFactor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "RH_TET_Empire_Shelf"]/drawGUIOverlay</xpath>
+					<value>
+						<drawGUIOverlay>True</drawGUIOverlay>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimhammer - The End Times - Dwarfs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Dwarf_Stonebread"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Empire_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Dwarf_BulkStonebread"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Empire_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_Bread"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Dwarfs_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_BreadBulk"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Dwarfs_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_Cheese"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Dwarfs_Hearth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>//RecipeDef[defName = "RH_TET_Empire_CheeseBulk"]/recipeUsers</xpath>
+					<value>
+						<li>RH_TET_Dwarfs_Hearth</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

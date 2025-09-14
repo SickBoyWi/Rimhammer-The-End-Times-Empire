@@ -72,7 +72,7 @@ namespace TheEndTimes_Empire
 
         public override FloatMenuAcceptanceReport StillValid(
           Caravan caravan,
-          int destinationTile)
+          PlanetTile destinationTile)
         {
             FloatMenuAcceptanceReport acceptanceReport = (FloatMenuAcceptanceReport)true;
             if (!(bool)acceptanceReport)
@@ -120,7 +120,7 @@ namespace TheEndTimes_Empire
         }
 
         public virtual Map GetOrGenerateMap(
-          int tile,
+          PlanetTile tile,
           IntVec3 mapSize,
           WorldObjectDef suggestedMapParentDef)
         {

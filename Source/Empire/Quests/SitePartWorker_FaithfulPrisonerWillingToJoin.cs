@@ -36,7 +36,7 @@ namespace TheEndTimes_Empire
             return str;
         }
 
-        public static Pawn GenerateFaithfulPrisoner(int tile, Faction hostFaction)
+        public static Pawn GenerateFaithfulPrisoner(PlanetTile tile, Faction hostFaction)
         {
             float? age = RH_TET_EmpireMod.random.Next(25, 40);
             Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(RH_TET_EmpireDefOf.RH_TET_Empire_FaithfulShallya, (Faction)null, PawnGenerationContext.NonPlayer, -1,

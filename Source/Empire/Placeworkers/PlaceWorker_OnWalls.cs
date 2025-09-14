@@ -25,7 +25,7 @@ namespace TheEndTimes_Empire
             if (((building.def.graphicData.linkFlags & (LinkFlags.Wall | LinkFlags.Rock)) == 0) && !(isMassiveCastleWall))
                 return (AcceptanceReport)"RH_TET_Empire_WallNeeded".Translate();
 
-            if (rot.FacingCell != null)
+            if (rot.FacingCell != IntVec3.Invalid)
             {
 
                 IntVec3 facingLoc = loc;

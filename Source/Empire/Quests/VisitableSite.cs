@@ -101,7 +101,7 @@ namespace TheEndTimes_Empire
                     return true;
                 })));
                 if (list.Any<Pawn>((Predicate<Pawn>)(x => CaravanUtility.IsOwner(x, Faction.OfPlayer))))
-                    CaravanExitMapUtility.ExitMapAndCreateCaravan((IEnumerable<Pawn>)list, Faction.OfPlayer, mapParent.Tile, mapParent.Tile, -1, true);
+                    CaravanExitMapUtility.ExitMapAndCreateCaravan((IEnumerable<Pawn>)list, Faction.OfPlayer, mapParent.Tile, mapParent.Tile, PlanetTile.Invalid, true);
                 list.Clear();
                 if (!this.RemoveAfterLeave)
                     return;

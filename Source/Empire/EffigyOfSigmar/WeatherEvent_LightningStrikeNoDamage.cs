@@ -33,7 +33,7 @@ namespace TheEndTimes_Empire
             this.boltMesh = LightningBoltMeshPool.RandomBoltMesh;
             if (!this.strikeLoc.Fogged(this.map))
             {
-                GenExplosion.DoExplosion(this.strikeLoc, this.map, 1.9f, DamageDefOf.Extinguish, (Thing)null, -1, -1f, (SoundDef)null, (ThingDef)null, (ThingDef)null, (Thing)null, (ThingDef)null, 0.0f, 1, new GasType?(), false, (ThingDef)null, 0.0f, 1, 0.0f, false, new float?(), (List<Thing>)null);
+                GenExplosion.DoExplosion(this.strikeLoc, this.map, 1.9f, DamageDefOf.Extinguish, (Thing)null, -1, -1f, (SoundDef)null, (ThingDef)null, (ThingDef)null, (Thing)null, (ThingDef)null, 0.0f, 1, new GasType?(), new float?(), new int(), false, (ThingDef)null, 0.0f, 1, 0.0f, false, new float?(), (List<Thing>)null);
                 Vector3 vector3Shifted = this.strikeLoc.ToVector3Shifted();
                 for (int index = 0; index < 4; ++index)
                 {

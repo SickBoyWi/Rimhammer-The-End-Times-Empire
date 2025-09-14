@@ -76,7 +76,7 @@ namespace TheEndTimes_Empire
                 int faithfulCount = 0;
 
                 // If the player has more than three faith pawns already, don't allow this event.
-                List<Pawn> playerPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
+                List<Pawn> playerPawns = PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists;
 
                 foreach (Pawn p in playerPawns)
                 {
@@ -123,7 +123,7 @@ namespace TheEndTimes_Empire
                         int faithfulCount = 0;
 
                         // If the player has more than three faith pawns already, don't allow this event.
-                        List<Pawn> playerPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
+                        List<Pawn> playerPawns = PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists;
 
                         foreach (Pawn p in playerPawns)
                         {

@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Abstract Classes -->
+
+	<!-- Warmachine Parent Abstract -->
+	<ThingDef Name="RH_TET_Empire_WarmachineBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<techLevel>Medieval</techLevel>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<graphicData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+	</ThingDef>
+
+	<!-- Warmachine Abstract -->
+	<ThingDef Name="RH_TET_Empire_WarmachineBuilding" ParentName="RH_TET_Empire_WarmachineBase" Abstract="True">
+		<thingClass>Building_TurretGun</thingClass>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasTooltip>true</hasTooltip>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+		</comps>
+		<designationCategory>Security</designationCategory>
+		<thingCategories>
+			<li>RH_TET_Empire_BuildingsSecurity</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<!-- Warmachine Turret Abstract -->
+	<ThingDef Name="RH_TET_Empire_WarmachineWeapon" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>10</Mass>
+		</statBases>
+		<pathCost>40</pathCost>
+		<selectable>True</selectable>
+		<alwaysHaulable>True</alwaysHaulable>
+		<useHitPoints>False</useHitPoints>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<tickerType>Never</tickerType>
+		<destroyOnDrop>True</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li><compClass>CompEquippable</compClass></li>
+		</comps>
+	</ThingDef>
+
+	<!-- Warmachine Ammunition Abstract -->
+	<ThingDef Name="RH_TET_Empire_ChangableAmmo" ParentName="RH_TET_Empire_WarmachineWeapon" Abstract="True">
+		<comps>
+			<li Class="CompProperties_ChangeableProjectile"/>
+		</comps>
+	</ThingDef>
+	
+
+	<ThingDef Name="RH_TET_Empire_ProjectileBase" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<!-- Projectiles -->
+	<ThingDef Name="RH_TET_Empire_ArrowBase" ParentName="RH_TET_Empire_ProjectileBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArrowBase">
+		<defName>RH_TET_Empire_Cannon_Ball_Round</defName>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>Empire cannon Ball</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_CannonBall</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>95</damageAmountBase>
+			<speed>120</speed>
+			<explosionRadius>2.5</explosionRadius>
+			<explosionDamageFalloff>false</explosionDamageFalloff>
+			<armorPenetrationBase>3.0</armorPenetrationBase>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArrowBase">
+		<defName>RH_TET_Empire_Hellblaster_Round_Shot</defName>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>Empire hellblaster round</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_Hellblaster</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>100</speed>
+			<explosionRadius>1.5</explosionRadius>
+			<explosionDamageFalloff>false</explosionDamageFalloff>
+			<armorPenetrationBase>2.0</armorPenetrationBase>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArrowBase">
+		<defName>RH_TET_Empire_RocketBattery_Round</defName>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>Empire rocket</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_Rocketbattery_Rocket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>3</explosionRadius>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<explosionDamageFalloff>true</explosionDamageFalloff>
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ArrowBase">
+		<defName>RH_TET_Empire_Mortar_Shell_Round</defName>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>Empire mortar shell</label>
+		<graphicData>
+			<texPath>Things/Projectiles/RH_TET_Empire_MortarShell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,0,0)</color>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<flyOverhead>true</flyOverhead>
+			<damageAmountBase>55</damageAmountBase>
+			<explosionRadius>4</explosionRadius>
+			<explosionDamageFalloff>true</explosionDamageFalloff>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+			<speed>35</speed>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Bridge_Collapse</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	
+	<!-- Ammo Items -->
+	<ThingDef>
+		<defName>RH_TET_Empire_Cannon_Ball</defName>
+		<label>Empire cannon ball</label>
+		<description>A large metal ball and a pouch of black powder, fired from an Empire great cannon.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/WarmachineAmmo/CannonBall</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>
+					<min>30</min>
+					<max>60</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>5</stackLimit>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Flammability>0.5</Flammability>
+			<Mass>3</Mass>
+		</statBases>
+		<thingCategories>
+			<li>RH_TET_Empire_Artillery</li>
+		</thingCategories>
+		<projectileWhenLoaded>RH_TET_Empire_Cannon_Ball_Round</projectileWhenLoaded>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>RH_TET_Empire_Hellblaster_Round</defName>
+		<label>Empire hellblaster round</label>
+		<description>A package of hellblaster volley gun rounds, and some black powder.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/WarmachineAmmo/Hellblaster</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>
+					<min>30</min>
+					<max>60</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>5</stackLimit>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Flammability>0.5</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+		<thingCategories>
+			<li>RH_TET_Empire_Artillery</li>
+		</thingCategories>
+		<projectileWhenLoaded>RH_TET_Empire_Hellblaster_Round_Shot</projectileWhenLoaded>
+	</ThingDef>
+	
+	<ThingDef>
+		<defName>RH_TET_Empire_Mortar_Shell</defName>
+		<label>Empire mortar shell</label>
+		<description>A large metal shell with a black powder load, fired from an Empire mortar.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/WarmachineAmmo/MortarShell</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>
+					<min>30</min>
+					<max>60</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>5</stackLimit>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Flammability>0.5</Flammability>
+			<Mass>3</Mass>
+		</statBases>
+		<thingCategories>
+			<li>RH_TET_Empire_Artillery</li>
+		</thingCategories>
+		<projectileWhenLoaded>RH_TET_Empire_Mortar_Shell_Round</projectileWhenLoaded>
+	</ThingDef>
+	
+	<ThingDef>
+		<defName>RH_TET_Empire_RocketBattery_Rocket</defName>
+		<label>Empire rocket battery rocket</label>
+		<description>A bunch of rockets for an Empire rocket battery. Highly explosive.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/WarmachineAmmo/RocketBattery</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>
+					<min>30</min>
+					<max>60</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>5</stackLimit>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Flammability>0.5</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+		<thingCategories>
+			<li>RH_TET_Empire_Artillery</li>
+		</thingCategories>
+		<projectileWhenLoaded>RH_TET_Empire_RocketBattery_Round</projectileWhenLoaded>
+	</ThingDef>
+
+	<!-- Warmachine Turrets -->
+	<ThingDef ParentName="RH_TET_Empire_ChangableAmmo">
+		<defName>RH_TET_Empire_Cannon_Turret</defName>
+		<label>Empire great cannon</label>
+		<description>A great cannon emplacement. Hurls cannon balls at enemies.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_GreatCannon</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_Cannon_Ball</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_Cannon_Ball</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>2.8</warmupTime>
+				<range>500</range>
+				<soundCast>RH_TET_Empire_Cannon</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ChangableAmmo">
+		<defName>RH_TET_Empire_Mortar_Turret</defName>
+		<label>Empire mortar</label>
+		<description>An Empire mortar emplacement. Lobs mortar shells that explode upon impact. Not very accurate accurate, and has a minimum range.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_Mortar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0</AccuracyTouch>
+			<AccuracyShort>0.68</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_Mortar_Shell</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_Mortar_Shell</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<requireLineOfSight>false</requireLineOfSight>
+				<hasStandardCommand>true</hasStandardCommand>
+				<warmupTime>3.5</warmupTime>
+				<minRange>20</minRange>
+				<range>500</range>
+				<forcedMissRadius>5</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Mortar_LaunchA</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ChangableAmmo">
+		<defName>RH_TET_Empire_Hellblaster_Turret</defName>
+		<label>Empire hellblaster</label>
+		<description>An Empire hellblaster emplacement. Hurls several hellblaster shot balls at very high speed.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_Hellblaster</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>.90</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.73</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_Hellblaster_Round</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_Hellblaster_Round</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>2.5</warmupTime>
+				<range>40</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>RH_TET_Empire_Hellblaster</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_ChangableAmmo">
+		<defName>RH_TET_Empire_RocketBattery_Turret</defName>
+		<label>Empire rocket battery</label>
+		<description>An Empire rocket battery emplacement. Hurls exploding rockets.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_RocketBattery</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>.75</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_RocketBattery_Rocket</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<thingDefs>
+						<li>RH_TET_Empire_RocketBattery_Rocket</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>2.5</warmupTime>
+				<range>50</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>RH_TET_Empire_RocketBattery</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- Warmachines -->
+	<ThingDef ParentName="RH_TET_Empire_WarmachineBuilding">
+		<defName>RH_TET_Empire_Mortar</defName>
+		<label>Empire mortar</label>
+		<description>An Empire mortar. Lobs mortar shells at enemies, which explode upon impact. Great at smashing groups of enemies. Has a minimum range, and not the greatest accuracy.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_Mortar_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Menu/RH_TET_Empire_Mortar_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>75</Mass>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<WoodLog>250</WoodLog>
+		</costList>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.75</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Warmachines/RH_TET_Empire_Mortar_Blueprint</texPath>
+			</blueprintGraphicData>
+			<turretGunDef>RH_TET_Empire_Mortar_Turret</turretGunDef>
+			<turretBurstWarmupTime>5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>20</turretBurstCooldownTime>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery_EmpireBaseDestroyer</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Shells</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Warmachines_Basic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_WarmachineBuilding">
+		<defName>RH_TET_Empire_Cannon</defName>
+		<label>Empire great cannon</label>
+		<description>An Empire great cannon. Fires lethal cannon balls at enemies. Does a ton of damage and smashes armor.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_GreatCannon_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Menu/RH_TET_Empire_GreatCannon_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>.75</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>65</Mass>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>125</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+			<WoodLog>125</WoodLog>
+		</costList>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.7</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Warmachines/RH_TET_Empire_GreatCannon_Blueprint</texPath>
+			</blueprintGraphicData>
+			<turretGunDef>RH_TET_Empire_Cannon_Turret</turretGunDef>
+			<turretBurstWarmupTime>4</turretBurstWarmupTime>
+			<turretBurstCooldownTime>10</turretBurstCooldownTime>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Shells</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Warmachines_Basic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_WarmachineBuilding">
+		<defName>RH_TET_Empire_Hellblaster</defName>
+		<label>Empire hellblaster</label>
+		<description>An Empire hellblaster volley gun. Fires a series of lethal metal balls at enemies. Makes a real mess out of enemies!</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_Hellblaster_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Menu/RH_TET_Empire_Hellblaster_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>11000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>50</Mass>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<WoodLog>200</WoodLog>
+		</costList>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.7</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<specialDisplayRadius>40</specialDisplayRadius>
+		<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Warmachines/RH_TET_Empire_Hellblaster_Blueprint</texPath>
+			</blueprintGraphicData>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RH_TET_Empire_Hellblaster_Turret</turretGunDef>
+			<turretBurstWarmupTime>4</turretBurstWarmupTime>
+			<turretBurstCooldownTime>10</turretBurstCooldownTime>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Shells</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Warmachines_Advanced</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="RH_TET_Empire_WarmachineBuilding">
+		<defName>RH_TET_Empire_RocketBattery</defName>
+		<label>Empire hellstorm</label>
+		<description>An Empire hellstorm rocket battery. Fires a series of exploding rockets at enemies. Very dramatic to fire, and makes a lot of fire.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Warmachines/RH_TET_Empire_RocketBattery_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Menu/RH_TET_Empire_RocketBattery_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>13000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>50</Mass>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<WoodLog>250</WoodLog>
+		</costList>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.7</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<specialDisplayRadius>50</specialDisplayRadius>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/Warmachines/RH_TET_Empire_RocketBattery_Blueprint</texPath>
+			</blueprintGraphicData>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RH_TET_Empire_RocketBattery_Turret</turretGunDef>
+			<turretBurstWarmupTime>5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>10</turretBurstCooldownTime>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Shells</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>RH_TET_Empire_Warmachines_Advanced</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

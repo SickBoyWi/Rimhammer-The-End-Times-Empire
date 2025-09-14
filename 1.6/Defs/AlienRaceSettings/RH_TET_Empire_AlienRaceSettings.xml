@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>RH_TET_Empire_RaceSettings</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>RH_TET_Empire_Civilian</li>
+						<li>RH_TET_Empire_Cook</li>
+					</kindDefs>
+					<chance>10</chance>
+				</li>
+			</alienslavekinds>
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>RH_TET_Empire_Civilian</li>
+						<li>RH_TET_Empire_Cook</li>
+					</kindDefs>
+					<chance>10</chance>
+				</li>
+			</alienrefugeekinds>
+			<alienwandererkinds>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>RH_TET_Empire_Cook</li>
+								<li>RH_TET_Empire_Huntsman</li>
+								<li>RH_TET_EmpireVillager</li>
+								<li>RH_TET_Empire_Witchhunter</li>
+								<li>RH_TET_Empire_WizardStandard_Beasts</li>
+							</kindDefs>
+							<chance>10</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+						<li>RH_TET_Empire_PlayerWizard</li>
+						<li>RH_TET_Empire_PlayerColony</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+</Defs>

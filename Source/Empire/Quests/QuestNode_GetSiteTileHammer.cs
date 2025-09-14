@@ -21,10 +21,10 @@ namespace TheEndTimes_Empire
                 return false;
             }
 
-            int tile;
+            PlanetTile tile;
             if (!this.TryFindTile(slate, out tile))
                 return false;
-            slate.Set<int>(this.storeAs.GetValue(slate), tile, false);
+            slate.Set<PlanetTile>(this.storeAs.GetValue(slate), tile, false);
             return true;
         }
 
@@ -36,22 +36,22 @@ namespace TheEndTimes_Empire
             }
 
             Slate slate = RimWorld.QuestGen.QuestGen.slate;
-            int tile;
+            PlanetTile tile;
             if (!this.TryFindTile(RimWorld.QuestGen.QuestGen.slate, out tile))
                 return;
-            RimWorld.QuestGen.QuestGen.slate.Set<int>(this.storeAs.GetValue(slate), tile, false);
+            RimWorld.QuestGen.QuestGen.slate.Set<PlanetTile>(this.storeAs.GetValue(slate), tile, false);
         }
 
-        private bool TryFindTile(Slate slate, out int tile)
+        private bool TryFindTile(Slate slate, out PlanetTile tile)
         {
             if (SigmarHammerSite.playerWon)
             {
-                tile = -1;
+                tile = PlanetTile.Invalid;
                 return false;
             }
 
             Map map = slate.Get<Map>("map", (Map)null, false) ?? Find.RandomPlayerHomeMap;
-            int nearThisTile1 = map != null ? map.Tile : -1;
+            PlanetTile nearThisTile1 = map != null ? map.Tile : PlanetTile.Invalid;
             IntRange var;
             if (slate.TryGet<IntRange>("siteDistRange", out var, false))
                 return QuestNode_GetSiteTileHammer.TryFindNewSiteTile(out tile, var.min, var.max, this.allowCaravans.GetValue(slate), this.preferCloserTiles.GetValue(slate), nearThisTile1);
@@ -63,58 +63,58 @@ namespace TheEndTimes_Empire
             return QuestNode_GetSiteTileHammer.TryFindNewSiteTile(out tile, 12, 30, num1 != 0, num2 != 0, nearThisTile2);
         }
 
-        public static bool TryFindNewSiteTile(out int tile, int minDist = 8, int maxDist = 30,
+        public static bool TryFindNewSiteTile(out PlanetTile tile, int minDist = 8, int maxDist = 30,
             bool allowCaravans = false, bool preferCloserTiles = false, int nearThisTile = -1)
         {
             if (SigmarHammerSite.playerWon)
             {
-                tile = -1;
+                tile = PlanetTile.Invalid;
                 return false;
             }
 
-            Func<int, int> findTile = delegate (int root)
+            Func<PlanetTile, PlanetTile> findTile = delegate (PlanetTile root)
             {
                 int minDist2 = minDist;
                 int maxDist2 = maxDist;
-                Predicate<int> validator = (int x) =>
+                Predicate<PlanetTile> validator = (PlanetTile x) =>
                     !Find.WorldObjects.AnyWorldObjectAt(x)
                     && Find.WorldGrid[x].hilliness == Hilliness.Flat
                     && IsValidTileForNewSettlement(x, null);
                 bool preferCloserTiles2 = preferCloserTiles;
-                int result;
+                PlanetTile result;
                 if (TileFinder.TryFindPassableTileWithTraversalDistance(root, minDist2, maxDist2, out result, validator,
                     false, TileFinderMode.Random, false, false))
                 {
                     return result;
                 }
-                return -1;
+                return PlanetTile.Invalid;
             };
 
-            int arg;
-            if (nearThisTile != -1)
+            PlanetTile arg;
+            if (nearThisTile != PlanetTile.Invalid)
             {
                 arg = nearThisTile;
             }
-            else if (!TileFinder.TryFindRandomPlayerTile(out arg, allowCaravans, (int x) => findTile(x) != -1))
+            else if (!TileFinder.TryFindRandomPlayerTile(out arg, allowCaravans, (PlanetTile x) => findTile(x) != PlanetTile.Invalid))
             {
-                tile = -1;
+                tile = PlanetTile.Invalid;
                 return false;
             }
             tile = findTile(arg);
-            return tile != -1;
+            return tile != PlanetTile.Invalid;
         }
 
-        public static bool IsValidTileForNewSettlement(int tile, StringBuilder reason = null)
+        public static bool IsValidTileForNewSettlement(PlanetTile tile, StringBuilder reason = null)
         {
             Tile tile1 = Find.WorldGrid[tile];
-            if (!tile1.biome.canBuildBase)
+            if (!tile1.PrimaryBiome.canBuildBase)
             {
-                reason?.Append("CannotLandBiome".Translate((NamedArgument)tile1.biome.LabelCap));
+                reason?.Append("CannotLandBiome".Translate((NamedArgument)tile1.PrimaryBiome.LabelCap));
                 return false;
             }
-            if (!tile1.biome.implemented)
+            if (!tile1.PrimaryBiome.implemented)
             {
-                reason?.Append("BiomeNotImplemented".Translate() + ": " + tile1.biome.LabelCap);
+                reason?.Append("BiomeNotImplemented".Translate() + ": " + tile1.PrimaryBiome.LabelCap);
                 return false;
             }
             Settlement settlementBase = Find.WorldObjects.SettlementBaseAt(tile);

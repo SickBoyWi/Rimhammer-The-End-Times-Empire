@@ -108,7 +108,7 @@ namespace TheEndTimes_Empire
             base.Destroy(mode);
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (isDestroyed)
                 return;
@@ -243,9 +243,12 @@ namespace TheEndTimes_Empire
             bool canTraverseImpassable = true;
             bool ignoreFirstTilePassability = true;
 
-            Find.WorldFloodFiller.FloodFill(this.Map.Tile, 
-            (Predicate<int>)(x => canTraverseImpassable || !Find.World.Impassable(x) || x == this.Map.Tile & ignoreFirstTilePassability), 
-            (Func<int, int, bool>)((tile, traversalDistance) =>
+            WorldFloodFiller filler = this.Map.Tile.Layer.Filler;
+
+            filler.FloodFill(
+                this.Map.Tile,
+                (Predicate<PlanetTile>)(x => canTraverseImpassable || !Find.World.Impassable(x) || x == this.Map.Tile & ignoreFirstTilePassability),
+                (Predicate<PlanetTile, int>)((tile, traversalDistance) =>
                 {
                     if (traversalDistance > maxDist)
                         return true;
@@ -259,9 +262,9 @@ namespace TheEndTimes_Empire
                         }
                     }
                     return false;
-                }), 
-            int.MaxValue, 
-            (IEnumerable<int>)null);
+                }),
+                int.MaxValue,
+                (IEnumerable<PlanetTile>)null);
 
             if (this.empEffecter != null)
             { 

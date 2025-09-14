@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>RH_TET_Empire_Dispossessed</defName>
+		<label>Rimhammer - The End Times - Empire - Dispossessed</label>
+		<description>A group of Empire soldiers have been sent out by the Emperor himself, and told to form a new stronghold. You must not only survive, but prosper. You must build a bastion against the evils of the world,
+	and hang on for all humankind.		</description>
+		<scenario>
+			<summary>Three soldiers, and their remaining animals build a new bastion of hope for the beseiged Empire of Man.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>RH_TET_Empire_PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+
+				<!-- Game set up pages. -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>9</pawnChoiceCount>
+				</li>
+
+				<!-- Starting stuff spawn method. -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+					<visible>false</visible>
+				</li>
+
+				<!-- Starting research. -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Stonecutting</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ComplexClothing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ComplexFurniture</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Smithing</project>
+				</li>
+		
+				<!-- Starting stuff. -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>2</count>
+					<animalKind>RH_TET_Horse</animalKind>
+					<bondToRandomPlayerPawnChance>0.2</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>2</count>
+					<animalKind>RH_TET_Empire_Mastiff</animalKind>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RH_TET_Empire_Shield_Low_Talabheim</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RH_TET_Empire_Armor_Low</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RH_TET_Empire_Helmet_Low</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RH_TET_Empire_FloppyHat</thingDef>
+					<stuff>Cloth</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RH_TET_Empire_Sword_Low</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RH_TET_Empire_Flail_Low</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RH_TET_Empire_Crossbow_Low</thingDef>
+				</li>
+				<!-- Scatter some things near player start. -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>25</count>
+				</li>
+				<!-- Scatter some things anywhere. -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>75</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>RH_TET_Empire_Wizard</defName>
+		<label>Rimhammer - The End Times - Empire - Lone Wizard</label>
+		<description>A wizard of the Empire has set out, and decided to create a new Empire settlement. In order to promote research and advancement of the Empire of Man, you must not only survive, but thrive. Build a new home, draw in others, grow, research, and further the interests of mankind.</description>
+		<scenario>
+			<summary>A lone wizard and a horse intend to start a new Empire stronghold for research, and advancement of the Empire of Man.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>RH_TET_Empire_PlayerWizard</factionDef>
+			</playerFaction>
+			<parts>
+
+				<!-- Game set up pages. -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>1</pawnCount>
+					<pawnChoiceCount>5</pawnChoiceCount>
+				</li>
+
+				<!-- Starting stuff spawn method. -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+					<visible>false</visible>
+				</li>
+
+				<!-- Starting research. -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Stonecutting</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ComplexClothing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ComplexFurniture</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Smithing</project>
+				</li>
+		
+				<!-- Starting stuff. -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>1</count>
+					<animalKind>RH_TET_Horse</animalKind>
+					<bondToRandomPlayerPawnChance>0.2</bondToRandomPlayerPawnChance>
+				</li>
+		
+				<!-- Scatter some things near player start. -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>25</count>
+				</li>
+				<!-- Scatter some things anywhere. -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>75</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+  
+</Defs>

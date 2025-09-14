@@ -64,7 +64,7 @@ namespace TheEndTimes_Empire
             return f;
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
 

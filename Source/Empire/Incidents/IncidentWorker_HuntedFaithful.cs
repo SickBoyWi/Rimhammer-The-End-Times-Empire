@@ -35,7 +35,7 @@ namespace TheEndTimes_Empire
                 if (factionFound)
                 {
                     // If the player has more than three faith pawns already, don't allow this event.
-                    List<Pawn> playerPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
+                    List<Pawn> playerPawns = PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists;
 
                     foreach (Pawn p in playerPawns)
                     {
@@ -88,7 +88,7 @@ namespace TheEndTimes_Empire
             raidParms.points = Mathf.Max(raidParms.points * IncidentWorker_HuntedFaithful.RaidPointsFactorRange.RandomInRange, enemyFac.def.MinPointsToGeneratePawnGroup(PawnGroupKindDefOf.Combat));
             raidParms.pawnGroupMakerSeed = new int?(num);
             PawnGroupMakerParms pawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(PawnGroupKindDefOf.Combat, raidParms, false);
-            pawnGroupMakerParms.points = IncidentWorker_Raid.AdjustedRaidPoints(pawnGroupMakerParms.points, raidParms.raidArrivalMode, raidParms.raidStrategy, pawnGroupMakerParms.faction, PawnGroupKindDefOf.Combat);
+            pawnGroupMakerParms.points = IncidentWorker_Raid.AdjustedRaidPoints(pawnGroupMakerParms.points, raidParms.raidArrivalMode, raidParms.raidStrategy, pawnGroupMakerParms.faction, PawnGroupKindDefOf.Combat, raidParms.target, raidParms.raidAgeRestriction);
             IEnumerable<PawnKindDef> pawnKindsExample = PawnGroupMakerUtility.GeneratePawnKindsExample(pawnGroupMakerParms);
 
             //int randoPawnsCount = RH_TET_EmpireMod.random.Next(2, 5);

@@ -242,7 +242,7 @@ namespace TheEndTimes_Empire
             incidentParams.pawnGroupMakerSeed = new int?(num);
 
             PawnGroupMakerParms pawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(PawnGroupKindDefOf.Combat, incidentParams, false);
-            pawnGroupMakerParms.points = IncidentWorker_Raid.AdjustedRaidPoints(pawnGroupMakerParms.points, incidentParams.raidArrivalMode, incidentParams.raidStrategy, pawnGroupMakerParms.faction, PawnGroupKindDefOf.Combat);
+            pawnGroupMakerParms.points = IncidentWorker_Raid.AdjustedRaidPoints(pawnGroupMakerParms.points, incidentParams.raidArrivalMode, incidentParams.raidStrategy, pawnGroupMakerParms.faction, PawnGroupKindDefOf.Combat, incidentParams.target, incidentParams.raidAgeRestriction);
 
             Find.Storyteller.incidentQueue.Add(new QueuedIncident(new FiringIncident(IncidentDefOf.RaidEnemy, (StorytellerComp)null, incidentParams), Find.TickManager.TicksGame + 1000, 0));
         }

@@ -46,7 +46,7 @@ namespace TheEndTimes_Empire
             this.currentMusician = player;
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (this.currentMusician != null)
