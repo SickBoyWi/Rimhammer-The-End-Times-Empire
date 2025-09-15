@@ -253,7 +253,7 @@
 		<fillPercent>1</fillPercent>
 		<passability>Impassable</passability>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<interactionCellIcon>DiningChair</interactionCellIcon>
 		<surfaceType>Item</surfaceType>
 		<canOverlapZones>false</canOverlapZones>

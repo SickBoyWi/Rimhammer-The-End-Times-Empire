@@ -2,6 +2,7 @@
 using RimWorld.Planet;
 using RimWorld.QuestGen;
 using System;
+using System.Collections.Generic;
 using System.Text;
 using Verse;
 
@@ -59,7 +60,7 @@ namespace TheEndTimes_Empire
             bool flag = this.preferCloserTiles.GetValue(slate);
             int num1 = this.allowCaravans.GetValue(slate) ? 1 : 0;
             int num2 = flag ? 1 : 0;
-            int nearThisTile2 = nearThisTile1;
+            PlanetTile nearThisTile2 = nearThisTile1;
             return QuestNode_GetSiteTileHammer.TryFindNewSiteTile(out tile, 12, 30, num1 != 0, num2 != 0, nearThisTile2);
         }
 
@@ -103,6 +104,72 @@ namespace TheEndTimes_Empire
             tile = findTile(arg);
             return tile != PlanetTile.Invalid;
         }
+
+
+
+
+
+
+
+
+
+        //public static bool TryFindNewSiteTile(
+        //  out PlanetTile tile,
+        //  PlanetTile nearTile,
+        //  int minDist = 8, int maxDist = 30,
+        //  bool allowCaravans = false,
+        //  List<LandmarkDef> allowedLandmarks = null,
+        //  float selectLandmarkChance = 0.5f,
+        //  bool canSelectComboLandmarks = true,
+        //  TileFinderMode tileFinderMode = TileFinderMode.Near,
+        //  bool exitOnFirstTileFound = false,
+        //  bool canBeSpace = false,
+        //  PlanetLayer layer = null,
+        //  Predicate<PlanetTile> validator = null)
+        //{
+        //    bool pickLandmark = ModsConfig.OdysseyActive && Rand.ChanceSeeded(selectLandmarkChance, Gen.HashCombineInt(Find.TickManager.TicksGame, 18271));
+        //    if (!nearTile.Valid && !TileFinder.TryFindRandomPlayerTile(out nearTile, allowCaravans, (Predicate<PlanetTile>)null, true, (PlanetLayer)null))
+        //    {
+        //        tile = PlanetTile.Invalid;
+        //        return false;
+        //    }
+        //    if (layer == null)
+        //        layer = nearTile.Layer;
+        //    if (!canBeSpace && layer.Def.isSpace && !Find.WorldGrid.TryGetFirstAdjacentLayerOfDef(nearTile, PlanetLayerDefOf.Surface, out layer))
+        //    {
+        //        int num;
+        //        PlanetLayer planetLayer;
+        //        ((IEnumerable<KeyValuePair<int, PlanetLayer>>)Find.WorldGrid.PlanetLayers).Where<KeyValuePair<int, PlanetLayer>>((Func<KeyValuePair<int, PlanetLayer>, bool>)(t => !t.Value.Def.isSpace)).RandomElement<KeyValuePair<int, PlanetLayer>>().Deconstruct(ref num, ref planetLayer);
+        //        layer = planetLayer;
+        //    }
+        //    FastTileFinder.LandmarkMode landmarkMode = pickLandmark ? FastTileFinder.LandmarkMode.Required : FastTileFinder.LandmarkMode.Any;
+        //    FastTileFinder.TileQueryParams query = new FastTileFinder.TileQueryParams(nearTile, (float)minDist, (float)maxDist, landmarkMode, true, Hilliness.Undefined, Hilliness.Undefined, true, true, canSelectComboLandmarks);
+        //    List<PlanetTile> planetTileList = layer.FastTileFinder.Query(query, (List<BiomeDef>)null, allowedLandmarks, new FastTileFinder.TileQueryParams());
+        //    if (validator != null)
+        //    {
+        //        for (int index = planetTileList.Count - 1; index >= 0; --index)
+        //        {
+        //            if (!validator(planetTileList[index]))
+        //                planetTileList.RemoveAt(index);
+        //        }
+        //    }
+        //    if (planetTileList.Empty<PlanetTile>())
+        //    {
+        //        if (TileFinder.TryFillFindTile(layer.GetClosestTile_NewTemp(nearTile, false), out tile, minDist, maxDist, allowedLandmarks, canSelectComboLandmarks, tileFinderMode, exitOnFirstTileFound, validator, pickLandmark))
+        //            return true;
+        //        tile = PlanetTile.Invalid;
+        //        return false;
+        //    }
+        //    tile = planetTileList.RandomElement<PlanetTile>();
+        //    return true;
+        //}
+
+
+
+
+
+
+
 
         public static bool IsValidTileForNewSettlement(PlanetTile tile, StringBuilder reason = null)
         {

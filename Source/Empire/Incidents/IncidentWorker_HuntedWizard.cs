@@ -79,20 +79,20 @@ namespace TheEndTimes_Empire
             pawnGroupMakerParms.points = IncidentWorker_Raid.AdjustedRaidPoints(pawnGroupMakerParms.points, raidParms.raidArrivalMode, raidParms.raidStrategy, pawnGroupMakerParms.faction, PawnGroupKindDefOf.Combat, raidParms.target, raidParms.raidAgeRestriction);
             IEnumerable<PawnKindDef> pawnKindsExample = PawnGroupMakerUtility.GeneratePawnKindsExample(pawnGroupMakerParms);
 
-            //int randoPawnsCount = RH_TET_EmpireMod.random.Next(2, 5);
             List<Pawn> wizard = new List<Pawn>();
 
-            Pawn refugee = PawnGenerator.GeneratePawn(new PawnGenerationRequest(GetRandomPawnKindDef(), (Faction)null, PawnGenerationContext.NonPlayer, -1,
-                false, false,
-                false, true, true,
-                20f, true, true, true,
+            PawnGenerationRequest request = new PawnGenerationRequest(GetRandomPawnKindDef(), (Faction)null, 
+                PawnGenerationContext.NonPlayer, 
+                PlanetTile.Invalid,
+                false, false, false, 
+                true, true, 20f, 
+                true, true, true,
                 true, false, false,
                 false, false, false,
-                0.0f, 0.0f, null, 5.0f,
-                null, null, null,
-                null, null, null,
-                null, null, null,
-                null, null, null));
+                0.0f, 0.0f, null, 0.05f, (Predicate<Pawn>)null, (Predicate<Pawn>)null, (IEnumerable<TraitDef>)null, (IEnumerable<TraitDef>)null, null, null, null, null, (string)null, (string)null, (RoyalTitleDef)null, null, false, false, false, false, (List<GeneDef>)null, (List<GeneDef>)null, (XenotypeDef)null, (CustomXenotype)null, (List<XenotypeDef>)null, 0.0f, DevelopmentalStage.Adult, (Func<XenotypeDef, PawnKindDef>)null, null, null, false, false, false, -1, 0, false);
+
+            Pawn refugee = PawnGenerator.GeneratePawn(request);
+
             refugee.relations.everSeenByPlayer = true;
 
             try
@@ -143,10 +143,31 @@ namespace TheEndTimes_Empire
 
         private PawnKindDef GetRandomPawnKindDef()
         {
+            List<PawnKindDef> STANDARD_WIZARD_PAWN_KINDS = new List<PawnKindDef>();
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Beasts);
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Bright);
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Celestial);
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Spirit);
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Grey);
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Jade);
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_White);
+            STANDARD_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Gold);
+
+            List<PawnKindDef> GREAT_WIZARD_PAWN_KINDS = new List<PawnKindDef>();
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Beasts);
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Bright);
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Celestial);
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Grey);
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Jade);
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Spirit);
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_White);
+            GREAT_WIZARD_PAWN_KINDS.Add(RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Gold);
+
             if (RH_TET_EmpireMod.random.Next(0, 10) != 0)
-                return RH_TET_EmpireMod.STANDARD_WIZARD_PAWN_KINDS.RandomElement();
-            else 
-                return RH_TET_EmpireMod.GREAT_WIZARD_PAWN_KINDS.RandomElement();
+                return STANDARD_WIZARD_PAWN_KINDS.RandomElement();
+            else
+                return GREAT_WIZARD_PAWN_KINDS.RandomElement();
+
         }
 
         private bool TryFindSpawnSpot(Map map, out IntVec3 spawnSpot)

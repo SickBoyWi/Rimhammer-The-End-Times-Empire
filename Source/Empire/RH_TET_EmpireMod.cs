@@ -12,19 +12,7 @@ namespace TheEndTimes_Empire
     {
         public static System.Random random = new System.Random(Guid.NewGuid().GetHashCode());
         public static bool royaltyAlertPatched = false;
-        public static bool ideologyAlertPatched = false; 
-        public static List<PawnKindDef> STANDARD_WIZARD_PAWN_KINDS = new List<PawnKindDef>()
-        {
-            RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Beasts,RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Bright,RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Celestial,
-            RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Spirit,RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Grey,RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Jade,
-            RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_White,RH_TET_EmpireDefOf.RH_TET_Empire_WizardStandard_Gold
-        };
-        public static List<PawnKindDef> GREAT_WIZARD_PAWN_KINDS = new List<PawnKindDef>()
-        {
-            RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Beasts,RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Bright,RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Celestial,
-            RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Spirit,RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Grey,RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Jade,
-            RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_White,RH_TET_EmpireDefOf.RH_TET_Empire_WizardGreat_Gold
-        };
+        public static bool ideologyAlertPatched = false;
 
         public RH_TET_EmpireMod(ModContentPack content) : base(content)
         {
