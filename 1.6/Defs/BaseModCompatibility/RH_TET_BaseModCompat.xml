@@ -527,6 +527,8 @@
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		
+		
 	</ThingDef>
 
 	<PawnKindDef ParentName="RH_TET_HorseKindBase">
