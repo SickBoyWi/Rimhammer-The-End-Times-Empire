@@ -3,16 +3,9 @@
 
 	<!-- ==================== Swords ==================== -->
 	<ThingDef Name="RH_TET_Empire_SharpQualityBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
-		<!--
-		<comps>
-			<li Class="MVCF.Comps.CompProperties_VerbProps">
-				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
-				<verbProps>
-					<li><brawlerCaresAbout>false</brawlerCaresAbout></li>
-				</verbProps>
-			</li>
-		</comps>
-		-->
+		<modExtensions>
+			<li Class="BrawlerFriendly.DefModExtension_BrawlerFriendly" />
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="RH_TET_Empire_SharpQualityBase">
@@ -1449,16 +1442,9 @@
 		</modExtensions>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>  
-		<!--		
-		<comps>
-			<li Class="MVCF.Comps.CompProperties_VerbProps">
-				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
-				<verbProps>
-					<li><brawlerCaresAbout>false</brawlerCaresAbout></li>
-				</verbProps>
-			</li>
-		</comps>
-		-->
+		<modExtensions>
+			<li Class="BrawlerFriendly.DefModExtension_BrawlerFriendly" />
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RH_TET_StandardBase">
