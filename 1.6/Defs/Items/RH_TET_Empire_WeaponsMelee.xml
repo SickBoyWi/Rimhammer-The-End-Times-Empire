@@ -4,8 +4,8 @@
 	<!-- ==================== Swords ==================== -->
 	<ThingDef Name="RH_TET_Empire_SharpQualityBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
 		<modExtensions>
-			<li Class="BrawlerFriendly.DefModExtension_BrawlerFriendly" />
-		</modExtensions>
+			<li Class="SickTools.DefModExtension_BrawlerAllowance" />
+		</modExtensions>	
 	</ThingDef>
 	
 	<ThingDef ParentName="RH_TET_Empire_SharpQualityBase">
@@ -1443,8 +1443,8 @@
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>  
 		<modExtensions>
-			<li Class="BrawlerFriendly.DefModExtension_BrawlerFriendly" />
-		</modExtensions>
+			<li Class="SickTools.DefModExtension_BrawlerAllowance" />
+		</modExtensions>	
 	</ThingDef>
 
 	<ThingDef ParentName="RH_TET_StandardBase">
